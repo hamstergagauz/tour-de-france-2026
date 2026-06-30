@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour de France 2026 — за кем следить</title>
+  <link rel="stylesheet" href="assets/riders.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Tour de France 2026</p>
+      <h1>Гонщики, за которыми стоит следить</h1>
+      <p class="lead">GC-фавориты, молодые претенденты, спринтеры, охотники за этапами и гонщики, которые могут сделать гонку интереснее.</p>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="stage-guide.html">Гид по этапам</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="summary">
+      <article>
+        <strong>GC</strong>
+        <span>Погачар, Вингегор, Эвенепул, Роглич, Липовиц, Айюсо, дель Торо.</span>
+      </article>
+      <article>
+        <strong>Спринт</strong>
+        <span>Филипсен, Мерлир, Гирмай, Педерсен.</span>
+      </article>
+      <article>
+        <strong>Шоу и этапы</strong>
+        <span>Ван дер Пул, Пидкок, Алафилипп, Хили, Карапас.</span>
+      </article>
+    </section>
+
+    <section class="controls" aria-label="Фильтры">
+      <button data-filter="all" class="active">Все</button>
+      <button data-filter="GC">GC</button>
+      <button data-filter="Спринтер">Спринтеры</button>
+      <button data-filter="Этапы">Охотники за этапами</button>
+      <button data-filter="Молодой">Молодые</button>
+    </section>
+
+    <section id="riderGrid" class="grid"></section>
+
+    <section class="table-section">
+      <h2>Краткая таблица</h2>
+      <div class="table-wrap">
+        <table id="riderTable">
+          <thead>
+            <tr>
+              <th>Гонщик</th>
+              <th>Команда</th>
+              <th>Роль</th>
+              <th>Почему следить</th>
+              <th>Главные результаты</th>
+              <th>Этапы</th>
+              <th>Соцсети</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>Статус данных</h2>
+      <p>Это рабочий список перед стартом гонки. Команды и старт-лист могут измениться до 4 июля 2026 года. Большинство фото хранится локально в папке <code>assets/riders/</code>; для отдельных гонщиков используется внешний fallback, если фото временно не удалось скачать.</p>
+      <p>Основные источники для проверки состава, фото и соцсетей: ProCyclingStats startlist, CyclingNews, CyclingWeekly, официальный сайт Tour de France, Wikipedia/Wikimedia/Wikidata.</p>
+    </section>
+  </main>
+
+  <script src="assets/riders-data.js"></script>
+  <script src="assets/riders.js"></script>
+</body>
+</html>

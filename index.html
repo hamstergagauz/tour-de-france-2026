@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour de France 2026 — личный центр</title>
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Tour de France 2026</p>
+      <h1>Личный центр сопровождения</h1>
+    </div>
+    <div class="top-actions">
+      <nav class="main-nav" aria-label="Основные разделы">
+        <a href="riders.html">Гонщики</a>
+        <a href="stage-guide.html">Гид по этапам</a>
+      </nav>
+      <div class="status">
+        <span id="todayLabel">Готово к обновлению</span>
+        <strong id="countdownLabel">Старт: 4 июля 2026</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage-panel">
+      <div class="stage-controls">
+        <label for="stageSelect">Этап</label>
+        <select id="stageSelect"></select>
+      </div>
+
+      <div class="stage-hero">
+        <div>
+          <p id="stageDate" class="eyebrow"></p>
+          <h2 id="stageTitle"></h2>
+          <p id="stageMeta"></p>
+        </div>
+        <div class="stage-score">
+          <span id="watchPriority"></span>
+          <small>приоритет просмотра</small>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a id="primaryWatch" class="button primary" target="_blank" rel="noreferrer">Смотреть этап</a>
+        <a id="backupWatch" class="button" target="_blank" rel="noreferrer">Резервная трансляция</a>
+        <a id="liveTracker" class="button" target="_blank" rel="noreferrer">Лайв-трекер</a>
+      </div>
+
+      <div class="grid two">
+        <article>
+          <h3>Профиль дня</h3>
+          <dl class="facts">
+            <div><dt>Тип</dt><dd id="stageType"></dd></div>
+            <div><dt>Дистанция</dt><dd id="stageDistance"></dd></div>
+            <div><dt>Набор</dt><dd id="stageElevation"></dd></div>
+            <div><dt>Финиш</dt><dd id="stageFinishWindow"></dd></div>
+          </dl>
+          <p id="stageGuide"></p>
+        </article>
+
+        <article>
+          <h3>Что смотреть</h3>
+          <dl class="facts">
+            <div><dt>Ключевые км</dt><dd id="keyKilometers"></dd></div>
+            <div><dt>GC-риск</dt><dd id="gcImpact"></dd></div>
+            <div><dt>Сложность</dt><dd id="difficulty"></dd></div>
+            <div><dt>Погода</dt><dd id="weatherNote"></dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <aside class="side-panel">
+      <section>
+        <h3>Рекомендация на сегодня</h3>
+        <ol id="recommendations" class="ranking"></ol>
+      </section>
+
+      <section>
+        <h3>Фавориты дня</h3>
+        <ul id="dailyFavorites" class="compact-list"></ul>
+      </section>
+
+      <section>
+        <h3>После этапа</h3>
+        <div class="link-stack">
+          <a id="replayLink" target="_blank" rel="noreferrer">Запись этапа</a>
+          <a id="highlightsLink" target="_blank" rel="noreferrer">Хайлайты</a>
+          <a id="resultsLink" target="_blank" rel="noreferrer">Результаты</a>
+        </div>
+      </section>
+    </aside>
+
+    <section class="wide">
+      <h2>Сравнение трансляций</h2>
+      <div class="table-wrap">
+        <table id="broadcastTable">
+          <thead>
+            <tr>
+              <th>Сервис</th>
+              <th>Бесплатно</th>
+              <th>Русский</th>
+              <th>VPN</th>
+              <th>Регистрация</th>
+              <th>Повторы</th>
+              <th>Прямой эфир</th>
+              <th>Итог</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="wide">
+      <h2>Все этапы</h2>
+      <div class="table-wrap">
+        <table id="stagesTable">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Этап</th>
+              <th>Маршрут</th>
+              <th>Дистанция</th>
+              <th>Тип</th>
+              <th>Смотреть</th>
+              <th>GC</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="wide">
+      <h2>Генеральная классификация: ориентиры</h2>
+      <div class="table-wrap">
+        <table id="ridersTable">
+          <thead>
+            <tr>
+              <th>Гонщик</th>
+              <th>Команда</th>
+              <th>Роль</th>
+              <th>Сильные стороны</th>
+              <th>Риск</th>
+              <th>Следить</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Данные маршрута: официальный сайт Tour de France. Последнее локальное обновление: <span id="updatedAt"></span>.</p>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+reports/
+scripts/
+wallpapers/
+.git/
+*.ps1
+*.log
+Thumbs.db
+Desktop.ini

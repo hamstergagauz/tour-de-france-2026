@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Tadej Pogacar",
+    "page": "Tadej Pogačar",
+    "image": "assets/riders/tadej-pogacar.jpg",
+    "source": "https://en.wikipedia.org/wiki/Tadej_Poga%C4%8Dar",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/2022_Tour_of_Slovenia_%28Stage_3%2C_Tadej_Poga%C4%8Dar_celebrating_victory_on_Celje_Castle_v2%29.jpg/330px-2022_Tour_of_Slovenia_%28Stage_3%2C_Tadej_Poga%C4%8Dar_celebrating_victory_on_Celje_Castle_v2%29.jpg"
+  },
+  {
+    "name": "Jonas Vingegaard",
+    "page": "Jonas Vingegaard",
+    "image": "assets/riders/jonas-vingegaard.jpg",
+    "source": "https://en.wikipedia.org/wiki/Jonas_Vingegaard",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/David_Gaudu%2C_Tadej_Poga%C4%8Dar%2C_Jonas_Vingegaard%2C_2023_Paris-Nice_%2852929456925%29_%28cropped2%29.jpg/330px-David_Gaudu%2C_Tadej_Poga%C4%8Dar%2C_Jonas_Vingegaard%2C_2023_Paris-Nice_%2852929456925%29_%28cropped2%29.jpg"
+  },
+  {
+    "name": "Remco Evenepoel",
+    "page": "Remco Evenepoel",
+    "image": "assets/riders/remco-evenepoel.jpg",
+    "source": "https://en.wikipedia.org/wiki/Remco_Evenepoel",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Remco_Evenepoel_WC_2022.jpg/330px-Remco_Evenepoel_WC_2022.jpg"
+  },
+  {
+    "name": "Primoz Roglic",
+    "page": "Primož Roglič 2017.jpg",
+    "image": "assets/riders/primoz-roglic.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Primo%C5%BE_Rogli%C4%8D_2017.jpg",
+    "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Primo%C5%BE%20Rogli%C4%8D%202017.jpg?width=900"
+  },
+  {
+    "name": "Isaac del Toro",
+    "page": "Isaac del Toro",
+    "image": "assets/riders/isaac-del-toro.jpg",
+    "source": "https://en.wikipedia.org/wiki/Isaac_del_Toro",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Isaac_Del_Toro_maglia_rosa.jpg/330px-Isaac_Del_Toro_maglia_rosa.jpg"
+  },
+  {
+    "name": "Paul Seixas",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Paul_Seixas",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (76af2b0))."
+  },
+  {
+    "name": "Florian Lipowitz",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Florian_Lipowitz",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (76af2b0))."
+  },
+  {
+    "name": "Juan Ayuso",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Juan_Ayuso",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (76af2b0))."
+  },
+  {
+    "name": "Richard Carapaz",
+    "page": "Richard Carapaz 2015.jpg",
+    "image": "assets/riders/richard-carapaz.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Richard_Carapaz_2015.jpg",
+    "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Carapaz%202015.jpg?width=900"
+  },
+  {
+    "name": "Mathieu van der Poel",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Mathieu_van_der_Poel",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Jasper Philipsen",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Jasper_Philipsen",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Mads Pedersen",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Mads_Pedersen",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Tim Merlier",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Tim_Merlier",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Biniam Girmay",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Biniam_Girmay",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Tom Pidcock",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Tom_Pidcock",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Julian Alaphilippe",
+    "page": "",
+    "image": "",
+    "source": "https://en.wikipedia.org/api/rest_v1/page/summary/Julian_Alaphilippe",
+    "thumb": "",
+    "error": "Response status code does not indicate success: 429 (Too many requests (f061ab2))."
+  },
+  {
+    "name": "Ben Healy",
+    "page": "2024 LBL start Ben Healy.jpg",
+    "image": "assets/riders/ben-healy.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2024_LBL_start_Ben_Healy.jpg",
+    "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20LBL%20start%20Ben%20Healy.jpg?width=900"
+  }
+]
