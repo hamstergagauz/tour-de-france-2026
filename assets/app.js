@@ -14,31 +14,80 @@
     return 9;
   }
 
+  function localDateKey(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
+
+  function selectedStageForToday() {
+    const today = localDateKey(new Date());
+    const exact = data.stages.find((stage) => stage.date === today);
+    if (exact) return exact;
+
+    const upcoming = data.stages.find((stage) => stage.date > today);
+    if (upcoming) return upcoming;
+
+    return data.stages[data.stages.length - 1];
+  }
+
+  function formatDateTime(value) {
+    if (!value) return "уточнить";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return value;
+    return date.toLocaleString("ru-RU", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  }
+
+  function findRiderByFavorite(favorite) {
+    const needle = favorite.toLowerCase();
+    return data.riders.find((rider) => {
+      const name = rider.name.toLowerCase();
+      return name.includes(needle) || needle.includes(name);
+    });
+  }
+
+  function renderFavorite(item) {
+    const rider = findRiderByFavorite(item);
+    if (!rider) return `<li>${item}</li>`;
+    return `<li><a href="riders.html">${rider.name}</a><span>${rider.team}</span></li>`;
+  }
+
   function renderStage(stage) {
+    const primary = data.broadcasters.find((service) => service.name === "HBO Max");
+    const backup = data.broadcasters.find((service) => service.name === "France TV");
+
     byId("stageDate").textContent = stage.label;
     byId("stageTitle").textContent = `Этап ${stage.number}: ${stage.route}`;
     byId("stageMeta").textContent = `${stage.type} · ${stage.distance}`;
+    byId("stageStatus").textContent = stage.status;
     byId("watchPriority").textContent = stage.watchPriority;
     byId("stageType").textContent = stage.type;
     byId("stageDistance").textContent = stage.distance;
-    byId("stageElevation").textContent = stage.elevation;
-    byId("stageFinishWindow").textContent = stage.finishWindow;
-    byId("stageGuide").textContent = stage.guide;
+    byId("stageStartTime").textContent = stage.startTime || "уточнить перед этапом";
+    byId("stageFinishWindow").textContent = stage.finishWindow || "уточнить перед этапом";
     byId("keyKilometers").textContent = stage.keyKilometers;
+    byId("viewingAdvice").textContent = stage.viewingAdvice;
     byId("gcImpact").textContent = stage.gcImpact;
     byId("difficulty").textContent = stage.difficulty;
-    byId("weatherNote").textContent = "обновить утром перед этапом";
+    byId("stageGuide").textContent = stage.guide;
 
-    const primary = data.broadcasters.find((service) => service.name === "HBO Max");
-    const backup = data.broadcasters.find((service) => service.name === "France TV");
     byId("primaryWatch").href = primary.url;
     byId("backupWatch").href = backup.url;
     byId("liveTracker").href = data.links.live;
     byId("replayLink").href = data.links.youtube;
     byId("highlightsLink").href = data.links.youtube;
     byId("resultsLink").href = data.links.results;
+    byId("primaryWatchStatus").innerHTML = tag(primary.result, primary.className);
+    byId("backupWatchStatus").innerHTML = tag(backup.result, backup.className);
 
-    byId("dailyFavorites").innerHTML = stage.favorites.map((item) => `<li>${item}</li>`).join("");
+    byId("dailyFavorites").innerHTML = stage.favorites.map(renderFavorite).join("");
   }
 
   function renderStageSelect() {
@@ -46,6 +95,11 @@
     select.innerHTML = data.stages
       .map((stage) => `<option value="${stage.number}">Этап ${stage.number} · ${stage.label} · ${stage.route}</option>`)
       .join("");
+
+    const selected = selectedStageForToday();
+    select.value = String(selected.number);
+    renderStage(selected);
+
     select.addEventListener("change", () => {
       const stage = data.stages.find((item) => item.number === Number(select.value));
       renderStage(stage);
@@ -90,6 +144,7 @@
           <td>${stage.type}</td>
           <td>${stage.watchPriority}</td>
           <td>${stage.gcImpact}</td>
+          <td>${stage.viewingAdvice}</td>
         </tr>
       `)
       .join("");
@@ -111,10 +166,20 @@
       .join("");
   }
 
+  function renderDataStatus() {
+    const status = data.meta.dataStatus;
+    byId("routeStatus").textContent = status.route;
+    byId("broadcasterStatus").textContent = status.broadcasters;
+    byId("predictionStatus").textContent = status.predictions;
+    byId("routeCheckedAt").textContent = formatDateTime(data.meta.routeCheckedAt);
+  }
+
   function renderCountdown() {
     const now = new Date();
     const start = new Date("2026-07-04T18:05:00+03:00");
+    const end = new Date("2026-07-26T23:59:59+03:00");
     const diff = start - now;
+
     byId("todayLabel").textContent = now.toLocaleDateString("ru-RU", {
       weekday: "long",
       year: "numeric",
@@ -125,8 +190,10 @@
     if (diff > 0) {
       const days = Math.ceil(diff / 86400000);
       byId("countdownLabel").textContent = `До старта: ${days} дн.`;
+    } else if (now <= end) {
+      byId("countdownLabel").textContent = "Гонка идет";
     } else {
-      byId("countdownLabel").textContent = "Гонка идет или завершена";
+      byId("countdownLabel").textContent = "Гонка завершена";
     }
   }
 
@@ -134,11 +201,11 @@
     byId("updatedAt").textContent = data.meta.updatedAt;
     renderCountdown();
     renderStageSelect();
-    renderStage(data.stages[0]);
     renderRecommendations();
     renderBroadcasts();
     renderStagesTable();
     renderRiders();
+    renderDataStatus();
   }
 
   init();

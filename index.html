@@ -25,7 +25,7 @@
   </header>
 
   <main class="layout">
-    <section class="stage-panel">
+    <section class="stage-panel daily-panel">
       <div class="stage-controls">
         <label for="stageSelect">Этап</label>
         <select id="stageSelect"></select>
@@ -36,6 +36,7 @@
           <p id="stageDate" class="eyebrow"></p>
           <h2 id="stageTitle"></h2>
           <p id="stageMeta"></p>
+          <p id="stageStatus" class="status-note"></p>
         </div>
         <div class="stage-score">
           <span id="watchPriority"></span>
@@ -43,54 +44,67 @@
         </div>
       </div>
 
-      <div class="actions">
-        <a id="primaryWatch" class="button primary" target="_blank" rel="noreferrer">Смотреть этап</a>
-        <a id="backupWatch" class="button" target="_blank" rel="noreferrer">Резервная трансляция</a>
-        <a id="liveTracker" class="button" target="_blank" rel="noreferrer">Лайв-трекер</a>
-      </div>
+      <div class="dashboard-grid">
+        <article class="dashboard-card watch-card">
+          <h3>Смотреть</h3>
+          <div class="actions">
+            <a id="primaryWatch" class="button primary" target="_blank" rel="noreferrer">Основная трансляция</a>
+            <a id="backupWatch" class="button" target="_blank" rel="noreferrer">Резерв</a>
+            <a id="liveTracker" class="button" target="_blank" rel="noreferrer">Лайв-трекер</a>
+          </div>
+          <dl class="facts compact">
+            <div><dt>Основной вариант</dt><dd id="primaryWatchStatus"></dd></div>
+            <div><dt>Резерв</dt><dd id="backupWatchStatus"></dd></div>
+          </dl>
+          <div class="link-stack after-links">
+            <a id="replayLink" target="_blank" rel="noreferrer">Запись</a>
+            <a id="highlightsLink" target="_blank" rel="noreferrer">Хайлайты</a>
+            <a id="resultsLink" target="_blank" rel="noreferrer">Результаты</a>
+          </div>
+        </article>
 
-      <div class="grid two">
-        <article>
-          <h3>Профиль дня</h3>
-          <dl class="facts">
+        <article class="dashboard-card">
+          <h3>Когда включать</h3>
+          <dl class="facts compact">
+            <div><dt>Старт</dt><dd id="stageStartTime"></dd></div>
+            <div><dt>Финиш</dt><dd id="stageFinishWindow"></dd></div>
+            <div><dt>Ключевые км</dt><dd id="keyKilometers"></dd></div>
+            <div><dt>Совет</dt><dd id="viewingAdvice"></dd></div>
+          </dl>
+        </article>
+
+        <article class="dashboard-card">
+          <h3>Почему важно</h3>
+          <dl class="facts compact">
             <div><dt>Тип</dt><dd id="stageType"></dd></div>
             <div><dt>Дистанция</dt><dd id="stageDistance"></dd></div>
-            <div><dt>Набор</dt><dd id="stageElevation"></dd></div>
-            <div><dt>Финиш</dt><dd id="stageFinishWindow"></dd></div>
+            <div><dt>Сложность</dt><dd id="difficulty"></dd></div>
+            <div><dt>GC-риск</dt><dd id="gcImpact"></dd></div>
           </dl>
           <p id="stageGuide"></p>
         </article>
 
-        <article>
-          <h3>Что смотреть</h3>
-          <dl class="facts">
-            <div><dt>Ключевые км</dt><dd id="keyKilometers"></dd></div>
-            <div><dt>GC-риск</dt><dd id="gcImpact"></dd></div>
-            <div><dt>Сложность</dt><dd id="difficulty"></dd></div>
-            <div><dt>Погода</dt><dd id="weatherNote"></dd></div>
-          </dl>
+        <article class="dashboard-card">
+          <h3>Фавориты дня</h3>
+          <ul id="dailyFavorites" class="compact-list favorite-list"></ul>
         </article>
       </div>
     </section>
 
     <aside class="side-panel">
       <section>
-        <h3>Рекомендация на сегодня</h3>
+        <h3>Рекомендация трансляций</h3>
         <ol id="recommendations" class="ranking"></ol>
       </section>
 
       <section>
-        <h3>Фавориты дня</h3>
-        <ul id="dailyFavorites" class="compact-list"></ul>
-      </section>
-
-      <section>
-        <h3>После этапа</h3>
-        <div class="link-stack">
-          <a id="replayLink" target="_blank" rel="noreferrer">Запись этапа</a>
-          <a id="highlightsLink" target="_blank" rel="noreferrer">Хайлайты</a>
-          <a id="resultsLink" target="_blank" rel="noreferrer">Результаты</a>
-        </div>
+        <h3>Статус данных</h3>
+        <dl class="facts compact">
+          <div><dt>Маршрут</dt><dd id="routeStatus"></dd></div>
+          <div><dt>Трансляции</dt><dd id="broadcasterStatus"></dd></div>
+          <div><dt>Прогнозы</dt><dd id="predictionStatus"></dd></div>
+          <div><dt>Проверка маршрута</dt><dd id="routeCheckedAt"></dd></div>
+        </dl>
       </section>
     </aside>
 
@@ -128,6 +142,7 @@
               <th>Тип</th>
               <th>Смотреть</th>
               <th>GC</th>
+              <th>Совет</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -144,7 +159,7 @@
               <th>Гонщик</th>
               <th>Команда</th>
               <th>Роль</th>
-              <th>Сильные стороны</th>
+              <th>Почему следить</th>
               <th>Риск</th>
               <th>Следить</th>
             </tr>

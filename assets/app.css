@@ -118,11 +118,15 @@ h3 {
   padding: 22px;
 }
 
+.daily-panel {
+  display: grid;
+  gap: 18px;
+}
+
 .stage-controls {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-bottom: 18px;
 }
 
 label {
@@ -176,11 +180,28 @@ select {
   font-weight: 700;
 }
 
+.status-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.dashboard-card {
+  border-top: 3px solid var(--yellow);
+  padding-top: 14px;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 18px 0;
+  margin: 0 0 14px;
 }
 
 .button {
@@ -215,6 +236,10 @@ article {
 .facts {
   display: grid;
   gap: 8px;
+}
+
+.facts.compact {
+  margin: 0;
 }
 
 .facts div {
@@ -263,11 +288,31 @@ dd {
   gap: 8px;
 }
 
+.after-links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
 .link-stack a {
   padding: 10px 12px;
   border: 1px solid var(--line);
   border-radius: 6px;
   text-decoration: none;
+}
+
+.favorite-list li {
+  display: grid;
+  gap: 3px;
+}
+
+.favorite-list a {
+  font-weight: 800;
+  text-decoration-color: rgba(25,25,25,.35);
+}
+
+.favorite-list span {
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .wide {
