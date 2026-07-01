@@ -369,7 +369,8 @@ footer {
 
   .topbar,
   .layout,
-  .grid.two {
+  .grid.two,
+  .dashboard-grid {
     display: block;
   }
 
@@ -388,7 +389,8 @@ footer {
   }
 
   .side-panel,
-  .wide {
+  .wide,
+  .dashboard-card + .dashboard-card {
     margin-top: 18px;
   }
 
@@ -403,5 +405,55 @@ footer {
   select {
     min-width: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2,
+  .stage-hero h2 {
+    font-size: 23px;
+  }
+
+  .stage-panel,
+  .side-panel section,
+  .wide {
+    padding: 16px;
+  }
+
+  .stage-controls {
+    display: grid;
+  }
+
+  .actions,
+  .after-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .button,
+  .link-stack a {
+    width: 100%;
+  }
+
+  .facts div {
+    grid-template-columns: minmax(88px, 34%) 1fr;
+  }
+
+  .stage-score {
+    min-width: 112px;
+    width: 112px;
+  }
+
+  footer {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
