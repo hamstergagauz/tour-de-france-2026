@@ -29,8 +29,8 @@
     byId("difficulty").textContent = stage.difficulty;
     byId("weatherNote").textContent = "обновить утром перед этапом";
 
-    const primary = data.services.find((service) => service.name === "HBO Max");
-    const backup = data.services.find((service) => service.name === "France TV");
+    const primary = data.broadcasters.find((service) => service.name === "HBO Max");
+    const backup = data.broadcasters.find((service) => service.name === "France TV");
     byId("primaryWatch").href = primary.url;
     byId("backupWatch").href = backup.url;
     byId("liveTracker").href = data.links.live;
@@ -53,7 +53,7 @@
   }
 
   function renderRecommendations() {
-    const ranked = [...data.services].sort((a, b) => serviceScore(a) - serviceScore(b)).slice(0, 5);
+    const ranked = [...data.broadcasters].sort((a, b) => serviceScore(a) - serviceScore(b)).slice(0, 5);
     byId("recommendations").innerHTML = ranked
       .map((service) => `<li><strong>${service.name}</strong><br><small>${service.result}. ${service.notes}</small></li>`)
       .join("");
@@ -61,7 +61,7 @@
 
   function renderBroadcasts() {
     const tbody = byId("broadcastTable").querySelector("tbody");
-    tbody.innerHTML = [...data.services]
+    tbody.innerHTML = [...data.broadcasters]
       .sort((a, b) => serviceScore(a) - serviceScore(b))
       .map((service) => `
         <tr>
@@ -102,9 +102,9 @@
         <tr>
           <td>${rider.name}</td>
           <td>${rider.team}</td>
-          <td>${rider.role}</td>
-          <td>${rider.strengths}</td>
-          <td>${rider.weakness}</td>
+          <td>${(rider.roles || []).join(", ")}</td>
+          <td>${rider.why}</td>
+          <td>${rider.risk}</td>
           <td>${rider.watch}</td>
         </tr>
       `)
@@ -131,7 +131,7 @@
   }
 
   function init() {
-    byId("updatedAt").textContent = data.updatedAt;
+    byId("updatedAt").textContent = data.meta.updatedAt;
     renderCountdown();
     renderStageSelect();
     renderStage(data.stages[0]);

@@ -1,5 +1,5 @@
 (function () {
-  const riders = window.TDF_RIDERS;
+  const riders = window.TDF_DATA.riders;
   const grid = document.getElementById("riderGrid");
   const tbody = document.querySelector("#riderTable tbody");
   const buttons = document.querySelectorAll("[data-filter]");
