@@ -77,6 +77,12 @@ nav a,
   background: rgba(255,255,255,.09);
 }
 
+nav a[aria-current="page"] {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: #111;
+}
+
 main {
   padding: 24px 42px 42px;
 }
