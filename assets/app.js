@@ -6,14 +6,6 @@
     return `<span class="tag ${className || "info"}">${value}</span>`;
   }
 
-  function serviceScore(service) {
-    if (service.result.startsWith("✅")) return 0;
-    if (service.name === "HBO Max") return 1;
-    if (service.name === "Eurosport") return 2;
-    if (service.result.startsWith("⚠️")) return 3;
-    return 9;
-  }
-
   function localDateKey(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -53,12 +45,6 @@
     });
   }
 
-  function renderFavorite(item) {
-    const rider = findRiderByFavorite(item);
-    if (!rider) return `<li>${item}</li>`;
-    return `<li><a href="riders.html">${rider.name}</a><span>${rider.team}</span></li>`;
-  }
-
   function stageHighlights(stageNumber) {
     return (data.highlights || [])
       .filter((item) => item.stage === stageNumber)
@@ -76,11 +62,10 @@
 
   function renderStageHighlights(stage) {
     const highlights = stageHighlights(stage.number).filter((item) => !item.isShort);
-    byId("highlightChannel").href = data.videoSource.channelUrl;
 
     if (!highlights.length) {
       byId("stageHighlights").innerHTML = `
-        <p class="empty-note">Обзор этого этапа пока не найден. Автопроверка канала запланирована на 04:00.</p>
+        <p class="empty-note">Обзор этого этапа пока не найден. Автопроверка TNT Sports Cycling идет отдельным потоком.</p>
       `;
       return;
     }
@@ -96,6 +81,17 @@
     return (data.stageResults && data.stageResults[String(stageNumber)]) || stageResults().find((item) => item.stage === stageNumber);
   }
 
+  function completedStageResults() {
+    return stageResults()
+      .filter((result) => ["preliminary", "official"].includes(result.status))
+      .sort((a, b) => a.stage - b.stage);
+  }
+
+  function latestCompletedResult() {
+    const results = completedStageResults();
+    return results[results.length - 1];
+  }
+
   function resultStatusLabel(status) {
     if (status === "official") return "Official";
     if (status === "preliminary") return "Preliminary";
@@ -105,8 +101,12 @@
 
   function riderLabel(entry) {
     if (!entry) return "не подтверждено";
-    const wornBy = entry.wornByRiderId ? " · worn by another rider" : "";
+    const wornBy = entry.wornByRiderId ? " · носит другой гонщик" : "";
     return `${entry.name}${wornBy}`;
+  }
+
+  function nextStageAfter(stage) {
+    return data.stages.find((item) => item.number > stage.number) || null;
   }
 
   function renderStageResult(stage) {
@@ -115,10 +115,14 @@
 
     if (!result || !["preliminary", "official"].includes(result.status)) {
       card.hidden = true;
+      byId("stageResultPill").textContent = "Результат ожидается";
+      byId("stageResultPill").className = "tag warn";
       return;
     }
 
     card.hidden = false;
+    byId("stageResultPill").textContent = resultStatusLabel(result.status);
+    byId("stageResultPill").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
     byId("stageWinner").textContent = `${result.winner.name} wins Stage ${stage.number}`;
     byId("stageResultStatus").textContent = resultStatusLabel(result.status);
     byId("stageResultStatus").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
@@ -128,45 +132,82 @@
       .map((item) => `<li><strong>${item.name}</strong><br><small>${item.team || ""}${item.time ? ` · ${item.time}` : ""}${item.gap ? ` · ${item.gap}` : ""}</small></li>`)
       .join("");
     byId("stageResultSummary").textContent = result.summary || "";
+  }
 
-    const jerseys = result.jerseysAfterStage || {};
+  function renderJerseySnapshot() {
+    const result = latestCompletedResult();
+    const jerseys = result && result.jerseysAfterStage ? result.jerseysAfterStage : {};
+
+    byId("jerseySnapshotStage").textContent = result
+      ? `После этапа ${result.stage} · ${resultStatusLabel(result.status)}`
+      : "Официальные майки появятся после первого результата.";
     byId("jerseyYellow").textContent = riderLabel(jerseys.yellow);
     byId("jerseyGreen").textContent = riderLabel(jerseys.green);
     byId("jerseyPolkaDot").textContent = riderLabel(jerseys.polkaDot);
     byId("jerseyWhite").textContent = riderLabel(jerseys.white);
   }
 
-  function renderStage(stage) {
-    const primary = data.broadcasters.find((service) => service.name === "HBO Max");
-    const backup = data.broadcasters.find((service) => service.name === "France TV");
+  function renderNextStage(stage) {
+    const next = nextStageAfter(stage);
+    const card = byId("nextStageCard");
 
+    if (!next) {
+      card.hidden = true;
+      return;
+    }
+
+    card.hidden = false;
+    byId("nextStageDate").textContent = next.label;
+    byId("nextStageTitle").textContent = `Этап ${next.number}: ${next.route}`;
+    byId("nextStageType").textContent = next.type;
+    byId("nextStageDistance").textContent = next.distance;
+    byId("nextStageGc").textContent = next.gcImpact;
+    byId("nextStageAdvice").textContent = next.viewingAdvice;
+  }
+
+  function renderRiderPreview(stage) {
+    const picked = [];
+
+    stage.favorites.forEach((favorite) => {
+      const rider = findRiderByFavorite(favorite);
+      if (rider && !picked.some((item) => item.id === rider.id)) picked.push(rider);
+    });
+
+    data.riders
+      .filter((rider) => (rider.roles || []).includes("GC"))
+      .forEach((rider) => {
+        if (picked.length < 6 && !picked.some((item) => item.id === rider.id)) picked.push(rider);
+      });
+
+    byId("ridersPreview").innerHTML = picked.slice(0, 6).map((rider) => `
+      <li>
+        <a href="riders.html">${rider.name}</a>
+        <span>${rider.team} · ${(rider.roles || []).join(", ")}</span>
+      </li>
+    `).join("");
+  }
+
+  function renderStage(stage) {
     byId("stageDate").textContent = stage.label;
     byId("stageTitle").textContent = `Этап ${stage.number}: ${stage.route}`;
     byId("stageMeta").textContent = `${stage.type} · ${stage.distance}`;
     byId("stageStatus").textContent = stage.status;
-    byId("watchPriority").textContent = stage.watchPriority;
-    byId("stageType").textContent = stage.type;
-    byId("stageDistance").textContent = stage.distance;
+    byId("watchPriority").textContent = `Просмотр ${stage.watchPriority}`;
     byId("stageStartTime").textContent = stage.startTime || "уточнить перед этапом";
     byId("stageFinishWindow").textContent = stage.finishWindow || "уточнить перед этапом";
     byId("keyKilometers").textContent = stage.keyKilometers;
-    byId("viewingAdvice").textContent = stage.viewingAdvice;
     byId("gcImpact").textContent = stage.gcImpact;
     byId("difficulty").textContent = stage.difficulty;
     byId("stageGuide").textContent = stage.guide;
 
-    byId("primaryWatch").href = primary.url;
-    byId("backupWatch").href = backup.url;
-    byId("liveTracker").href = data.links.live;
-    byId("replayLink").href = data.links.youtube;
-    byId("highlightsLink").href = data.links.youtube;
+    byId("highlightChannel").href = data.videoSource.channelUrl;
     byId("resultsLink").href = data.links.results;
-    byId("primaryWatchStatus").innerHTML = tag(primary.result, primary.className);
-    byId("backupWatchStatus").innerHTML = tag(backup.result, backup.className);
+    byId("liveTracker").href = data.links.live;
 
-    byId("dailyFavorites").innerHTML = stage.favorites.map(renderFavorite).join("");
     renderStageHighlights(stage);
     renderStageResult(stage);
+    renderNextStage(stage);
+    renderRiderPreview(stage);
   }
 
   function renderStageSelect() {
@@ -185,63 +226,30 @@
     });
   }
 
-  function renderRecommendations() {
-    const ranked = [...data.broadcasters].sort((a, b) => serviceScore(a) - serviceScore(b)).slice(0, 5);
-    byId("recommendations").innerHTML = ranked
-      .map((service) => `<li><strong>${service.name}</strong><br><small>${service.result}. ${service.notes}</small></li>`)
-      .join("");
-  }
-
-  function renderBroadcasts() {
-    const tbody = byId("broadcastTable").querySelector("tbody");
-    tbody.innerHTML = [...data.broadcasters]
-      .sort((a, b) => serviceScore(a) - serviceScore(b))
-      .map((service) => `
-        <tr>
-          <td><a href="${service.url}" target="_blank" rel="noreferrer">${service.name}</a></td>
-          <td>${service.free}</td>
-          <td>${service.russian}</td>
-          <td>${service.vpn}</td>
-          <td>${service.registration}</td>
-          <td>${service.replays}</td>
-          <td>${service.live}</td>
-          <td>${tag(service.result, service.className)}</td>
-        </tr>
-      `)
-      .join("");
-  }
-
   function renderStagesTable() {
     const tbody = byId("stagesTable").querySelector("tbody");
     tbody.innerHTML = data.stages
-      .map((stage) => `
-        <tr>
-          <td>${stage.label}</td>
-          <td>${stage.number}</td>
-          <td><a href="${stage.map}" target="_blank" rel="noreferrer">${stage.route}</a></td>
-          <td>${stage.distance}</td>
-          <td>${stage.type}</td>
-          <td>${stage.watchPriority}</td>
-          <td>${stage.gcImpact}</td>
-          <td>${stage.viewingAdvice}</td>
-        </tr>
-      `)
-      .join("");
-  }
+      .map((stage) => {
+        const result = stageResult(stage.number);
+        const highlights = stageHighlights(stage.number).filter((item) => !item.isShort);
+        const resultCell = result && ["preliminary", "official"].includes(result.status)
+          ? `${tag(resultStatusLabel(result.status), result.status === "official" ? "ok" : "warn")} ${result.winner.name}`
+          : tag("Ожидается", "warn");
+        const highlightCell = highlights.length
+          ? `<a href="${highlights[0].url}" target="_blank" rel="noreferrer">${highlights.length} видео</a>`
+          : "нет";
 
-  function renderRiders() {
-    const tbody = byId("ridersTable").querySelector("tbody");
-    tbody.innerHTML = data.riders
-      .map((rider) => `
-        <tr>
-          <td>${rider.name}</td>
-          <td>${rider.team}</td>
-          <td>${(rider.roles || []).join(", ")}</td>
-          <td>${rider.why}</td>
-          <td>${rider.risk}</td>
-          <td>${rider.watch}</td>
-        </tr>
-      `)
+        return `
+          <tr>
+            <td>${stage.label}</td>
+            <td>${stage.number}</td>
+            <td><a href="${stage.map}" target="_blank" rel="noreferrer">${stage.route}</a></td>
+            <td>${stage.type}</td>
+            <td>${resultCell}</td>
+            <td>${highlightCell}</td>
+          </tr>
+        `;
+      })
       .join("");
   }
 
@@ -265,7 +273,6 @@
     const status = data.meta.dataStatus;
     byId("routeStatus").textContent = status.route;
     byId("resultsStatus").textContent = status.results || "не настроено";
-    byId("broadcasterStatus").textContent = status.broadcasters;
     byId("highlightsStatus").textContent = status.highlights || "не настроено";
     byId("predictionStatus").textContent = status.predictions;
     byId("routeCheckedAt").textContent = formatDateTime(data.meta.routeCheckedAt);
@@ -298,11 +305,9 @@
   function init() {
     byId("updatedAt").textContent = data.meta.updatedAt;
     renderCountdown();
+    renderJerseySnapshot();
     renderStageSelect();
-    renderRecommendations();
-    renderBroadcasts();
     renderStagesTable();
-    renderRiders();
     renderLatestHighlights();
     renderDataStatus();
   }
