@@ -26,6 +26,42 @@
     return links.length ? links.join("") : `<span class="small">нет проверенной ссылки</span>`;
   }
 
+  function stageResults() {
+    return Array.isArray(window.TDF_DATA.stageResults) ? window.TDF_DATA.stageResults : Object.values(window.TDF_DATA.stageResults || {});
+  }
+
+  function latestCompletedResult() {
+    return [...stageResults()]
+      .filter((result) => ["preliminary", "official"].includes(result.status))
+      .sort((a, b) => b.stage - a.stage)[0];
+  }
+
+  function riderResultBadges(rider) {
+    const results = stageResults();
+    const wins = results.filter((result) => result.winner && result.winner.riderId === rider.id).length;
+    const latest = latestCompletedResult();
+    const badges = [];
+
+    if (wins === 1) badges.push({ label: "Stage win", className: "win" });
+    if (wins > 1) badges.push({ label: `Stage wins x${wins}`, className: "win" });
+
+    if (latest && latest.jerseysAfterStage) {
+      const jerseys = latest.jerseysAfterStage;
+      if (jerseys.yellow && jerseys.yellow.riderId === rider.id) badges.push({ label: "Yellow", className: "yellow" });
+      if (jerseys.green && jerseys.green.riderId === rider.id) badges.push({ label: "Green", className: "green" });
+      if (jerseys.polkaDot && jerseys.polkaDot.riderId === rider.id) badges.push({ label: "Polka Dot", className: "polka" });
+      if (jerseys.white && jerseys.white.riderId === rider.id) badges.push({ label: "White", className: "white" });
+    }
+
+    return badges;
+  }
+
+  function resultBadgesHtml(rider) {
+    const badges = riderResultBadges(rider);
+    if (!badges.length) return "";
+    return `<div class="result-badges">${badges.map((badge) => `<span class="result-badge ${badge.className}">${badge.label}</span>`).join("")}</div>`;
+  }
+
   function cssUrl(value) {
     return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'");
   }
@@ -41,6 +77,7 @@
         <div class="card-body">
           <h3>${rider.name}</h3>
           <p class="team">${rider.team} · ${rider.country}</p>
+          ${resultBadgesHtml(rider)}
           <div class="meta">
             ${rider.roles.map((role) => `<span class="tag ${roleClass(role)}">${role}</span>`).join("")}
           </div>
@@ -55,7 +92,7 @@
 
     tbody.innerHTML = riders.map((rider) => `
       <tr>
-        <td><strong>${rider.name}</strong><br><span class="small">${rider.country}</span></td>
+        <td><strong>${rider.name}</strong><br><span class="small">${rider.country}</span>${resultBadgesHtml(rider)}</td>
         <td>${rider.team}</td>
         <td>${rider.roles.join(", ")}</td>
         <td>${rider.why}</td>

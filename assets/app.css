@@ -203,6 +203,36 @@ select {
   padding-top: 14px;
 }
 
+.stage-summary-card {
+  background: #fffdf4;
+}
+
+.summary-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summary-head strong {
+  font-size: 18px;
+}
+
+.compact-ranking {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.compact-ranking li {
+  margin-bottom: 8px;
+}
+
+.jersey-facts {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

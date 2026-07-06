@@ -46,6 +46,26 @@
       </div>
 
       <div class="dashboard-grid">
+        <article id="stageSummaryCard" class="dashboard-card stage-summary-card" hidden>
+          <h3>Stage Summary</h3>
+          <div class="summary-head">
+            <strong id="stageWinner"></strong>
+            <span id="stageResultStatus" class="tag info"></span>
+          </div>
+          <dl class="facts compact">
+            <div><dt>Команда</dt><dd id="stageWinnerTeam"></dd></div>
+            <div><dt>Время</dt><dd id="stageWinningTime"></dd></div>
+          </dl>
+          <ol id="stageTop3" class="ranking compact-ranking"></ol>
+          <p id="stageResultSummary"></p>
+          <dl class="facts compact jersey-facts">
+            <div><dt>Yellow</dt><dd id="jerseyYellow"></dd></div>
+            <div><dt>Green</dt><dd id="jerseyGreen"></dd></div>
+            <div><dt>Polka Dot</dt><dd id="jerseyPolkaDot"></dd></div>
+            <div><dt>White</dt><dd id="jerseyWhite"></dd></div>
+          </dl>
+        </article>
+
         <article class="dashboard-card watch-card">
           <h3>Смотреть</h3>
           <div class="highlight-source">
@@ -107,6 +127,7 @@
         <h3>Статус данных</h3>
         <dl class="facts compact">
           <div><dt>Маршрут</dt><dd id="routeStatus"></dd></div>
+          <div><dt>Результаты</dt><dd id="resultsStatus"></dd></div>
           <div><dt>Трансляции</dt><dd id="broadcasterStatus"></dd></div>
           <div><dt>Обзоры</dt><dd id="highlightsStatus"></dd></div>
           <div><dt>Прогнозы</dt><dd id="predictionStatus"></dd></div>

@@ -221,6 +221,49 @@ main {
   margin-bottom: 10px;
 }
 
+.result-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 0 10px;
+}
+
+.result-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 3px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.result-badge.win,
+.result-badge.yellow {
+  background: #fff1b8;
+  border-color: #ecd264;
+}
+
+.result-badge.green {
+  background: #dff2e8;
+  border-color: #a8d8bd;
+  color: var(--green);
+}
+
+.result-badge.polka {
+  background: #f8dfdc;
+  border-color: #e7aaa4;
+  color: var(--red);
+}
+
+.result-badge.white {
+  background: #fff;
+  border-color: #bfc8d2;
+}
+
 .tag {
   padding: 4px 7px;
   border-radius: 999px;

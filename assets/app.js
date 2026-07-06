@@ -88,6 +88,54 @@
     byId("stageHighlights").innerHTML = highlights.map(renderHighlightLink).join("");
   }
 
+  function stageResults() {
+    return Array.isArray(data.stageResults) ? data.stageResults : Object.values(data.stageResults || {});
+  }
+
+  function stageResult(stageNumber) {
+    return (data.stageResults && data.stageResults[String(stageNumber)]) || stageResults().find((item) => item.stage === stageNumber);
+  }
+
+  function resultStatusLabel(status) {
+    if (status === "official") return "Official";
+    if (status === "preliminary") return "Preliminary";
+    if (status === "live") return "Live";
+    return "Scheduled";
+  }
+
+  function riderLabel(entry) {
+    if (!entry) return "не подтверждено";
+    const wornBy = entry.wornByRiderId ? " · worn by another rider" : "";
+    return `${entry.name}${wornBy}`;
+  }
+
+  function renderStageResult(stage) {
+    const result = stageResult(stage.number);
+    const card = byId("stageSummaryCard");
+
+    if (!result || !["preliminary", "official"].includes(result.status)) {
+      card.hidden = true;
+      return;
+    }
+
+    card.hidden = false;
+    byId("stageWinner").textContent = `${result.winner.name} wins Stage ${stage.number}`;
+    byId("stageResultStatus").textContent = resultStatusLabel(result.status);
+    byId("stageResultStatus").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
+    byId("stageWinnerTeam").textContent = result.winner.team || "не подтверждено";
+    byId("stageWinningTime").textContent = result.winningTime || "не подтверждено";
+    byId("stageTop3").innerHTML = (result.top3 || [])
+      .map((item) => `<li><strong>${item.name}</strong><br><small>${item.team || ""}${item.time ? ` · ${item.time}` : ""}${item.gap ? ` · ${item.gap}` : ""}</small></li>`)
+      .join("");
+    byId("stageResultSummary").textContent = result.summary || "";
+
+    const jerseys = result.jerseysAfterStage || {};
+    byId("jerseyYellow").textContent = riderLabel(jerseys.yellow);
+    byId("jerseyGreen").textContent = riderLabel(jerseys.green);
+    byId("jerseyPolkaDot").textContent = riderLabel(jerseys.polkaDot);
+    byId("jerseyWhite").textContent = riderLabel(jerseys.white);
+  }
+
   function renderStage(stage) {
     const primary = data.broadcasters.find((service) => service.name === "HBO Max");
     const backup = data.broadcasters.find((service) => service.name === "France TV");
@@ -118,6 +166,7 @@
 
     byId("dailyFavorites").innerHTML = stage.favorites.map(renderFavorite).join("");
     renderStageHighlights(stage);
+    renderStageResult(stage);
   }
 
   function renderStageSelect() {
@@ -215,6 +264,7 @@
   function renderDataStatus() {
     const status = data.meta.dataStatus;
     byId("routeStatus").textContent = status.route;
+    byId("resultsStatus").textContent = status.results || "не настроено";
     byId("broadcasterStatus").textContent = status.broadcasters;
     byId("highlightsStatus").textContent = status.highlights || "не настроено";
     byId("predictionStatus").textContent = status.predictions;

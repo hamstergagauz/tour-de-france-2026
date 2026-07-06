@@ -6,7 +6,8 @@ window.TDF_DATA = {
       "route": "Verified",
       "broadcasters": "Preliminary",
       "predictions": "Forecast",
-      "highlights": "RSS monitored"
+      "highlights": "RSS monitored",
+      "results": "Official/partial"
     },
     "youtubeHighlightsCheckedAt": "2026-07-06"
   },
@@ -784,6 +785,13 @@ window.TDF_DATA = {
   ],
   "riders": [
     {
+      "id": "tadej-pogacar",
+      "aliases": [
+        "Tadej Pogacar",
+        "Tadej POGACAR",
+        "T. POGACAR",
+        "Tadej Pogačar"
+      ],
       "name": "Tadej Pogacar",
       "image": "assets/riders/tadej-pogacar.jpg",
       "imagePosition": "center 22%",
@@ -805,6 +813,13 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "jonas-vingegaard",
+      "aliases": [
+        "Jonas Vingegaard",
+        "Jonas VINGEGAARD HANSEN",
+        "J. VINGEGAARD",
+        "Jonas VINGEGAARD"
+      ],
       "name": "Jonas Vingegaard",
       "image": "assets/riders/jonas-vingegaard.jpg",
       "imagePosition": "center 18%",
@@ -825,6 +840,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "remco-evenepoel",
+      "aliases": [
+        "Remco Evenepoel",
+        "Remco EVENEPOEL",
+        "R. EVENEPOEL"
+      ],
       "name": "Remco Evenepoel",
       "image": "assets/riders/remco-evenepoel.jpg",
       "imagePosition": "center 16%",
@@ -846,6 +867,13 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "primoz-roglic",
+      "aliases": [
+        "Primoz Roglic",
+        "Primoz ROGLIC",
+        "P. ROGLIC",
+        "Primož Roglič"
+      ],
       "name": "Primoz Roglic",
       "image": "assets/riders/primoz-roglic.jpg",
       "imagePosition": "center 18%",
@@ -867,6 +895,13 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "isaac-del-toro",
+      "aliases": [
+        "Isaac del Toro",
+        "Isaac DEL TORO ROMERO",
+        "I. DEL TORO",
+        "Isaac Del Toro"
+      ],
       "name": "Isaac del Toro",
       "image": "assets/riders/isaac-del-toro.jpg",
       "imagePosition": "center 18%",
@@ -885,6 +920,12 @@ window.TDF_DATA = {
       "social": {}
     },
     {
+      "id": "paul-seixas",
+      "aliases": [
+        "Paul Seixas",
+        "Paul SEIXAS",
+        "P. SEIXAS"
+      ],
       "name": "Paul Seixas",
       "image": "assets/riders/paul-seixas.jpg",
       "imagePosition": "center 16%",
@@ -907,6 +948,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "florian-lipowitz",
+      "aliases": [
+        "Florian Lipowitz",
+        "Florian LIPOWITZ",
+        "F. LIPOWITZ"
+      ],
       "name": "Florian Lipowitz",
       "image": "assets/riders/florian-lipowitz.jpg",
       "imagePosition": "center 20%",
@@ -926,6 +973,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "juan-ayuso",
+      "aliases": [
+        "Juan Ayuso",
+        "Juan AYUSO",
+        "J. AYUSO"
+      ],
       "name": "Juan Ayuso",
       "image": "assets/riders/juan-ayuso.jpg",
       "imagePosition": "center 18%",
@@ -947,6 +1000,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "richard-carapaz",
+      "aliases": [
+        "Richard Carapaz",
+        "Richard CARAPAZ",
+        "R. CARAPAZ"
+      ],
       "name": "Richard Carapaz",
       "image": "assets/riders/richard-carapaz.jpg",
       "imagePosition": "center 13%",
@@ -968,6 +1027,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "mathieu-van-der-poel",
+      "aliases": [
+        "Mathieu van der Poel",
+        "Mathieu VAN DER POEL",
+        "M. VAN DER POEL"
+      ],
       "name": "Mathieu van der Poel",
       "image": "assets/riders/mathieu-van-der-poel.jpg",
       "imagePosition": "center 14%",
@@ -987,6 +1052,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "jasper-philipsen",
+      "aliases": [
+        "Jasper Philipsen",
+        "Jasper PHILIPSEN",
+        "J. PHILIPSEN"
+      ],
       "name": "Jasper Philipsen",
       "image": "assets/riders/jasper-philipsen.jpg",
       "imagePosition": "center 13%",
@@ -1005,6 +1076,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "mads-pedersen",
+      "aliases": [
+        "Mads Pedersen",
+        "Mads PEDERSEN",
+        "M. PEDERSEN"
+      ],
       "name": "Mads Pedersen",
       "image": "assets/riders/mads-pedersen.jpg",
       "imagePosition": "center 12%",
@@ -1025,6 +1102,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "tim-merlier",
+      "aliases": [
+        "Tim Merlier",
+        "Tim MERLIER",
+        "T. MERLIER"
+      ],
       "name": "Tim Merlier",
       "image": "assets/riders/tim-merlier.jpg",
       "imagePosition": "center 13%",
@@ -1043,6 +1126,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "biniam-girmay",
+      "aliases": [
+        "Biniam Girmay",
+        "Biniam GIRMAY",
+        "B. GIRMAY"
+      ],
       "name": "Biniam Girmay",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Biniam%20Girmay%2C%20Grand%20Prix%20Cycliste%20de%20Qu%C3%A9bec%202022%20%28UCI%20WorldTour%29%20%28cropped%29.jpg?width=900",
       "imagePosition": "center 15%",
@@ -1063,6 +1152,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "tom-pidcock",
+      "aliases": [
+        "Tom Pidcock",
+        "Tom PIDCOCK",
+        "T. PIDCOCK"
+      ],
       "name": "Tom Pidcock",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Pidcock%20%282023%29.jpg?width=900",
       "imagePosition": "center 13%",
@@ -1082,6 +1177,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "julian-alaphilippe",
+      "aliases": [
+        "Julian Alaphilippe",
+        "Julian ALAPHILIPPE",
+        "J. ALAPHILIPPE"
+      ],
       "name": "Julian Alaphilippe",
       "image": "assets/riders/julian-alaphilippe.jpg",
       "imagePosition": "center 12%",
@@ -1101,6 +1202,12 @@ window.TDF_DATA = {
       }
     },
     {
+      "id": "ben-healy",
+      "aliases": [
+        "Ben Healy",
+        "Ben HEALY",
+        "B. HEALY"
+      ],
       "name": "Ben Healy",
       "image": "assets/riders/ben-healy.jpg",
       "imagePosition": "center 14%",
@@ -1171,5 +1278,148 @@ window.TDF_DATA = {
       "discoveredAt": "2026-07-06",
       "isShort": false
     }
-  ]
+  ],
+  "stageResults": {
+    "1": {
+      "stage": 1,
+      "status": "official",
+      "flags": [],
+      "source": "letour",
+      "sourceUrl": "https://www.letour.fr/en/rankings/stage-1",
+      "checkedAt": "2026-07-06",
+      "distanceActual": "19.6 км",
+      "winner": {
+        "riderId": "jonas-vingegaard",
+        "name": "Jonas Vingegaard",
+        "team": "Team Visma | Lease a Bike"
+      },
+      "top3": [
+        {
+          "rank": 1,
+          "riderId": "jonas-vingegaard",
+          "name": "Jonas Vingegaard",
+          "team": "Team Visma | Lease a Bike",
+          "time": "00h 21' 47''",
+          "gap": "-"
+        },
+        {
+          "rank": 2,
+          "riderId": null,
+          "name": "Filippo Ganna",
+          "team": "Netcompany Ineos Cycling Team",
+          "time": "00h 21' 55''",
+          "gap": "+ 00h 00' 08''"
+        },
+        {
+          "rank": 3,
+          "riderId": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "team": "UAE Team Emirates XRG",
+          "time": "00h 21' 59''",
+          "gap": "+ 00h 00' 12''"
+        }
+      ],
+      "winningTime": "00h 21' 47''",
+      "summary": "Jonas Vingegaard opened the Tour by winning the Barcelona team time trial and taking the first yellow jersey. Filippo Ganna finished second, while Tadej Pogacar limited the damage in third after a strong late push. The short team time trial immediately created early GC gaps among the main contenders.",
+      "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-1",
+      "jerseysAfterStage": {
+        "yellow": {
+          "riderId": "jonas-vingegaard",
+          "name": "Jonas Vingegaard",
+          "team": "Team Visma | Lease a Bike"
+        },
+        "green": null,
+        "polkaDot": null,
+        "white": null
+      },
+      "decisions": []
+    },
+    "2": {
+      "stage": 2,
+      "status": "official",
+      "flags": [],
+      "source": "letour",
+      "sourceUrl": "https://www.letour.fr/en/rankings",
+      "checkedAt": "2026-07-06",
+      "distanceActual": "168.5 км",
+      "winner": {
+        "riderId": "isaac-del-toro",
+        "name": "Isaac del Toro",
+        "team": "UAE Team Emirates XRG"
+      },
+      "top3": [
+        {
+          "rank": 1,
+          "riderId": "isaac-del-toro",
+          "name": "Isaac del Toro",
+          "team": "UAE Team Emirates XRG",
+          "time": "03h 40' 01''",
+          "gap": "-"
+        },
+        {
+          "rank": 2,
+          "riderId": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "team": "UAE Team Emirates XRG",
+          "time": "03h 40' 01''",
+          "gap": "-"
+        },
+        {
+          "rank": 3,
+          "riderId": "remco-evenepoel",
+          "name": "Remco Evenepoel",
+          "team": "Red Bull - BORA - hansgrohe",
+          "time": "03h 40' 01''",
+          "gap": "-"
+        }
+      ],
+      "winningTime": "03h 40' 01''",
+      "summary": "Isaac del Toro won Stage 2 in Barcelona after UAE Team Emirates-XRG controlled the decisive Montjuic finale. Tadej Pogacar finished second after guiding his teammate to the line, with Remco Evenepoel third. Jonas Vingegaard remained in yellow after finishing with the main favourites.",
+      "summarySourceUrl": "https://www.letour.fr/en/news/2026/stage-2/pogacar-gifts-montjuic-to-del-toro/1334899",
+      "jerseysAfterStage": {
+        "yellow": {
+          "riderId": "jonas-vingegaard",
+          "name": "Jonas Vingegaard",
+          "team": "Team Visma | Lease a Bike"
+        },
+        "green": {
+          "riderId": "isaac-del-toro",
+          "name": "Isaac del Toro",
+          "team": "UAE Team Emirates XRG"
+        },
+        "polkaDot": {
+          "riderId": null,
+          "name": "A. Molenaar",
+          "team": "Caja Rural-Seguros RGA"
+        },
+        "white": {
+          "riderId": "isaac-del-toro",
+          "name": "Isaac del Toro",
+          "team": "UAE Team Emirates XRG",
+          "wornByRiderId": "juan-ayuso"
+        }
+      },
+      "decisions": []
+    }
+  },
+  "resultsMeta": {
+    "checkedAt": "2026-07-06",
+    "sourcePriority": [
+      "letour",
+      "pcs",
+      "manualFallback"
+    ],
+    "latestCompletedStage": 2,
+    "status": "needs_review",
+    "unresolvedRiders": [
+      {
+        "name": "Filippo Ganna",
+        "context": "stage 1 top3"
+      },
+      {
+        "name": "A. Molenaar",
+        "context": "stage 2 polkaDot jersey"
+      }
+    ]
+  }
 };
