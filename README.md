@@ -23,6 +23,7 @@ https://tdf.halktoplushu.md
 - Первичная оценка трансляций и резервных вариантов.
 - Единая модель данных в `assets/data.js`: этапы, гонщики, трансляции и статусы данных.
 - Ежедневный dashboard: что смотреть, когда включать, почему этап важен, фавориты дня и статус данных.
+- Блок ежедневных YouTube-обзоров с канала TNT Sports Cycling.
 - Адаптивная верстка для мобильного, планшета и desktop.
 - PowerShell-скрипт для быстрой проверки доступности сайтов.
 
@@ -59,8 +60,20 @@ https://tdf.halktoplushu.md
 - DNS: **verified and propagated**.
 - Phase 2: **complete**.
 - Homepage daily dashboard: **operational**.
+- YouTube highlight workflow: **RSS monitored**.
 - Responsive behavior: **validated locally and manually**.
 - Current focus: **operational monitoring during the Tour de France**.
+
+## Основной режим просмотра
+
+С 2026-07-06 основной сценарий — смотреть не live-трансляции, а ежедневные обзоры.
+
+- Primary source: https://www.youtube.com/@TNTSportsCycling
+- Stable RSS source: `https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA`
+- Update script: `scripts/Update-YoutubeHighlights.ps1`
+- Daily automation target: 04:00 Europe/Bucharest.
+
+Скрипт ищет новые ролики канала по RSS, фильтрует `Tour de France` + `Stage N`, добавляет ссылки в `assets/data.js` и не дублирует уже найденные `videoId`.
 
 ## Operator Checklist: проверка трансляций в Chrome
 
@@ -108,10 +121,10 @@ https://tdf.halktoplushu.md
 
 До и во время гонки:
 
-1. В день этапа проверить основные TV/broadcaster links.
-2. Проверить фактическое время старта, финишное окно и ключевые километры.
-3. Обновить stage data, если организаторы публикуют изменения маршрута, времени или профиля.
-4. Проверить, доступны ли replay/highlights/results после этапа.
+1. Утром проверить, появились ли ссылки на обзоры прошедшего этапа.
+2. Если RSS не нашел обзор, проверить канал TNT Sports Cycling вручную.
+3. Проверить фактическое время старта, финишное окно и ключевые километры текущего этапа.
+4. Обновить stage data, если организаторы публикуют изменения маршрута, времени или профиля.
 5. Фиксировать реальные UX-наблюдения для будущей Phase 3, не смешивая их с оперативными race-day правками.
 
 ## Журнал изменений
@@ -142,10 +155,17 @@ https://tdf.halktoplushu.md
 - Адаптивное поведение проверено для мобильного, планшета и desktop.
 - Проект переведен в состояние `WAITING_FOR_TOUR_START`.
 
+### 2026-07-06 — YouTube highlights workflow
+
+- Основной режим просмотра смещен с live на ежедневные YouTube-обзоры.
+- Добавлен канал TNT Sports Cycling как основной источник обзоров.
+- Добавлен RSS-based скрипт `scripts/Update-YoutubeHighlights.ps1`.
+- На главной странице добавлен блок обзоров выбранного этапа и список последних обзоров.
+
 ## Следующие шаги
 
-1. В день старта открыть Chrome с профилем `Hamster Gagauz`.
-2. Проверить основные и резервные варианты трансляции.
-3. Проверить фактические stage timing данные.
+1. Каждое утро проверять, что обзоры прошлого этапа появились на главной странице.
+2. Если обзоров нет, проверить канал TNT Sports Cycling вручную.
+3. Проверить stage timing текущего этапа.
 4. Обновлять только оперативные race-day данные, если они реально изменились.
 5. Собирать UX-наблюдения для будущей Phase 3.

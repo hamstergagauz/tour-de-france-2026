@@ -47,6 +47,11 @@
       <div class="dashboard-grid">
         <article class="dashboard-card watch-card">
           <h3>Смотреть</h3>
+          <div class="highlight-source">
+            <strong>Основной формат: обзоры</strong>
+            <a id="highlightChannel" target="_blank" rel="noreferrer">TNT Sports Cycling</a>
+          </div>
+          <div id="stageHighlights" class="highlight-list"></div>
           <div class="actions">
             <a id="primaryWatch" class="button primary" target="_blank" rel="noreferrer">Основная трансляция</a>
             <a id="backupWatch" class="button" target="_blank" rel="noreferrer">Резерв</a>
@@ -102,9 +107,16 @@
         <dl class="facts compact">
           <div><dt>Маршрут</dt><dd id="routeStatus"></dd></div>
           <div><dt>Трансляции</dt><dd id="broadcasterStatus"></dd></div>
+          <div><dt>Обзоры</dt><dd id="highlightsStatus"></dd></div>
           <div><dt>Прогнозы</dt><dd id="predictionStatus"></dd></div>
           <div><dt>Проверка маршрута</dt><dd id="routeCheckedAt"></dd></div>
+          <div><dt>Проверка обзоров</dt><dd id="highlightsCheckedAt"></dd></div>
         </dl>
+      </section>
+
+      <section>
+        <h3>Последние обзоры</h3>
+        <ul id="latestHighlights" class="compact-list highlight-compact"></ul>
       </section>
     </aside>
 

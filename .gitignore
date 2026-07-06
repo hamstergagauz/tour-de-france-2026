@@ -1,8 +1,10 @@
 reports/
-scripts/
+scripts/*
+!scripts/Update-YoutubeHighlights.ps1
 wallpapers/
 .git/
 *.ps1
+!scripts/Update-YoutubeHighlights.ps1
 *.log
 Thumbs.db
 Desktop.ini

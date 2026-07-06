@@ -59,6 +59,35 @@
     return `<li><a href="riders.html">${rider.name}</a><span>${rider.team}</span></li>`;
   }
 
+  function stageHighlights(stageNumber) {
+    return (data.highlights || [])
+      .filter((item) => item.stage === stageNumber)
+      .sort((a, b) => String(a.type).localeCompare(String(b.type), "ru"));
+  }
+
+  function renderHighlightLink(item) {
+    return `
+      <a class="highlight-link" href="${item.url}" target="_blank" rel="noreferrer">
+        <span>${item.type}</span>
+        <strong>${item.title}</strong>
+      </a>
+    `;
+  }
+
+  function renderStageHighlights(stage) {
+    const highlights = stageHighlights(stage.number).filter((item) => !item.isShort);
+    byId("highlightChannel").href = data.videoSource.channelUrl;
+
+    if (!highlights.length) {
+      byId("stageHighlights").innerHTML = `
+        <p class="empty-note">Обзор этого этапа пока не найден. Автопроверка канала запланирована на 04:00.</p>
+      `;
+      return;
+    }
+
+    byId("stageHighlights").innerHTML = highlights.map(renderHighlightLink).join("");
+  }
+
   function renderStage(stage) {
     const primary = data.broadcasters.find((service) => service.name === "HBO Max");
     const backup = data.broadcasters.find((service) => service.name === "France TV");
@@ -88,6 +117,7 @@
     byId("backupWatchStatus").innerHTML = tag(backup.result, backup.className);
 
     byId("dailyFavorites").innerHTML = stage.favorites.map(renderFavorite).join("");
+    renderStageHighlights(stage);
   }
 
   function renderStageSelect() {
@@ -166,12 +196,30 @@
       .join("");
   }
 
+  function renderLatestHighlights() {
+    const latest = [...(data.highlights || [])]
+      .filter((item) => !item.isShort)
+      .sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)))
+      .slice(0, 6);
+
+    byId("latestHighlights").innerHTML = latest.length
+      ? latest.map((item) => `
+        <li>
+          <a href="${item.url}" target="_blank" rel="noreferrer">Этап ${item.stage}: ${item.type}</a>
+          <span>${item.source}</span>
+        </li>
+      `).join("")
+      : "<li>Обзоры пока не добавлены.</li>";
+  }
+
   function renderDataStatus() {
     const status = data.meta.dataStatus;
     byId("routeStatus").textContent = status.route;
     byId("broadcasterStatus").textContent = status.broadcasters;
+    byId("highlightsStatus").textContent = status.highlights || "не настроено";
     byId("predictionStatus").textContent = status.predictions;
     byId("routeCheckedAt").textContent = formatDateTime(data.meta.routeCheckedAt);
+    byId("highlightsCheckedAt").textContent = data.meta.youtubeHighlightsCheckedAt || "еще не проверялось";
   }
 
   function renderCountdown() {
@@ -205,6 +253,7 @@
     renderBroadcasts();
     renderStagesTable();
     renderRiders();
+    renderLatestHighlights();
     renderDataStatus();
   }
 

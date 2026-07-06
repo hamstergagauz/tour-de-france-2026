@@ -1,12 +1,14 @@
 window.TDF_DATA = {
   "meta": {
-    "updatedAt": "2026-06-30",
+    "updatedAt": "2026-07-06",
     "routeCheckedAt": "2026-06-30T13:04:40",
     "dataStatus": {
       "route": "Verified",
       "broadcasters": "Preliminary",
-      "predictions": "Forecast"
-    }
+      "predictions": "Forecast",
+      "highlights": "RSS monitored"
+    },
+    "youtubeHighlightsCheckedAt": "2026-07-06"
   },
   "links": {
     "officialRoute": "https://www.letour.fr/en/overall-route",
@@ -1115,6 +1117,59 @@ window.TDF_DATA = {
       "social": {
         "instagram": "benhealy._"
       }
+    }
+  ],
+  "videoSource": {
+    "name": "TNT Sports Cycling",
+    "channelUrl": "https://www.youtube.com/@TNTSportsCycling",
+    "channelId": "UCfDfvvMARk4TKcC62ALi6eA",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA",
+    "note": "Основной источник ежедневных обзоров. RSS проверяется утром после этапа."
+  },
+  "highlights": [
+    {
+      "stage": 1,
+      "type": "Race Highlights",
+      "title": "YELLOW TAKEN IN BARCELONA! | Men's Tour de France Stage 1 Race Highlights | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=PUyesMCaLQ0",
+      "videoId": "PUyesMCaLQ0",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-04",
+      "discoveredAt": "2026-07-06",
+      "isShort": false
+    },
+    {
+      "stage": 2,
+      "type": "Race Highlights",
+      "title": "WHAT A STUNNING MOMENT! | Men's Tour de France Stage 2 Race Highlights | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=7FGqimwO-OA",
+      "videoId": "7FGqimwO-OA",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-05T18:28:38+00:00",
+      "discoveredAt": "2026-07-06",
+      "isShort": false
+    },
+    {
+      "stage": 2,
+      "type": "Final KM's",
+      "title": "THE FUTURE IS HERE! | Men's Tour de France Stage 2 Final KM's | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=m6hCpoHwHzs",
+      "videoId": "m6hCpoHwHzs",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-05T15:45:52+00:00",
+      "discoveredAt": "2026-07-06",
+      "isShort": false
+    },
+    {
+      "stage": 2,
+      "type": "Reaction",
+      "title": "Tour de France Stage 2 REACTION: Montjuic win GIFTED in thriller",
+      "url": "https://www.youtube.com/watch?v=3p-GD9f-Wlw",
+      "videoId": "3p-GD9f-Wlw",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-05T16:11:30+00:00",
+      "discoveredAt": "2026-07-06",
+      "isShort": false
     }
   ]
 };
