@@ -264,6 +264,19 @@ main {
   border-color: #bfc8d2;
 }
 
+.race-history {
+  display: grid;
+  gap: 3px;
+  margin: -2px 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.race-history strong {
+  color: var(--ink);
+}
+
 .tag {
   padding: 4px 7px;
   border-radius: 999px;
