@@ -38,19 +38,22 @@
 
   function riderResultBadges(rider) {
     const results = stageResults();
-    const wins = results.filter((result) => result.winner && result.winner.riderId === rider.id).length;
+    const wonStages = results
+      .filter((result) => result.winner && result.winner.riderId === rider.id)
+      .map((result) => result.stage)
+      .sort((a, b) => a - b);
     const latest = latestCompletedResult();
     const badges = [];
 
-    if (wins === 1) badges.push({ label: "Stage win", className: "win" });
-    if (wins > 1) badges.push({ label: `Stage wins x${wins}`, className: "win" });
+    if (wonStages.length === 1) badges.push({ label: `Победа: этап ${wonStages[0]}`, className: "win" });
+    if (wonStages.length > 1) badges.push({ label: `Победы: этапы ${wonStages.join(", ")}`, className: "win" });
 
     if (latest && latest.jerseysAfterStage) {
       const jerseys = latest.jerseysAfterStage;
-      if (jerseys.yellow && jerseys.yellow.riderId === rider.id) badges.push({ label: "Yellow", className: "yellow" });
-      if (jerseys.green && jerseys.green.riderId === rider.id) badges.push({ label: "Green", className: "green" });
-      if (jerseys.polkaDot && jerseys.polkaDot.riderId === rider.id) badges.push({ label: "Polka Dot", className: "polka" });
-      if (jerseys.white && jerseys.white.riderId === rider.id) badges.push({ label: "White", className: "white" });
+      if (jerseys.yellow && jerseys.yellow.riderId === rider.id) badges.push({ label: "Жёлтая майка", className: "yellow" });
+      if (jerseys.green && jerseys.green.riderId === rider.id) badges.push({ label: "Зелёная майка", className: "green" });
+      if (jerseys.polkaDot && jerseys.polkaDot.riderId === rider.id) badges.push({ label: "Гороховая майка", className: "polka" });
+      if (jerseys.white && jerseys.white.riderId === rider.id) badges.push({ label: "Белая майка", className: "white" });
     }
 
     return badges;

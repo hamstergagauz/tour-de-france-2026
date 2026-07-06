@@ -1320,7 +1320,7 @@ window.TDF_DATA = {
         }
       ],
       "winningTime": "00h 21' 47''",
-      "summary": "Jonas Vingegaard opened the Tour by winning the Barcelona team time trial and taking the first yellow jersey. Filippo Ganna finished second, while Tadej Pogacar limited the damage in third after a strong late push. The short team time trial immediately created early GC gaps among the main contenders.",
+      "summary": "Йонас Вингегор выиграл 1-й этап «Тур де Франс» (Barcelone → Barcelone) и сразу получил жёлтую майку. Победитель команды Team Visma | Lease a Bike показал время 00h 21' 47''. Вторым финишировал Филиппо Ганна, третьим — Тадей Погачар. Короткая гонка в Барселоне сразу дала первые разрывы между претендентами на генеральную классификацию.",
       "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-1",
       "jerseysAfterStage": {
         "yellow": {
@@ -1374,7 +1374,7 @@ window.TDF_DATA = {
         }
       ],
       "winningTime": "03h 40' 01''",
-      "summary": "Isaac del Toro won Stage 2 in Barcelona after UAE Team Emirates-XRG controlled the decisive Montjuic finale. Tadej Pogacar finished second after guiding his teammate to the line, with Remco Evenepoel third. Jonas Vingegaard remained in yellow after finishing with the main favourites.",
+      "summary": "Исаак дель Торо выиграл 2-й этап «Тур де Франс» (Tarragone → Barcelone). Победитель команды UAE Team Emirates XRG взял этап после решающего финала на Монжуике. Вторым финишировал Тадей Погачар, третьим — Ремко Эвенепул. Йонас Вингегор сохранил жёлтую майку после финиша в группе главных фаворитов.",
       "summarySourceUrl": "https://www.letour.fr/en/news/2026/stage-2/pogacar-gifts-montjuic-to-del-toro/1334899",
       "jerseysAfterStage": {
         "yellow": {

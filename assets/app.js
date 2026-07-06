@@ -123,7 +123,7 @@
     card.hidden = false;
     byId("stageResultPill").textContent = resultStatusLabel(result.status);
     byId("stageResultPill").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
-    byId("stageWinner").textContent = `${result.winner.name} wins Stage ${stage.number}`;
+    byId("stageWinner").textContent = `${result.winner.name}: победа на этапе ${stage.number}`;
     byId("stageResultStatus").textContent = resultStatusLabel(result.status);
     byId("stageResultStatus").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
     byId("stageWinnerTeam").textContent = result.winner.team || "не подтверждено";
