@@ -1328,9 +1328,21 @@ window.TDF_DATA = {
           "name": "Jonas Vingegaard",
           "team": "Team Visma | Lease a Bike"
         },
-        "green": null,
-        "polkaDot": null,
-        "white": null
+        "green": {
+          "riderId": null,
+          "name": "Egan Bernal",
+          "team": "Netcompany Ineos Cycling Team"
+        },
+        "polkaDot": {
+          "riderId": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "team": "UAE Team Emirates XRG"
+        },
+        "white": {
+          "riderId": "juan-ayuso",
+          "name": "Juan Ayuso",
+          "team": "Lidl-Trek"
+        }
       },
       "decisions": []
     },
@@ -1389,7 +1401,7 @@ window.TDF_DATA = {
         },
         "polkaDot": {
           "riderId": null,
-          "name": "A. Molenaar",
+          "name": "Alex Molenaar",
           "team": "Caja Rural-Seguros RGA"
         },
         "white": {
