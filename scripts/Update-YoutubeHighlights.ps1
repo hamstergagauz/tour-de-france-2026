@@ -12,7 +12,7 @@ function Get-HighlightType {
   param([string]$Title)
 
   if ($Title -match "(?i)race highlights") { return "Race Highlights" }
-  if ($Title -match "(?i)final\\s*km") { return "Final KM's" }
+  if ($Title -match "(?i)final\s*km") { return "Final KM's" }
   if ($Title -match "(?i)reaction") { return "Reaction" }
   return "Clip"
 }
@@ -20,7 +20,7 @@ function Get-HighlightType {
 function Get-StageNumber {
   param([string]$Title)
 
-  if ($Title -match "(?i)stage\\s+([0-9]{1,2})") {
+  if ($Title -match "(?i)stage\s+([0-9]{1,2})") {
     return [int]$Matches[1]
   }
 
@@ -30,7 +30,7 @@ function Get-StageNumber {
 function Read-TdfData {
   param([string]$Path)
 
-  $raw = Get-Content -Raw -Path $Path
+  $raw = Get-Content -Raw -Encoding UTF8 -Path $Path
   $json = $raw -replace '^\s*window\.TDF_DATA\s*=\s*', ''
   $json = $json -replace ';\s*$', ''
   return $json | ConvertFrom-Json
@@ -51,7 +51,8 @@ function Write-TdfData {
 $feedUrl = "https://www.youtube.com/feeds/videos.xml?channel_id=$ChannelId"
 Write-Host "Fetching $feedUrl"
 
-[xml]$feed = (Invoke-WebRequest -Uri $feedUrl -UseBasicParsing -TimeoutSec 30).Content
+$requestHeaders = @{ "User-Agent" = "Mozilla/5.0" }
+[xml]$feed = (Invoke-WebRequest -Uri $feedUrl -UseBasicParsing -TimeoutSec 30 -Headers $requestHeaders).Content
 $ns = [System.Xml.XmlNamespaceManager]::new($feed.NameTable)
 $ns.AddNamespace("a", "http://www.w3.org/2005/Atom")
 $ns.AddNamespace("yt", "http://www.youtube.com/xml/schemas/2015")
@@ -67,7 +68,7 @@ $data.videoSource = [pscustomobject]@{
   channelUrl = $ChannelUrl
   channelId = $ChannelId
   feedUrl = $feedUrl
-  note = "Основной источник ежедневных обзоров. RSS проверяется утром после этапа."
+  note = "Primary source for daily highlights. RSS is checked after each stage."
 }
 
 if (-not $data.highlights) {
@@ -89,7 +90,7 @@ foreach ($entry in $entries) {
   $stage = Get-StageNumber -Title $title
 
   if (-not $stage) { continue }
-  if ($title -notmatch "(?i)tour de france") { continue }
+  if ($title -notmatch "(?i)\btour\b") { continue }
   if ($existingIds.ContainsKey($videoId)) { continue }
 
   $item = [pscustomobject]@{
