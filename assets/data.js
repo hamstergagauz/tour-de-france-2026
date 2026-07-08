@@ -1,6 +1,6 @@
 window.TDF_DATA = {
     "meta":  {
-                 "updatedAt":  "2026-07-07",
+                 "updatedAt":  "2026-07-08",
                  "routeCheckedAt":  "2026-06-30T13:04:40",
                  "dataStatus":  {
                                     "route":  "Verified",
@@ -9,7 +9,7 @@ window.TDF_DATA = {
                                     "highlights":  "RSS monitored",
                                     "results":  "Official/partial"
                                 },
-                 "youtubeHighlightsCheckedAt":  "2026-07-07T07:53:45+03:00"
+                 "youtubeHighlightsCheckedAt":  "2026-07-08T08:07:25+03:00"
              },
     "links":  {
                   "officialRoute":  "https://www.letour.fr/en/overall-route",
@@ -1232,8 +1232,10 @@ window.TDF_DATA = {
                         "name":  "TNT Sports Cycling",
                         "channelUrl":  "https://www.youtube.com/@TNTSportsCycling",
                         "channelId":  "UCfDfvvMARk4TKcC62ALi6eA",
+                        "playlistId":  "PLXJfHJFBpClY",
                         "feedUrl":  "https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA",
-                        "note":  "Primary source for daily highlights. RSS is checked after each stage."
+                        "sourceType":  "channel",
+                        "note":  "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
                     },
     "highlights":  [
                        {
@@ -1322,6 +1324,39 @@ window.TDF_DATA = {
                            "source":  "TNT Sports Cycling",
                            "publishedAt":  "2026-07-06T15:22:46+00:00",
                            "discoveredAt":  "2026-07-07T07:53:15+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  4,
+                           "type":  "Race Highlights",
+                           "title":  "WORTH THE WAIT! 💨 | Men\u0027s Tour de France Stage 4 Race Highlights | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=RjFcv1dj5Xg",
+                           "videoId":  "RjFcv1dj5Xg",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-07T19:00:14+00:00",
+                           "discoveredAt":  "2026-07-08T08:07:25+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  4,
+                           "type":  "Reaction",
+                           "title":  "Tour de France Stage 4 REACTION: Sprint domination after giant break goes clear 💨",
+                           "url":  "https://www.youtube.com/watch?v=ddrmq5XWN_I",
+                           "videoId":  "ddrmq5XWN_I",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-07T15:59:02+00:00",
+                           "discoveredAt":  "2026-07-08T08:07:25+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  4,
+                           "type":  "Final KM\u0027s",
+                           "title":  "SPECTACULAR SPRINT! 💪 | Men\u0027s Tour de France Stage 4 Final KM\u0027s | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=y2OJzI8e6ao",
+                           "videoId":  "y2OJzI8e6ao",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-07T15:42:10+00:00",
+                           "discoveredAt":  "2026-07-08T08:07:25+03:00",
                            "isShort":  false
                        }
                    ],
