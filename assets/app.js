@@ -15,11 +15,25 @@
 
   function selectedStageForToday() {
     const today = localDateKey(new Date());
+    const latestCompleted = latestCompletedResult();
     const exact = data.stages.find((stage) => stage.date === today);
-    if (exact) return exact;
+    if (exact) {
+      const exactResult = stageResult(exact.number);
+      if (exactResult && ["preliminary", "official"].includes(exactResult.status)) return exact;
+      if (latestCompleted) {
+        const completedStage = data.stages.find((stage) => stage.number === latestCompleted.stage);
+        if (completedStage) return completedStage;
+      }
+      return exact;
+    }
 
     const upcoming = data.stages.find((stage) => stage.date > today);
     if (upcoming) return upcoming;
+
+    if (latestCompleted) {
+      const completedStage = data.stages.find((stage) => stage.number === latestCompleted.stage);
+      if (completedStage) return completedStage;
+    }
 
     return data.stages[data.stages.length - 1];
   }

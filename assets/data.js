@@ -7,7 +7,7 @@ window.TDF_DATA = {
                                     "broadcasters":  "Preliminary",
                                     "predictions":  "Forecast",
                                     "highlights":  "RSS monitored",
-                                    "results":  "Official/partial"
+                                    "results":  "Official / needs review"
                                 },
                  "youtubeHighlightsCheckedAt":  "2026-07-08T08:07:25+03:00"
              },
@@ -307,9 +307,9 @@ window.TDF_DATA = {
                        "route":  "Granollers \u003e Les Angles",
                        "distance":  "195.9 км",
                        "type":  "Горный",
-                       "elevation":  "уточнить",
-                       "startTime":  "уточнить",
-                       "finishWindow":  "уточнить",
+                       "elevation":  "3850 м",
+                       "startTime":  "12:10 CEST",
+                       "finishWindow":  "около 16:54 CEST",
                        "difficulty":  "Высокая",
                        "gcImpact":  "Высокий",
                        "watchPriority":  "9/10",
@@ -322,7 +322,7 @@ window.TDF_DATA = {
                                      ],
                        "map":  "https://www.letour.fr/en/stage-3",
                        "viewingAdvice":  "Смотреть ключевой финальный блок",
-                       "status":  "Verified route / Forecast notes"
+                       "status":  "Verified route / Official result"
                    },
                    {
                        "number":  4,
@@ -333,9 +333,9 @@ window.TDF_DATA = {
                        "route":  "Carcassonne \u003e Foix",
                        "distance":  "181.9 км",
                        "type":  "Холмистый",
-                       "elevation":  "уточнить",
-                       "startTime":  "уточнить",
-                       "finishWindow":  "уточнить",
+                       "elevation":  "2700 м",
+                       "startTime":  "13:10 CEST",
+                       "finishWindow":  "около 17:23 CEST",
                        "difficulty":  "Средняя",
                        "gcImpact":  "Средний",
                        "watchPriority":  "7/10",
@@ -348,7 +348,7 @@ window.TDF_DATA = {
                                      ],
                        "map":  "https://www.letour.fr/en/stage-4",
                        "viewingAdvice":  "Смотреть финальный час",
-                       "status":  "Verified route / Forecast notes"
+                       "status":  "Verified route / Official result"
                    },
                    {
                        "number":  5,
@@ -1501,16 +1501,156 @@ window.TDF_DATA = {
                                    "decisions":  [
 
                                                  ]
+                               },
+                         "3":  {
+                                   "stage":  3,
+                                   "status":  "official",
+                                   "flags":  [
+
+                                             ],
+                                   "source":  "letour",
+                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-3",
+                                   "checkedAt":  "2026-07-08T08:24:26+03:00",
+                                   "distanceActual":  "195.9 км",
+                                   "winner":  {
+                                                  "riderId":  "tadej-pogacar",
+                                                  "name":  "Tadej Pogacar",
+                                                  "team":  "UAE Team Emirates XRG"
+                                              },
+                                   "top3":  [
+                                                {
+                                                    "rank":  1,
+                                                    "riderId":  "tadej-pogacar",
+                                                    "name":  "Tadej Pogacar",
+                                                    "team":  "UAE Team Emirates XRG",
+                                                    "time":  "04h 45\u0027 11\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  2,
+                                                    "riderId":  "jonas-vingegaard",
+                                                    "name":  "Jonas Vingegaard",
+                                                    "team":  "Team Visma | Lease a Bike",
+                                                    "time":  "04h 45\u0027 13\u0027\u0027",
+                                                    "gap":  "+ 00h 00\u0027 02\u0027\u0027"
+                                                },
+                                                {
+                                                    "rank":  3,
+                                                    "riderId":  "richard-carapaz",
+                                                    "name":  "Richard Carapaz",
+                                                    "team":  "EF Education - EasyPost",
+                                                    "time":  "04h 45\u0027 13\u0027\u0027",
+                                                    "gap":  "+ 00h 00\u0027 02\u0027\u0027"
+                                                }
+                                            ],
+                                   "winningTime":  "04h 45\u0027 11\u0027\u0027",
+                                   "summary":  "Tadej Pogacar выиграл 3-й этап «Тур де Франс» (Granollers → Les Angles) и перехватил жёлтую майку после первого горного финиша. Он опередил Jonas Vingegaard на 2 секунды, а третьим стал Richard Carapaz. На решающем подъёме UAE Team Emirates XRG контролировала гонку, Alex Baudin удержал лидерство в гороховой майке, а Isaac del Toro сохранил белую.",
+                                   "summarySourceUrl":  "https://www.letour.fr/en/news/2026/pogacar-takes-over/1336205",
+                                   "jerseysAfterStage":  {
+                                                             "yellow":  {
+                                                                            "riderId":  "tadej-pogacar",
+                                                                            "name":  "Tadej Pogacar",
+                                                                            "team":  "UAE Team Emirates XRG"
+                                                                        },
+                                                             "green":  {
+                                                                           "riderId":  "tadej-pogacar",
+                                                                           "name":  "Tadej Pogacar",
+                                                                           "team":  "UAE Team Emirates XRG"
+                                                                       },
+                                                             "polkaDot":  {
+                                                                              "riderId":  null,
+                                                                              "name":  "Alex Baudin",
+                                                                              "team":  "EF Education - EasyPost"
+                                                                          },
+                                                             "white":  {
+                                                                           "riderId":  "isaac-del-toro",
+                                                                           "name":  "Isaac del Toro",
+                                                                           "team":  "UAE Team Emirates XRG"
+                                                                       }
+                                                         },
+                                   "decisions":  [
+
+                                                 ]
+                               },
+                         "4":  {
+                                   "stage":  4,
+                                   "status":  "official",
+                                   "flags":  [
+
+                                             ],
+                                   "source":  "letour",
+                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-4",
+                                   "checkedAt":  "2026-07-08T08:24:26+03:00",
+                                   "distanceActual":  "181.9 км",
+                                   "winner":  {
+                                                  "riderId":  "mads-pedersen",
+                                                  "name":  "Mads Pedersen",
+                                                  "team":  "Lidl-Trek"
+                                              },
+                                   "top3":  [
+                                                {
+                                                    "rank":  1,
+                                                    "riderId":  "mads-pedersen",
+                                                    "name":  "Mads Pedersen",
+                                                    "team":  "Lidl-Trek",
+                                                    "time":  "04h 10\u0027 45\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  2,
+                                                    "riderId":  null,
+                                                    "name":  "Quinn Simmons",
+                                                    "team":  "Lidl-Trek",
+                                                    "time":  "04h 10\u0027 45\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  3,
+                                                    "riderId":  null,
+                                                    "name":  "Raul Garcia Pierna",
+                                                    "team":  "Movistar Team",
+                                                    "time":  "04h 10\u0027 45\u0027\u0027",
+                                                    "gap":  "-"
+                                                }
+                                            ],
+                                   "winningTime":  "04h 10\u0027 45\u0027\u0027",
+                                   "summary":  "Mads Pedersen выиграл 4-й этап «Тур де Франс» (Carcassonne → Foix) после большого отрыва и мощной работы Lidl-Trek. Команда оформила дубль: вторым финишировал Quinn Simmons, третьим — Raul Garcia Pierna. Важнейший сдвиг в генеральной классификации произошёл за счёт отрыва: Torstein Traeen забрал жёлтую майку у Tadej Pogacar, Pedersen вышел в лидеры очковой классификации, Alex Baudin сохранил гороховую, а Mathias Vacek взял белую. Пелотон проиграл более 13 минут, так что этап резко перетряхнул общий зачёт.",
+                                   "summarySourceUrl":  "https://www.letour.fr/en/news/2026/pedersen-and-traeen-northern-power-rules-foix/1337325",
+                                   "jerseysAfterStage":  {
+                                                             "yellow":  {
+                                                                            "riderId":  null,
+                                                                            "name":  "Torstein Traeen",
+                                                                            "team":  "Uno-X Mobility"
+                                                                        },
+                                                             "green":  {
+                                                                           "riderId":  "mads-pedersen",
+                                                                           "name":  "Mads Pedersen",
+                                                                           "team":  "Lidl-Trek"
+                                                                       },
+                                                             "polkaDot":  {
+                                                                              "riderId":  null,
+                                                                              "name":  "Alex Baudin",
+                                                                              "team":  "EF Education - EasyPost"
+                                                                          },
+                                                             "white":  {
+                                                                           "riderId":  null,
+                                                                           "name":  "Mathias Vacek",
+                                                                           "team":  "Lidl-Trek"
+                                                                       }
+                                                         },
+                                   "decisions":  [
+
+                                                 ]
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-06",
+                        "checkedAt":  "2026-07-08T08:24:26+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
                                                "manualFallback"
                                            ],
-                        "latestCompletedStage":  2,
+                        "latestCompletedStage":  4,
                         "status":  "needs_review",
                         "unresolvedRiders":  [
                                                  {
@@ -1520,6 +1660,26 @@ window.TDF_DATA = {
                                                  {
                                                      "name":  "A. Molenaar",
                                                      "context":  "stage 2 polkaDot jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Torstein Traeen",
+                                                     "context":  "stage 4 yellow jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Alex Baudin",
+                                                     "context":  "stage 4 polka-dot jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Mathias Vacek",
+                                                     "context":  "stage 4 white jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Quinn Simmons",
+                                                     "context":  "stage 4 top3 rank 2"
+                                                 },
+                                                 {
+                                                     "name":  "Raul Garcia Pierna",
+                                                     "context":  "stage 4 top3 rank 3"
                                                  }
                                              ]
                     }
