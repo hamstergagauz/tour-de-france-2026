@@ -21,6 +21,47 @@
   </header>
 
   <main>
+    <section class="table-section gc-section" id="generalClassificationSection" hidden>
+      <div class="section-heading">
+        <div>
+          <h2 id="generalClassificationTitle">Общий зачёт</h2>
+          <p class="small" id="generalClassificationMeta"></p>
+        </div>
+        <a class="source-link" id="generalClassificationSource" href="https://www.letour.fr/en/rankings" target="_blank" rel="noopener">Letour</a>
+      </div>
+      <div class="leader-grid" id="classificationLeaders" hidden>
+        <article class="leader-card leader-yellow">
+          <span>Yellow jersey</span>
+          <strong id="leaderYellow"></strong>
+        </article>
+        <article class="leader-card leader-green">
+          <span>Green jersey</span>
+          <strong id="leaderGreen"></strong>
+        </article>
+        <article class="leader-card leader-polka">
+          <span>Polka-dot jersey</span>
+          <strong id="leaderPolkaDot"></strong>
+        </article>
+        <article class="leader-card leader-white">
+          <span>White jersey</span>
+          <strong id="leaderWhite"></strong>
+        </article>
+      </div>
+      <div class="table-wrap">
+        <table class="gc-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Гонщик</th>
+              <th>Команда</th>
+              <th>Отставание</th>
+            </tr>
+          </thead>
+          <tbody id="generalClassificationTable"></tbody>
+        </table>
+      </div>
+    </section>
+
     <section class="table-section guide">
       <h2>Главные дни для просмотра</h2>
       <ul>
@@ -48,11 +89,11 @@
       </article>
     </section>
 
-    <section class="notes">
-      <h2>Источник</h2>
-      <p>Маршрут взят с официальной страницы Tour de France: <a href="https://www.letour.fr/en/overall-route" target="_blank" rel="noopener">letour.fr/en/overall-route</a>.</p>
-      <p>Текстовая версия гида сохранена в <code>reports/stage-guide.md</code>.</p>
+    <section class="source-note">
+      <p>Маршрут: <a href="https://www.letour.fr/en/overall-route" target="_blank" rel="noopener">letour.fr</a> · Документация гида: <code>reports/stage-guide.md</code></p>
     </section>
   </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/stage-guide.js"></script>
 </body>
 </html>

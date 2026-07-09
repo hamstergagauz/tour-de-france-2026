@@ -42,6 +42,16 @@ function Test-PlaceholderValue {
   return $Value -notmatch '\d'
 }
 
+function Test-SequentialTop10 {
+  param([object[]]$Rows)
+
+  if ($Rows.Count -lt 10) { return $false }
+  for ($i = 0; $i -lt 10; $i++) {
+    if ([int]$Rows[$i].position -ne ($i + 1)) { return $false }
+  }
+  return $true
+}
+
 function Get-LatestCompletedResult {
   param([object]$Data)
 
@@ -104,7 +114,9 @@ if (-not $latestCompleted) {
     $errors.Add("Latest completed stage is $($latestCompleted.stage), expected $expectedLatestStage for $($ReferenceDate.ToString('yyyy-MM-dd')).")
   }
 
-  if ([int]$data.resultsMeta.latestCompletedStage -ne [int]$latestCompleted.stage) {
+  if ($data.resultsMeta.latestCompletedStage -is [array]) {
+    $errors.Add("resultsMeta.latestCompletedStage must be a scalar integer, not an array.")
+  } elseif ([int]$data.resultsMeta.latestCompletedStage -ne [int]$latestCompleted.stage) {
     $errors.Add("resultsMeta.latestCompletedStage is $($data.resultsMeta.latestCompletedStage), but latest result is stage $($latestCompleted.stage).")
   }
 
@@ -138,6 +150,42 @@ if (-not $latestCompleted) {
     }
     if (@($latestCompleted.top3).Count -ge 2 -and $latestCompleted.summary -notmatch [regex]::Escape($latestCompleted.top3[1].name)) {
       $errors.Add("Latest completed stage $($latestCompleted.stage) recap does not mention another key rider or event outcome.")
+    }
+  }
+
+  $gc = $data.generalClassification
+  if (-not $gc) {
+    $errors.Add("Missing general classification standings after stage $($latestCompleted.stage).")
+  } else {
+    if ([int]$gc.stage -ne [int]$latestCompleted.stage) {
+      $errors.Add("General classification is after stage $($gc.stage), but latest completed stage is $($latestCompleted.stage).")
+    }
+
+    if ($data.resultsMeta.latestCompletedStage -isnot [array] -and [int]$gc.stage -ne [int]$data.resultsMeta.latestCompletedStage) {
+      $errors.Add("General classification stage $($gc.stage) does not match resultsMeta.latestCompletedStage $($data.resultsMeta.latestCompletedStage).")
+    }
+
+    if ($gc.status -ne "official") {
+      $errors.Add("General classification status is $($gc.status), expected official.")
+    }
+
+    if (-not $gc.checkedAt) {
+      $errors.Add("General classification has no checkedAt timestamp.")
+    }
+
+    if (-not $gc.sourceUrl) {
+      $errors.Add("General classification has no sourceUrl.")
+    }
+
+    $gcRows = @($gc.standings)
+    if (-not (Test-SequentialTop10 -Rows $gcRows)) {
+      $errors.Add("General classification must contain positions 1 through 10.")
+    }
+
+    foreach ($row in $gcRows | Select-Object -First 10) {
+      if (-not $row.position -or -not $row.name -or -not $row.team -or (-not $row.gap -and -not $row.totalTime)) {
+        $errors.Add("General classification row $($row.position) is missing position, name, team, or time/gap.")
+      }
     }
   }
 }

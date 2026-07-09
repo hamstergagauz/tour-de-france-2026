@@ -1747,7 +1747,7 @@ window.TDF_DATA = {
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-09T07:02:34+03:00",
+                        "checkedAt":  "2026-07-09T07:22:19+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
@@ -1805,5 +1805,104 @@ window.TDF_DATA = {
                                                      "context":  "stage 5 white jersey"
                                                  }
                                              ]
-                    }
+                    },
+    "generalClassification":  {
+                                  "stage":  5,
+                                  "checkedAt":  "2026-07-09T07:22:18+03:00",
+                                  "status":  "official",
+                                  "source":  "letour",
+                                  "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
+                                  "standings":  [
+                                                    {
+                                                        "position":  1,
+                                                        "riderId":  null,
+                                                        "name":  "Torstein Træen",
+                                                        "team":  "UNO-X MOBILITY",
+                                                        "totalTime":  "16h 32\u0027 07\u0027\u0027",
+                                                        "gap":  "-",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  2,
+                                                        "riderId":  null,
+                                                        "name":  "Sean Quinn",
+                                                        "team":  "EF EDUCATION - EASYPOST",
+                                                        "totalTime":  "16h 32\u0027 35\u0027\u0027",
+                                                        "gap":  "+ 00h 00\u0027 28\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  3,
+                                                        "riderId":  null,
+                                                        "name":  "Mathias Vacek",
+                                                        "team":  "LIDL-TREK",
+                                                        "totalTime":  "16h 35\u0027 57\u0027\u0027",
+                                                        "gap":  "+ 00h 03\u0027 50\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  4,
+                                                        "riderId":  "tadej-pogacar",
+                                                        "name":  "Tadej Pogacar",
+                                                        "team":  "UAE TEAM EMIRATES XRG",
+                                                        "totalTime":  "16h 40\u0027 00\u0027\u0027",
+                                                        "gap":  "+ 00h 07\u0027 53\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  5,
+                                                        "riderId":  "jonas-vingegaard",
+                                                        "name":  "Jonas Vingegaard",
+                                                        "team":  "TEAM VISMA | LEASE A BIKE",
+                                                        "totalTime":  "16h 40\u0027 00\u0027\u0027",
+                                                        "gap":  "+ 00h 07\u0027 53\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  6,
+                                                        "riderId":  null,
+                                                        "name":  "R. Debruyne",
+                                                        "team":  "ALPECIN-PREMIER TECH",
+                                                        "totalTime":  "16h 40\u0027 13\u0027\u0027",
+                                                        "gap":  "+ 00h 08\u0027 06\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  7,
+                                                        "riderId":  "remco-evenepoel",
+                                                        "name":  "Remco Evenepoel",
+                                                        "team":  "RED BULL - BORA - HANSGROHE",
+                                                        "totalTime":  "16h 40\u0027 23\u0027\u0027",
+                                                        "gap":  "+ 00h 08\u0027 16\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  8,
+                                                        "riderId":  "isaac-del-toro",
+                                                        "name":  "Isaac del Toro",
+                                                        "team":  "UAE TEAM EMIRATES XRG",
+                                                        "totalTime":  "16h 40\u0027 24\u0027\u0027",
+                                                        "gap":  "+ 00h 08\u0027 17\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  9,
+                                                        "riderId":  "juan-ayuso",
+                                                        "name":  "Juan Ayuso",
+                                                        "team":  "LIDL-TREK",
+                                                        "totalTime":  "16h 40\u0027 27\u0027\u0027",
+                                                        "gap":  "+ 00h 08\u0027 20\u0027\u0027",
+                                                        "movement":  null
+                                                    },
+                                                    {
+                                                        "position":  10,
+                                                        "riderId":  "paul-seixas",
+                                                        "name":  "Paul Seixas",
+                                                        "team":  "DECATHLON CMA CGM TEAM",
+                                                        "totalTime":  "16h 40\u0027 48\u0027\u0027",
+                                                        "gap":  "+ 00h 08\u0027 41\u0027\u0027",
+                                                        "movement":  null
+                                                    }
+                                                ]
+                              }
 }

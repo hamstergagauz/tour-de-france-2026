@@ -25,7 +25,7 @@ function Normalize-Name {
 function Read-TdfData {
   param([string]$Path)
 
-  $raw = Get-Content -Raw -Path $Path
+  $raw = Get-Content -Raw -Encoding UTF8 -Path $Path
   $json = $raw -replace '^\s*window\.TDF_DATA\s*=\s*', ''
   $json = $json -replace ';\s*$', ''
   return $json | ConvertFrom-Json
@@ -134,6 +134,139 @@ function Parse-StageTop3 {
   return $top3 | Sort-Object rank
 }
 
+function Merge-ParsedTop3WithExisting {
+  param(
+    [object[]]$ParsedTop3,
+    [object[]]$ExistingTop3
+  )
+
+  if (-not $ExistingTop3) { return $ParsedTop3 }
+
+  return @($ParsedTop3 | ForEach-Object {
+    $parsed = $_
+    $existing = @($ExistingTop3 | Where-Object {
+      [int]$_.rank -eq [int]$parsed.rank -and
+      $_.name -eq $parsed.name -and
+      $_.time -eq $parsed.time -and
+      $_.gap -eq $parsed.gap -and
+      [string]$_.team -ieq [string]$parsed.team
+    })[0]
+
+    if ($existing) { $existing } else { $parsed }
+  })
+}
+
+function Get-RankingPageUrl {
+  param([int]$Stage)
+
+  return "https://www.letour.fr/en/rankings/stage-$Stage"
+}
+
+function Get-LatestCompletedStageNumber {
+  param([object]$Data)
+
+  $latest = @($Data.stageResults.PSObject.Properties |
+    ForEach-Object { $_.Value } |
+    Where-Object { $_.status -in @("preliminary", "official") } |
+    ForEach-Object { [int]$_.stage } |
+    Sort-Object -Descending |
+    Select-Object -First 1)
+
+  if (-not $latest.Count) { return $null }
+  return [int]$latest[0]
+}
+
+function Get-GeneralClassificationAjaxUrl {
+  param(
+    [string]$Html,
+    [string]$BaseUrl = "https://www.letour.fr"
+  )
+
+  $match = [regex]::Match($Html, '&quot;itg&quot;:&quot;([^&]+)&quot;')
+  if (-not $match.Success) { return $null }
+
+  $path = [System.Net.WebUtility]::HtmlDecode($match.Groups[1].Value).Replace('\/', '/')
+  if ($path -match '^https?://') { return $path }
+  return "$BaseUrl$path"
+}
+
+function Parse-GeneralClassificationTop10 {
+  param(
+    [string]$Html,
+    [hashtable]$Resolver
+  )
+
+  $rows = [regex]::Matches($Html, '<tr[^>]*class="[^"]*rankingTables__row[^"]*"[^>]*>(.*?)</tr>', 'Singleline')
+  $standings = @()
+
+  foreach ($rowMatch in $rows) {
+    $row = $rowMatch.Groups[1].Value
+    $rankMatch = [regex]::Match($row, 'rankingTables__row__position[^>]*>\s*<span>(\d+)</span>', 'Singleline')
+    if (-not $rankMatch.Success) { continue }
+
+    $position = [int]$rankMatch.Groups[1].Value
+    if ($position -lt 1 -or $position -gt 10) { continue }
+
+    $fullNameMatch = [regex]::Match($row, 'alt="([^"]+)"', 'Singleline')
+    $shortNameMatch = [regex]::Match($row, 'rankingTables__row__profile--name[^>]*>\s*(.*?)\s*</a>', 'Singleline')
+    $teamMatch = [regex]::Match($row, '<td class="break-line team">\s*<a[^>]*>\s*(.*?)\s*</a>', 'Singleline')
+    $timeMatches = [regex]::Matches($row, '<td class="is-alignCenter time">\s*(.*?)\s*</td>', 'Singleline')
+
+    $rawName = if ($fullNameMatch.Success) { Convert-HtmlText $fullNameMatch.Groups[1].Value } else { Convert-HtmlText $shortNameMatch.Groups[1].Value }
+    $resolved = Resolve-Rider -Resolver $Resolver -Name $rawName
+    $name = if ($resolved) { $resolved.name } else { Convert-RiderDisplayName $rawName }
+
+    $standings += [pscustomobject]@{
+      position = $position
+      riderId = if ($resolved) { $resolved.id } else { $null }
+      name = $name
+      team = if ($teamMatch.Success) { Convert-HtmlText $teamMatch.Groups[1].Value } else { "" }
+      totalTime = if ($timeMatches.Count -ge 1) { Convert-HtmlText $timeMatches[0].Groups[1].Value } else { "" }
+      gap = if ($timeMatches.Count -ge 2) { Convert-HtmlText $timeMatches[1].Groups[1].Value } else { "" }
+      movement = $null
+    }
+  }
+
+  return $standings | Sort-Object position
+}
+
+function Get-GeneralClassification {
+  param(
+    [int]$Stage,
+    [string]$RankingHtml,
+    [hashtable]$Resolver
+  )
+
+  $ajaxUrl = Get-GeneralClassificationAjaxUrl -Html $RankingHtml
+  if (-not $ajaxUrl) {
+    Write-Warning "Could not find general classification endpoint for stage $Stage."
+    return $null
+  }
+
+  Write-Host "Fetching general classification from $ajaxUrl"
+  try {
+    $gcHtml = (Invoke-WebRequest -Uri $ajaxUrl -UseBasicParsing -TimeoutSec 30).Content
+  } catch {
+    Write-Warning "Could not fetch general classification for stage $Stage`: $($_.Exception.Message)"
+    return $null
+  }
+
+  $standings = @(Parse-GeneralClassificationTop10 -Html $gcHtml -Resolver $Resolver)
+  if ($standings.Count -lt 10) {
+    Write-Warning "General classification top 10 was not available for stage $Stage."
+    return $null
+  }
+
+  return [pscustomobject]@{
+    stage = $Stage
+    checkedAt = (Get-Date).ToString("yyyy-MM-ddTHH:mm:sszzz")
+    status = "official"
+    source = "letour"
+    sourceUrl = Get-RankingPageUrl -Stage $Stage
+    standings = $standings
+  }
+}
+
 function New-GeneratedSummary {
   param(
     [int]$Stage,
@@ -153,6 +286,7 @@ function Convert-ComparableJson {
 $data = Read-TdfData -Path $DataPath
 $resolver = New-RiderResolver -Riders @($data.riders)
 $unresolved = [System.Collections.ArrayList]::new()
+$rankingHtmlByStage = @{}
 $changed = $false
 
 if (-not $data.stageResults) {
@@ -186,7 +320,7 @@ foreach ($stageNumber in $stageNumbers) {
   $stage = @($data.stages | Where-Object { [int]$_.number -eq $stageNumber })[0]
   if (-not $stage) { continue }
 
-  $url = if ($stageNumber -eq 2) { "https://www.letour.fr/en/rankings" } else { "https://www.letour.fr/en/rankings/stage-$stageNumber" }
+  $url = Get-RankingPageUrl -Stage $stageNumber
   Write-Host "Fetching stage $stageNumber results from $url"
 
   try {
@@ -195,6 +329,7 @@ foreach ($stageNumber in $stageNumbers) {
     Write-Warning "Could not fetch stage $stageNumber results: $($_.Exception.Message)"
     continue
   }
+  $rankingHtmlByStage[$stageNumber] = $html
 
   $top3 = @(Parse-StageTop3 -Html $html -Resolver $resolver -Unresolved $unresolved -Stage $stageNumber)
   if ($top3.Count -lt 3) {
@@ -207,22 +342,24 @@ foreach ($stageNumber in $stageNumbers) {
   $existing = if ($stageResultProperty) { $stageResultProperty.Value } else { $null }
   $result = if ($existing) { $existing } else { [pscustomobject]@{ stage = $stageNumber } }
 
+  $mergedTop3 = if ($existing) { @(Merge-ParsedTop3WithExisting -ParsedTop3 $top3 -ExistingTop3 @($existing.top3)) } else { $top3 }
+
   $updatedResult = [pscustomobject]@{
     stage = $stageNumber
     status = "official"
     flags = if ($result.PSObject.Properties["flags"] -and $result.flags) { @($result.flags) } else { @() }
     source = "letour"
-    sourceUrl = $url
+    sourceUrl = if ($result.sourceUrl) { $result.sourceUrl } else { $url }
     checkedAt = if ($result.checkedAt) { $result.checkedAt } else { (Get-Date).ToString("yyyy-MM-ddTHH:mm:sszzz") }
     distanceActual = $stage.distance
     winner = [pscustomobject]@{
-    riderId = $top3[0].riderId
-    name = $top3[0].name
-    team = $top3[0].team
+    riderId = $mergedTop3[0].riderId
+    name = $mergedTop3[0].name
+    team = $mergedTop3[0].team
     }
-    top3 = $top3
-    winningTime = $top3[0].time
-    summary = if ($result.summary) { $result.summary } else { New-GeneratedSummary -Stage $stageNumber -Top3 $top3 }
+    top3 = $mergedTop3
+    winningTime = $mergedTop3[0].time
+    summary = if ($result.summary) { $result.summary } else { New-GeneratedSummary -Stage $stageNumber -Top3 $mergedTop3 }
     summarySourceUrl = if ($result.summarySourceUrl) { $result.summarySourceUrl } else { $url }
     jerseysAfterStage = if ($result.jerseysAfterStage) { $result.jerseysAfterStage } else { [pscustomobject]@{
       yellow = $null
@@ -283,9 +420,58 @@ foreach ($stageNumber in $stageNumbers) {
   $changed = $true
 }
 
+$latestCompletedStage = Get-LatestCompletedStageNumber -Data $data
+
+if ($latestCompletedStage) {
+  $latestRankingHtml = $rankingHtmlByStage[$latestCompletedStage]
+  if (-not $latestRankingHtml) {
+    $latestUrl = Get-RankingPageUrl -Stage $latestCompletedStage
+    Write-Host "Fetching stage $latestCompletedStage rankings for general classification from $latestUrl"
+    try {
+      $latestRankingHtml = (Invoke-WebRequest -Uri $latestUrl -UseBasicParsing -TimeoutSec 30).Content
+    } catch {
+      Write-Warning "Could not fetch stage $latestCompletedStage rankings for general classification: $($_.Exception.Message)"
+    }
+  }
+
+  if ($latestRankingHtml) {
+    $generalClassification = Get-GeneralClassification -Stage $latestCompletedStage -RankingHtml $latestRankingHtml -Resolver $resolver
+    if ($generalClassification) {
+      $oldGcComparable = if ($data.PSObject.Properties["generalClassification"]) {
+        Convert-ComparableJson ([pscustomobject]@{
+          stage = $data.generalClassification.stage
+          status = $data.generalClassification.status
+          source = $data.generalClassification.source
+          sourceUrl = $data.generalClassification.sourceUrl
+          standings = $data.generalClassification.standings
+        })
+      } else {
+        $null
+      }
+
+      $newGcComparable = Convert-ComparableJson ([pscustomobject]@{
+        stage = $generalClassification.stage
+        status = $generalClassification.status
+        source = $generalClassification.source
+        sourceUrl = $generalClassification.sourceUrl
+        standings = $generalClassification.standings
+      })
+
+      if ($oldGcComparable -ne $newGcComparable) {
+        if ($data.PSObject.Properties["generalClassification"]) {
+          $data.generalClassification = $generalClassification
+        } else {
+          $data | Add-Member -NotePropertyName "generalClassification" -NotePropertyValue $generalClassification
+        }
+        $changed = $true
+      }
+    }
+  }
+}
+
 if ($changed) {
   $data.resultsMeta.checkedAt = (Get-Date).ToString("yyyy-MM-ddTHH:mm:sszzz")
-  $data.resultsMeta.latestCompletedStage = (@($data.stageResults.PSObject.Properties | ForEach-Object { $_.Value } | Where-Object { $_.status -in @("preliminary", "official") } | ForEach-Object { [int]$_.stage } | Sort-Object -Descending | Select-Object -First 1))
+  $data.resultsMeta.latestCompletedStage = Get-LatestCompletedStageNumber -Data $data
   $data.resultsMeta.unresolvedRiders = @($unresolved)
   $data.resultsMeta.status = if ($unresolved.Count) { "needs_review" } else { "ok" }
   $data.meta.dataStatus.results = if ($unresolved.Count) { "Official / needs review" } else { "Official" }
@@ -306,7 +492,7 @@ if (-not $changed) {
   exit 0
 }
 
-$before = Get-Content -Raw -Path $DataPath
+$before = Get-Content -Raw -Encoding UTF8 -Path $DataPath
 $tempJson = $data | ConvertTo-Json -Depth 30
 $after = "window.TDF_DATA = $tempJson;`n"
 
