@@ -1,6 +1,6 @@
 window.TDF_DATA = {
     "meta":  {
-                 "updatedAt":  "2026-07-08",
+                 "updatedAt":  "2026-07-09",
                  "routeCheckedAt":  "2026-06-30T13:04:40",
                  "dataStatus":  {
                                     "route":  "Verified",
@@ -9,7 +9,7 @@ window.TDF_DATA = {
                                     "highlights":  "RSS monitored",
                                     "results":  "Official / needs review"
                                 },
-                 "youtubeHighlightsCheckedAt":  "2026-07-08T08:07:25+03:00"
+                 "youtubeHighlightsCheckedAt":  "2026-07-09T07:02:30+03:00"
              },
     "links":  {
                   "officialRoute":  "https://www.letour.fr/en/overall-route",
@@ -359,9 +359,9 @@ window.TDF_DATA = {
                        "route":  "Lannemezan \u003e Pau",
                        "distance":  "158.3 км",
                        "type":  "Равнинный",
-                       "elevation":  "уточнить",
-                       "startTime":  "уточнить",
-                       "finishWindow":  "уточнить",
+                       "elevation":  "1600 м",
+                       "startTime":  "14:05 CEST",
+                       "finishWindow":  "около 17:37 CEST",
                        "difficulty":  "Низкая",
                        "gcImpact":  "Низкий",
                        "watchPriority":  "5/10",
@@ -1233,9 +1233,9 @@ window.TDF_DATA = {
                         "channelUrl":  "https://www.youtube.com/@TNTSportsCycling",
                         "channelId":  "UCfDfvvMARk4TKcC62ALi6eA",
                         "playlistId":  "PLXJfHJFBpClY",
-                        "feedUrl":  "https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA",
-                        "sourceType":  "channel",
-                        "note":  "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
+                        "feedUrl":  "https://www.youtube.com/feeds/videos.xml?playlist_id=PLXJfHJFBpClY",
+                        "sourceType":  "playlist",
+                        "note":  "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."
                     },
     "highlights":  [
                        {
@@ -1256,7 +1256,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=7FGqimwO-OA",
                            "videoId":  "7FGqimwO-OA",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-05T18:28:38+00:00",
+                           "publishedAt":  "2026-07-05T21:28:38+03:00",
                            "discoveredAt":  "2026-07-06",
                            "isShort":  false
                        },
@@ -1267,7 +1267,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=m6hCpoHwHzs",
                            "videoId":  "m6hCpoHwHzs",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-05T15:45:52+00:00",
+                           "publishedAt":  "2026-07-05T18:45:52+03:00",
                            "discoveredAt":  "2026-07-06",
                            "isShort":  false
                        },
@@ -1278,7 +1278,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=3p-GD9f-Wlw",
                            "videoId":  "3p-GD9f-Wlw",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-05T16:11:30+00:00",
+                           "publishedAt":  "2026-07-05T19:11:30+03:00",
                            "discoveredAt":  "2026-07-06",
                            "isShort":  false
                        },
@@ -1289,7 +1289,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/shorts/aNKeo2EzqVM",
                            "videoId":  "aNKeo2EzqVM",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-06T20:27:41+00:00",
+                           "publishedAt":  "2026-07-06T23:27:41+03:00",
                            "discoveredAt":  "2026-07-07T07:53:15+03:00",
                            "isShort":  true
                        },
@@ -1300,7 +1300,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=pJ-_wWQ6MZk",
                            "videoId":  "pJ-_wWQ6MZk",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-06T18:03:45+00:00",
+                           "publishedAt":  "2026-07-06T21:03:45+03:00",
                            "discoveredAt":  "2026-07-07T07:53:15+03:00",
                            "isShort":  false
                        },
@@ -1311,7 +1311,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=XbaThiXggtM",
                            "videoId":  "XbaThiXggtM",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-06T15:42:40+00:00",
+                           "publishedAt":  "2026-07-06T18:42:40+03:00",
                            "discoveredAt":  "2026-07-07T07:53:15+03:00",
                            "isShort":  false
                        },
@@ -1322,7 +1322,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=88em9aXvmX0",
                            "videoId":  "88em9aXvmX0",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-06T15:22:46+00:00",
+                           "publishedAt":  "2026-07-06T18:22:46+03:00",
                            "discoveredAt":  "2026-07-07T07:53:15+03:00",
                            "isShort":  false
                        },
@@ -1333,7 +1333,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=RjFcv1dj5Xg",
                            "videoId":  "RjFcv1dj5Xg",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-07T19:00:14+00:00",
+                           "publishedAt":  "2026-07-07T22:00:14+03:00",
                            "discoveredAt":  "2026-07-08T08:07:25+03:00",
                            "isShort":  false
                        },
@@ -1344,7 +1344,7 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=ddrmq5XWN_I",
                            "videoId":  "ddrmq5XWN_I",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-07T15:59:02+00:00",
+                           "publishedAt":  "2026-07-07T18:59:02+03:00",
                            "discoveredAt":  "2026-07-08T08:07:25+03:00",
                            "isShort":  false
                        },
@@ -1355,8 +1355,41 @@ window.TDF_DATA = {
                            "url":  "https://www.youtube.com/watch?v=y2OJzI8e6ao",
                            "videoId":  "y2OJzI8e6ao",
                            "source":  "TNT Sports Cycling",
-                           "publishedAt":  "2026-07-07T15:42:10+00:00",
+                           "publishedAt":  "2026-07-07T18:42:10+03:00",
                            "discoveredAt":  "2026-07-08T08:07:25+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  5,
+                           "type":  "Race Highlights",
+                           "title":  "ELITE PERFORMANCE! 🙌 | Men\u0027s Tour de France Stage 5 Race Highlights | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=2gEcyMCojSo",
+                           "videoId":  "2gEcyMCojSo",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-08T21:38:22+03:00",
+                           "discoveredAt":  "2026-07-09T07:02:30+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  5,
+                           "type":  "Reaction",
+                           "title":  "Tour de France Stage 5 REACTION: Decathlon gets its first Tour victory! 👏",
+                           "url":  "https://www.youtube.com/watch?v=6b_LbF1qr7A",
+                           "videoId":  "6b_LbF1qr7A",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-08T19:12:07+03:00",
+                           "discoveredAt":  "2026-07-09T07:02:30+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  5,
+                           "type":  "Final KM\u0027s",
+                           "title":  "ACTION PACKED FINISH! 🤯 | Men\u0027s Tour de France Stage 5 Final KM\u0027s | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=718Q8F_MUW8",
+                           "videoId":  "718Q8F_MUW8",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-08T18:52:11+03:00",
+                           "discoveredAt":  "2026-07-09T07:02:30+03:00",
                            "isShort":  false
                        }
                    ],
@@ -1641,16 +1674,86 @@ window.TDF_DATA = {
                                    "decisions":  [
 
                                                  ]
+                               },
+                         "5":  {
+                                   "stage":  5,
+                                   "status":  "official",
+                                   "flags":  [
+
+                                             ],
+                                   "source":  "letour",
+                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
+                                   "checkedAt":  "2026-07-09T07:02:34+03:00",
+                                   "distanceActual":  "158.3 км",
+                                   "winner":  {
+                                                  "riderId":  null,
+                                                  "name":  "Olav Kooij",
+                                                  "team":  "DECATHLON CMA CGM TEAM"
+                                              },
+                                   "top3":  [
+                                                {
+                                                    "rank":  1,
+                                                    "riderId":  null,
+                                                    "name":  "Olav Kooij",
+                                                    "team":  "DECATHLON CMA CGM TEAM",
+                                                    "time":  "03h 29\u0027 07\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  2,
+                                                    "riderId":  null,
+                                                    "name":  "Max Kanter",
+                                                    "team":  "XDS ASTANA TEAM",
+                                                    "time":  "03h 29\u0027 07\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  3,
+                                                    "riderId":  "tim-merlier",
+                                                    "name":  "Tim Merlier",
+                                                    "team":  "SOUDAL QUICK-STEP",
+                                                    "time":  "03h 29\u0027 07\u0027\u0027",
+                                                    "gap":  "-"
+                                                }
+                                            ],
+                                   "winningTime":  "03h 29\u0027 07\u0027\u0027",
+                                   "summary":  "Olav Kooij выиграл 5-й этап Tour de France 2026 из Lannemezan в Pau, опередив Max Kanter и Tim Merlier в спринтерском финише. После этапа Torstein Traeen сохранил жёлтую майку, Mads Pedersen остался лидером очковой классификации, Alex Baudin удержал гороховую майку, а Mathias Vacek сохранил белую.",
+                                   "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
+                                   "jerseysAfterStage":  {
+                                                             "yellow":  {
+                                                                            "riderId":  null,
+                                                                            "name":  "Torstein Traeen",
+                                                                            "team":  "UNO-X MOBILITY"
+                                                                        },
+                                                             "green":  {
+                                                                           "riderId":  "mads-pedersen",
+                                                                           "name":  "Mads Pedersen",
+                                                                           "team":  "LIDL-TREK"
+                                                                       },
+                                                             "polkaDot":  {
+                                                                              "riderId":  null,
+                                                                              "name":  "Alex Baudin",
+                                                                              "team":  "EF EDUCATION - EASYPOST"
+                                                                          },
+                                                             "white":  {
+                                                                           "riderId":  null,
+                                                                           "name":  "Mathias Vacek",
+                                                                           "team":  "LIDL-TREK"
+                                                                       }
+                                                         },
+                                   "decisions":  [
+
+                                                 ]
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-08T08:24:26+03:00",
+                        "checkedAt":  "2026-07-09T07:02:34+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
                                                "manualFallback"
                                            ],
-                        "latestCompletedStage":  4,
+                        "latestCompletedStage":  5,
                         "status":  "needs_review",
                         "unresolvedRiders":  [
                                                  {
@@ -1680,7 +1783,27 @@ window.TDF_DATA = {
                                                  {
                                                      "name":  "Raul Garcia Pierna",
                                                      "context":  "stage 4 top3 rank 3"
+                                                 },
+                                                 {
+                                                     "name":  "Olav Kooij",
+                                                     "context":  "stage 5 top3 rank 1"
+                                                 },
+                                                 {
+                                                     "name":  "Max Kanter",
+                                                     "context":  "stage 5 top3 rank 2"
+                                                 },
+                                                 {
+                                                     "name":  "Torstein Traeen",
+                                                     "context":  "stage 5 yellow jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Alex Baudin",
+                                                     "context":  "stage 5 polka-dot jersey"
+                                                 },
+                                                 {
+                                                     "name":  "Mathias Vacek",
+                                                     "context":  "stage 5 white jersey"
                                                  }
                                              ]
                     }
-};
+}
