@@ -7,7 +7,7 @@ window.TDF_DATA = {
                                     "broadcasters":  "Preliminary",
                                     "predictions":  "Forecast",
                                     "highlights":  "RSS monitored",
-                                    "results":  "Official / needs review"
+                                    "results":  "Official / review needed"
                                 },
                  "youtubeHighlightsCheckedAt":  "2026-07-10T16:47:51+03:00"
              },
@@ -810,7 +810,40 @@ window.TDF_DATA = {
                                       "instagram":  "tadejpogacar",
                                       "facebook":  "tadej.pogacar.5",
                                       "x":  "TamauPogi"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  "1"
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  true,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+                                                 3,
+                                                 6
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+                                                            3,
+                                                            6
+                                                        ],
+                                             "green":  [
+                                                           3
+                                                       ],
+                                             "polkaDot":  [
+                                                              1,
+                                                              6
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  6,
+                       "editorialOrder":  1,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "jonas-vingegaard",
@@ -837,7 +870,38 @@ window.TDF_DATA = {
                                       "instagram":  "jonasvingegaard",
                                       "facebook":  "jonasvingegaard",
                                       "x":  "VingegaardJonas"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  "11"
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  true,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+                                                 1
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+                                                            1,
+                                                            2
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  2,
+                       "editorialOrder":  2,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "remco-evenepoel",
@@ -864,7 +928,37 @@ window.TDF_DATA = {
                                       "instagram":  "remco.ev",
                                       "facebook":  "RemcoEvenepoelOfficial",
                                       "x":  "EvenepoelRemco"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  3,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "primoz-roglic",
@@ -892,7 +986,37 @@ window.TDF_DATA = {
                                       "instagram":  "primozroglic",
                                       "facebook":  "Rogla007",
                                       "x":  "rogla"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  4,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "isaac-del-toro",
@@ -919,7 +1043,39 @@ window.TDF_DATA = {
                        "risk":  "Роль в команде может быть полностью подчинена лидеру.",
                        "social":  {
 
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  "2"
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  true,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+                                                 2
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+                                                           2
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+                                                           2,
+                                                           3,
+                                                           6
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  6,
+                       "editorialOrder":  5,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "paul-seixas",
@@ -947,7 +1103,37 @@ window.TDF_DATA = {
                                       "instagram":  "paul.sxs",
                                       "facebook":  "paul.sxs",
                                       "x":  "seixas_paul"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  6,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "florian-lipowitz",
@@ -972,7 +1158,37 @@ window.TDF_DATA = {
                        "risk":  "Нужно подтвердить стабильность против лучших на третьей неделе.",
                        "social":  {
                                       "instagram":  "lipo.fl"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  7,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "juan-ayuso",
@@ -999,7 +1215,37 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "juann_ayuso",
                                       "x":  "juann_ayuso"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+                                                           1
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  1,
+                       "editorialOrder":  8,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "richard-carapaz",
@@ -1026,7 +1272,37 @@ window.TDF_DATA = {
                                       "instagram":  "richardcarapaz",
                                       "facebook":  "richardcarapazoficial",
                                       "x":  "RichardCarapazM"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  9,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "mathieu-van-der-poel",
@@ -1051,7 +1327,37 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "mathieuvanderpoel",
                                       "x":  "mathieuvdpoel"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  10,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "jasper-philipsen",
@@ -1075,7 +1381,37 @@ window.TDF_DATA = {
                        "risk":  "Горы и борьба за позицию на нервных финишах.",
                        "social":  {
                                       "instagram":  "jasperphilipsen"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  11,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "mads-pedersen",
@@ -1101,7 +1437,39 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "pedersen__mads",
                                       "x":  "Mads__Pedersen"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  "33"
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  true,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+                                                 4
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+                                                           4,
+                                                           5,
+                                                           6
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  6,
+                       "editorialOrder":  12,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "tim-merlier",
@@ -1125,7 +1493,37 @@ window.TDF_DATA = {
                        "risk":  "Горные лимиты и зависимость от lead-out.",
                        "social":  {
                                       "instagram":  "merliertim"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  13,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "biniam-girmay",
@@ -1151,7 +1549,37 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "biniam_girmaye_hailu_",
                                       "x":  "GrmayeBiniam"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  14,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "tom-pidcock",
@@ -1176,7 +1604,37 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "tompidcock",
                                       "x":  "Tompidolla"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  15,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "julian-alaphilippe",
@@ -1201,7 +1659,37 @@ window.TDF_DATA = {
                        "social":  {
                                       "instagram":  "alafpolak",
                                       "x":  "alafpolak1"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  16,
+                       "derivedFrom":  null
                    },
                    {
                        "id":  "ben-healy",
@@ -1225,7 +1713,325 @@ window.TDF_DATA = {
                        "risk":  "Атаки требуют свободы и правильного состава отрыва.",
                        "social":  {
                                       "instagram":  "benhealy._"
-                                  }
+                                  },
+                       "entryType":  "curated",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  true,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  null,
+                       "editorialOrder":  17,
+                       "derivedFrom":  null
+                   },
+                   {
+                       "id":  "derived-alex-baudin",
+                       "aliases":  [
+                                       "Alex Baudin"
+                                   ],
+                       "name":  "Alex Baudin",
+                       "team":  "EF Education - EasyPost",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  true,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+                                                              3,
+                                                              4,
+                                                              5
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  5,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "fallback-name",
+                                           "source":  "jersey-holder",
+                                           "createdAtStage":  3,
+                                           "jerseyType":  "polkaDot"
+                                       }
+                   },
+                   {
+                       "id":  "derived-mathias-vacek",
+                       "aliases":  [
+                                       "Mathias Vacek"
+                                   ],
+                       "name":  "Mathias Vacek",
+                       "team":  "Lidl-Trek",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  true,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+                                                           4,
+                                                           5
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  5,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "fallback-name",
+                                           "source":  "jersey-holder",
+                                           "createdAtStage":  4,
+                                           "jerseyType":  "white"
+                                       }
+                   },
+                   {
+                       "id":  "letour-rider-55",
+                       "aliases":  [
+                                       "Olav KOOIJ",
+                                       "O. KOOIJ",
+                                       "Olav Kooij"
+                                   ],
+                       "name":  "Olav Kooij",
+                       "team":  "DECATHLON CMA CGM TEAM",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  "55"
+                                       },
+                       "reviewNeeded":  false,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  true,
+                                         "jerseyHolder":  false
+                                     },
+                       "stageWinnerStages":  [
+                                                 5
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  5,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "letour-official",
+                                           "source":  "stage-winner",
+                                           "createdAtStage":  5,
+                                           "jerseyType":  ""
+                                       }
+                   },
+                   {
+                       "id":  "derived-torstein-traeen",
+                       "aliases":  [
+                                       "Torstein Traeen"
+                                   ],
+                       "name":  "Torstein Traeen",
+                       "team":  "Uno-X Mobility",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  true,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+                                                            4,
+                                                            5
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  5,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "fallback-name",
+                                           "source":  "jersey-holder",
+                                           "createdAtStage":  4,
+                                           "jerseyType":  "yellow"
+                                       }
+                   },
+                   {
+                       "id":  "derived-alex-molenaar",
+                       "aliases":  [
+                                       "Alex Molenaar"
+                                   ],
+                       "name":  "Alex Molenaar",
+                       "team":  "Caja Rural-Seguros RGA",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  true,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+
+                                                       ],
+                                             "polkaDot":  [
+                                                              2
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  2,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "fallback-name",
+                                           "source":  "jersey-holder",
+                                           "createdAtStage":  2,
+                                           "jerseyType":  "polkaDot"
+                                       }
+                   },
+                   {
+                       "id":  "derived-egan-bernal",
+                       "aliases":  [
+                                       "Egan Bernal"
+                                   ],
+                       "name":  "Egan Bernal",
+                       "team":  "Netcompany Ineos Cycling Team",
+                       "country":  "",
+                       "roles":  [
+
+                                 ],
+                       "entryType":  "derived",
+                       "officialIds":  {
+                                           "letour":  null
+                                       },
+                       "reviewNeeded":  true,
+                       "inclusion":  {
+                                         "editorial":  false,
+                                         "stageWinner":  false,
+                                         "jerseyHolder":  true
+                                     },
+                       "stageWinnerStages":  [
+
+                                             ],
+                       "jerseyHistory":  {
+                                             "yellow":  [
+
+                                                        ],
+                                             "green":  [
+                                                           1
+                                                       ],
+                                             "polkaDot":  [
+
+                                                          ],
+                                             "white":  [
+
+                                                       ]
+                                         },
+                       "latestQualifyingStage":  1,
+                       "editorialOrder":  null,
+                       "derivedFrom":  {
+                                           "type":  "fallback-name",
+                                           "source":  "jersey-holder",
+                                           "createdAtStage":  1,
+                                           "jerseyType":  "green"
+                                       }
                    }
                ],
     "videoSource":  {
@@ -1430,40 +2236,60 @@ window.TDF_DATA = {
                          "1":  {
                                    "stage":  1,
                                    "status":  "official",
-                                   "flags":  [
+                                   "flags":  {
 
-                                             ],
+                                             },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-1",
-                                   "checkedAt":  "2026-07-06",
+                                   "checkedAt":  "2026-07-10T17:24:36+03:00",
                                    "distanceActual":  "19.6 км",
                                    "winner":  {
                                                   "riderId":  "jonas-vingegaard",
-                                                  "name":  "Jonas Vingegaard",
-                                                  "team":  "Team Visma | Lease a Bike"
+                                                  "officialIds":  {
+                                                                      "letour":  "11"
+                                                                  },
+                                                  "letourSlug":  "jonas-vingegaard-hansen",
+                                                  "name":  "J. VINGEGAARD",
+                                                  "rawName":  "Jonas VINGEGAARD HANSEN",
+                                                  "team":  "TEAM VISMA | LEASE A BIKE"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
                                                     "riderId":  "jonas-vingegaard",
-                                                    "name":  "Jonas Vingegaard",
-                                                    "team":  "Team Visma | Lease a Bike",
+                                                    "officialIds":  {
+                                                                        "letour":  "11"
+                                                                    },
+                                                    "letourSlug":  "jonas-vingegaard-hansen",
+                                                    "name":  "J. VINGEGAARD",
+                                                    "rawName":  "Jonas VINGEGAARD HANSEN",
+                                                    "team":  "TEAM VISMA | LEASE A BIKE",
                                                     "time":  "00h 21\u0027 47\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  2,
                                                     "riderId":  null,
-                                                    "name":  "Filippo Ganna",
-                                                    "team":  "Netcompany Ineos Cycling Team",
+                                                    "officialIds":  {
+                                                                        "letour":  "84"
+                                                                    },
+                                                    "letourSlug":  "filippo-ganna",
+                                                    "name":  "F. GANNA",
+                                                    "rawName":  "Filippo GANNA",
+                                                    "team":  "NETCOMPANY INEOS CYCLING TEAM",
                                                     "time":  "00h 21\u0027 55\u0027\u0027",
                                                     "gap":  "+ 00h 00\u0027 08\u0027\u0027"
                                                 },
                                                 {
                                                     "rank":  3,
                                                     "riderId":  "tadej-pogacar",
-                                                    "name":  "Tadej Pogacar",
-                                                    "team":  "UAE Team Emirates XRG",
+                                                    "officialIds":  {
+                                                                        "letour":  "1"
+                                                                    },
+                                                    "letourSlug":  "tadej-pogacar",
+                                                    "name":  "T. POGACAR",
+                                                    "rawName":  "Tadej POGACAR",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "00h 21\u0027 59\u0027\u0027",
                                                     "gap":  "+ 00h 00\u0027 12\u0027\u0027"
                                                 }
@@ -1478,7 +2304,7 @@ window.TDF_DATA = {
                                                                             "team":  "Team Visma | Lease a Bike"
                                                                         },
                                                              "green":  {
-                                                                           "riderId":  null,
+                                                                           "riderId":  "derived-egan-bernal",
                                                                            "name":  "Egan Bernal",
                                                                            "team":  "Netcompany Ineos Cycling Team"
                                                                        },
@@ -1493,47 +2319,67 @@ window.TDF_DATA = {
                                                                            "team":  "Lidl-Trek"
                                                                        }
                                                          },
-                                   "decisions":  [
+                                   "decisions":  {
 
-                                                 ]
+                                                 }
                                },
                          "2":  {
                                    "stage":  2,
                                    "status":  "official",
-                                   "flags":  [
+                                   "flags":  {
 
-                                             ],
+                                             },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings",
-                                   "checkedAt":  "2026-07-06",
+                                   "checkedAt":  "2026-07-10T17:24:37+03:00",
                                    "distanceActual":  "168.5 км",
                                    "winner":  {
                                                   "riderId":  "isaac-del-toro",
-                                                  "name":  "Isaac del Toro",
-                                                  "team":  "UAE Team Emirates XRG"
+                                                  "officialIds":  {
+                                                                      "letour":  "2"
+                                                                  },
+                                                  "letourSlug":  "isaac-del-toro-romero",
+                                                  "name":  "I. DEL TORO",
+                                                  "rawName":  "Isaac DEL TORO ROMERO",
+                                                  "team":  "UAE TEAM EMIRATES XRG"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
                                                     "riderId":  "isaac-del-toro",
-                                                    "name":  "Isaac del Toro",
-                                                    "team":  "UAE Team Emirates XRG",
+                                                    "officialIds":  {
+                                                                        "letour":  "2"
+                                                                    },
+                                                    "letourSlug":  "isaac-del-toro-romero",
+                                                    "name":  "I. DEL TORO",
+                                                    "rawName":  "Isaac DEL TORO ROMERO",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "03h 40\u0027 01\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  2,
                                                     "riderId":  "tadej-pogacar",
-                                                    "name":  "Tadej Pogacar",
-                                                    "team":  "UAE Team Emirates XRG",
+                                                    "officialIds":  {
+                                                                        "letour":  "1"
+                                                                    },
+                                                    "letourSlug":  "tadej-pogacar",
+                                                    "name":  "T. POGACAR",
+                                                    "rawName":  "Tadej POGACAR",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "03h 40\u0027 01\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  3,
                                                     "riderId":  "remco-evenepoel",
-                                                    "name":  "Remco Evenepoel",
-                                                    "team":  "Red Bull - BORA - hansgrohe",
+                                                    "officialIds":  {
+                                                                        "letour":  "21"
+                                                                    },
+                                                    "letourSlug":  "remco-evenepoel",
+                                                    "name":  "R. EVENEPOEL",
+                                                    "rawName":  "Remco EVENEPOEL",
+                                                    "team":  "RED BULL - BORA - HANSGROHE",
                                                     "time":  "03h 40\u0027 01\u0027\u0027",
                                                     "gap":  "-"
                                                 }
@@ -1553,7 +2399,7 @@ window.TDF_DATA = {
                                                                            "team":  "UAE Team Emirates XRG"
                                                                        },
                                                              "polkaDot":  {
-                                                                              "riderId":  null,
+                                                                              "riderId":  "derived-alex-molenaar",
                                                                               "name":  "Alex Molenaar",
                                                                               "team":  "Caja Rural-Seguros RGA"
                                                                           },
@@ -1564,47 +2410,67 @@ window.TDF_DATA = {
                                                                            "wornByRiderId":  "juan-ayuso"
                                                                        }
                                                          },
-                                   "decisions":  [
+                                   "decisions":  {
 
-                                                 ]
+                                                 }
                                },
                          "3":  {
                                    "stage":  3,
                                    "status":  "official",
-                                   "flags":  [
+                                   "flags":  {
 
-                                             ],
+                                             },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-3",
-                                   "checkedAt":  "2026-07-08T08:24:26+03:00",
+                                   "checkedAt":  "2026-07-10T17:24:37+03:00",
                                    "distanceActual":  "195.9 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
-                                                  "name":  "Tadej Pogacar",
-                                                  "team":  "UAE Team Emirates XRG"
+                                                  "officialIds":  {
+                                                                      "letour":  "1"
+                                                                  },
+                                                  "letourSlug":  "tadej-pogacar",
+                                                  "name":  "T. POGACAR",
+                                                  "rawName":  "Tadej POGACAR",
+                                                  "team":  "UAE TEAM EMIRATES XRG"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
                                                     "riderId":  "tadej-pogacar",
-                                                    "name":  "Tadej Pogacar",
-                                                    "team":  "UAE Team Emirates XRG",
+                                                    "officialIds":  {
+                                                                        "letour":  "1"
+                                                                    },
+                                                    "letourSlug":  "tadej-pogacar",
+                                                    "name":  "T. POGACAR",
+                                                    "rawName":  "Tadej POGACAR",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "04h 45\u0027 11\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  2,
                                                     "riderId":  "jonas-vingegaard",
-                                                    "name":  "Jonas Vingegaard",
-                                                    "team":  "Team Visma | Lease a Bike",
+                                                    "officialIds":  {
+                                                                        "letour":  "11"
+                                                                    },
+                                                    "letourSlug":  "jonas-vingegaard-hansen",
+                                                    "name":  "J. VINGEGAARD",
+                                                    "rawName":  "Jonas VINGEGAARD HANSEN",
+                                                    "team":  "TEAM VISMA | LEASE A BIKE",
                                                     "time":  "04h 45\u0027 13\u0027\u0027",
                                                     "gap":  "+ 00h 00\u0027 02\u0027\u0027"
                                                 },
                                                 {
                                                     "rank":  3,
                                                     "riderId":  "richard-carapaz",
-                                                    "name":  "Richard Carapaz",
-                                                    "team":  "EF Education - EasyPost",
+                                                    "officialIds":  {
+                                                                        "letour":  "41"
+                                                                    },
+                                                    "letourSlug":  "richard-carapaz",
+                                                    "name":  "R. CARAPAZ",
+                                                    "rawName":  "Richard CARAPAZ",
+                                                    "team":  "EF EDUCATION - EASYPOST",
                                                     "time":  "04h 45\u0027 13\u0027\u0027",
                                                     "gap":  "+ 00h 00\u0027 02\u0027\u0027"
                                                 }
@@ -1624,7 +2490,7 @@ window.TDF_DATA = {
                                                                            "team":  "UAE Team Emirates XRG"
                                                                        },
                                                              "polkaDot":  {
-                                                                              "riderId":  null,
+                                                                              "riderId":  "derived-alex-baudin",
                                                                               "name":  "Alex Baudin",
                                                                               "team":  "EF Education - EasyPost"
                                                                           },
@@ -1634,47 +2500,67 @@ window.TDF_DATA = {
                                                                            "team":  "UAE Team Emirates XRG"
                                                                        }
                                                          },
-                                   "decisions":  [
+                                   "decisions":  {
 
-                                                 ]
+                                                 }
                                },
                          "4":  {
                                    "stage":  4,
                                    "status":  "official",
-                                   "flags":  [
+                                   "flags":  {
 
-                                             ],
+                                             },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-4",
-                                   "checkedAt":  "2026-07-08T08:24:26+03:00",
+                                   "checkedAt":  "2026-07-10T17:24:38+03:00",
                                    "distanceActual":  "181.9 км",
                                    "winner":  {
                                                   "riderId":  "mads-pedersen",
-                                                  "name":  "Mads Pedersen",
-                                                  "team":  "Lidl-Trek"
+                                                  "officialIds":  {
+                                                                      "letour":  "33"
+                                                                  },
+                                                  "letourSlug":  "mads-pedersen",
+                                                  "name":  "M. PEDERSEN",
+                                                  "rawName":  "Mads PEDERSEN",
+                                                  "team":  "LIDL-TREK"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
                                                     "riderId":  "mads-pedersen",
-                                                    "name":  "Mads Pedersen",
-                                                    "team":  "Lidl-Trek",
+                                                    "officialIds":  {
+                                                                        "letour":  "33"
+                                                                    },
+                                                    "letourSlug":  "mads-pedersen",
+                                                    "name":  "M. PEDERSEN",
+                                                    "rawName":  "Mads PEDERSEN",
+                                                    "team":  "LIDL-TREK",
                                                     "time":  "04h 10\u0027 45\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  2,
                                                     "riderId":  null,
-                                                    "name":  "Quinn Simmons",
-                                                    "team":  "Lidl-Trek",
+                                                    "officialIds":  {
+                                                                        "letour":  "34"
+                                                                    },
+                                                    "letourSlug":  "quinn-simmons",
+                                                    "name":  "Q. SIMMONS",
+                                                    "rawName":  "Quinn SIMMONS",
+                                                    "team":  "LIDL-TREK",
                                                     "time":  "04h 10\u0027 45\u0027\u0027",
                                                     "gap":  "-"
                                                 },
                                                 {
                                                     "rank":  3,
                                                     "riderId":  null,
-                                                    "name":  "Raul Garcia Pierna",
-                                                    "team":  "Movistar Team",
+                                                    "officialIds":  {
+                                                                        "letour":  "144"
+                                                                    },
+                                                    "letourSlug":  "raul-garcia-pierna",
+                                                    "name":  "R. GARCIA",
+                                                    "rawName":  "Raul GARCIA PIERNA",
+                                                    "team":  "MOVISTAR TEAM",
                                                     "time":  "04h 10\u0027 45\u0027\u0027",
                                                     "gap":  "-"
                                                 }
@@ -1684,7 +2570,7 @@ window.TDF_DATA = {
                                    "summarySourceUrl":  "https://www.letour.fr/en/news/2026/pedersen-and-traeen-northern-power-rules-foix/1337325",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {
-                                                                            "riderId":  null,
+                                                                            "riderId":  "derived-torstein-traeen",
                                                                             "name":  "Torstein Traeen",
                                                                             "team":  "Uno-X Mobility"
                                                                         },
@@ -1694,40 +2580,50 @@ window.TDF_DATA = {
                                                                            "team":  "Lidl-Trek"
                                                                        },
                                                              "polkaDot":  {
-                                                                              "riderId":  null,
+                                                                              "riderId":  "derived-alex-baudin",
                                                                               "name":  "Alex Baudin",
                                                                               "team":  "EF Education - EasyPost"
                                                                           },
                                                              "white":  {
-                                                                           "riderId":  null,
+                                                                           "riderId":  "derived-mathias-vacek",
                                                                            "name":  "Mathias Vacek",
                                                                            "team":  "Lidl-Trek"
                                                                        }
                                                          },
-                                   "decisions":  [
+                                   "decisions":  {
 
-                                                 ]
+                                                 }
                                },
                          "5":  {
                                    "stage":  5,
                                    "status":  "official",
-                                   "flags":  [
+                                   "flags":  {
 
-                                             ],
+                                             },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
-                                   "checkedAt":  "2026-07-09T07:02:34+03:00",
+                                   "checkedAt":  "2026-07-10T17:24:39+03:00",
                                    "distanceActual":  "158.3 км",
                                    "winner":  {
-                                                  "riderId":  null,
-                                                  "name":  "Olav Kooij",
+                                                  "riderId":  "letour-rider-55",
+                                                  "officialIds":  {
+                                                                      "letour":  "55"
+                                                                  },
+                                                  "letourSlug":  "olav-kooij",
+                                                  "name":  "O. KOOIJ",
+                                                  "rawName":  "Olav KOOIJ",
                                                   "team":  "DECATHLON CMA CGM TEAM"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
-                                                    "riderId":  null,
-                                                    "name":  "Olav Kooij",
+                                                    "riderId":  "letour-rider-55",
+                                                    "officialIds":  {
+                                                                        "letour":  "55"
+                                                                    },
+                                                    "letourSlug":  "olav-kooij",
+                                                    "name":  "O. KOOIJ",
+                                                    "rawName":  "Olav KOOIJ",
                                                     "team":  "DECATHLON CMA CGM TEAM",
                                                     "time":  "03h 29\u0027 07\u0027\u0027",
                                                     "gap":  "-"
@@ -1735,7 +2631,12 @@ window.TDF_DATA = {
                                                 {
                                                     "rank":  2,
                                                     "riderId":  null,
-                                                    "name":  "Max Kanter",
+                                                    "officialIds":  {
+                                                                        "letour":  "64"
+                                                                    },
+                                                    "letourSlug":  "max-kanter",
+                                                    "name":  "M. KANTER",
+                                                    "rawName":  "Max KANTER",
                                                     "team":  "XDS ASTANA TEAM",
                                                     "time":  "03h 29\u0027 07\u0027\u0027",
                                                     "gap":  "-"
@@ -1743,7 +2644,12 @@ window.TDF_DATA = {
                                                 {
                                                     "rank":  3,
                                                     "riderId":  "tim-merlier",
-                                                    "name":  "Tim Merlier",
+                                                    "officialIds":  {
+                                                                        "letour":  "91"
+                                                                    },
+                                                    "letourSlug":  "tim-merlier",
+                                                    "name":  "T. MERLIER",
+                                                    "rawName":  "Tim MERLIER",
                                                     "team":  "SOUDAL QUICK-STEP",
                                                     "time":  "03h 29\u0027 07\u0027\u0027",
                                                     "gap":  "-"
@@ -1754,7 +2660,7 @@ window.TDF_DATA = {
                                    "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {
-                                                                            "riderId":  null,
+                                                                            "riderId":  "derived-torstein-traeen",
                                                                             "name":  "Torstein Traeen",
                                                                             "team":  "UNO-X MOBILITY"
                                                                         },
@@ -1764,19 +2670,19 @@ window.TDF_DATA = {
                                                                            "team":  "LIDL-TREK"
                                                                        },
                                                              "polkaDot":  {
-                                                                              "riderId":  null,
+                                                                              "riderId":  "derived-alex-baudin",
                                                                               "name":  "Alex Baudin",
                                                                               "team":  "EF EDUCATION - EASYPOST"
                                                                           },
                                                              "white":  {
-                                                                           "riderId":  null,
+                                                                           "riderId":  "derived-mathias-vacek",
                                                                            "name":  "Mathias Vacek",
                                                                            "team":  "LIDL-TREK"
                                                                        }
                                                          },
-                                   "decisions":  [
+                                   "decisions":  {
 
-                                                 ]
+                                                 }
                                },
                          "6":  {
                                    "stage":  6,
@@ -1786,18 +2692,28 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
-                                   "checkedAt":  "2026-07-10T16:48:01+03:00",
+                                   "checkedAt":  "2026-07-10T17:24:40+03:00",
                                    "distanceActual":  "186.2 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
-                                                  "name":  "Tadej Pogacar",
+                                                  "officialIds":  {
+                                                                      "letour":  "1"
+                                                                  },
+                                                  "letourSlug":  "tadej-pogacar",
+                                                  "name":  "T. POGACAR",
+                                                  "rawName":  "Tadej POGACAR",
                                                   "team":  "UAE TEAM EMIRATES XRG"
                                               },
                                    "top3":  [
                                                 {
                                                     "rank":  1,
                                                     "riderId":  "tadej-pogacar",
-                                                    "name":  "Tadej Pogacar",
+                                                    "officialIds":  {
+                                                                        "letour":  "1"
+                                                                    },
+                                                    "letourSlug":  "tadej-pogacar",
+                                                    "name":  "T. POGACAR",
+                                                    "rawName":  "Tadej POGACAR",
                                                     "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "04h 32\u0027 07\u0027\u0027",
                                                     "gap":  "-"
@@ -1805,7 +2721,12 @@ window.TDF_DATA = {
                                                 {
                                                     "rank":  2,
                                                     "riderId":  "jonas-vingegaard",
-                                                    "name":  "Jonas Vingegaard",
+                                                    "officialIds":  {
+                                                                        "letour":  "11"
+                                                                    },
+                                                    "letourSlug":  "jonas-vingegaard-hansen",
+                                                    "name":  "J. VINGEGAARD",
+                                                    "rawName":  "Jonas VINGEGAARD HANSEN",
                                                     "team":  "TEAM VISMA | LEASE A BIKE",
                                                     "time":  "04h 34\u0027 45\u0027\u0027",
                                                     "gap":  "+ 00h 02\u0027 38\u0027\u0027"
@@ -1813,7 +2734,12 @@ window.TDF_DATA = {
                                                 {
                                                     "rank":  3,
                                                     "riderId":  "isaac-del-toro",
-                                                    "name":  "Isaac del Toro",
+                                                    "officialIds":  {
+                                                                        "letour":  "2"
+                                                                    },
+                                                    "letourSlug":  "isaac-del-toro-romero",
+                                                    "name":  "I. DEL TORO",
+                                                    "rawName":  "Isaac DEL TORO ROMERO",
                                                     "team":  "UAE TEAM EMIRATES XRG",
                                                     "time":  "04h 35\u0027 04\u0027\u0027",
                                                     "gap":  "+ 00h 02\u0027 57\u0027\u0027"
@@ -1829,10 +2755,10 @@ window.TDF_DATA = {
                                                                             "team":  "UAE TEAM EMIRATES XRG"
                                                                         },
                                                              "green":  {
-                                                                          "riderId":  "mads-pedersen",
-                                                                          "name":  "Mads Pedersen",
-                                                                          "team":  "LIDL-TREK"
-                                                                      },
+                                                                           "riderId":  "mads-pedersen",
+                                                                           "name":  "Mads Pedersen",
+                                                                           "team":  "LIDL-TREK"
+                                                                       },
                                                              "polkaDot":  {
                                                                               "riderId":  "tadej-pogacar",
                                                                               "name":  "Tadej Pogacar",
@@ -1850,40 +2776,19 @@ window.TDF_DATA = {
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-10T16:48:02+03:00",
+                        "checkedAt":  "2026-07-10T17:24:41+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
                                                "manualFallback"
                                            ],
                         "latestCompletedStage":  6,
-                        "status":  "needs_review",
-                        "unresolvedRiders":  [
-                                                 {
-                                                     "name":  "Filippo Ganna",
-                                                     "context":  "stage 1 top3 rank 2"
-                                                 },
-                                                 {
-                                                     "name":  "Quinn Simmons",
-                                                     "context":  "stage 4 top3 rank 2"
-                                                 },
-                                                 {
-                                                     "name":  "Raul Garcia Pierna",
-                                                     "context":  "stage 4 top3 rank 3"
-                                                 },
-                                                 {
-                                                     "name":  "Olav Kooij",
-                                                     "context":  "stage 5 top3 rank 1"
-                                                 },
-                                                 {
-                                                     "name":  "Max Kanter",
-                                                     "context":  "stage 5 top3 rank 2"
-                                                 }
-                                             ]
+                        "status":  "review-needed",
+                        "riderRegistryStatus":  "review-needed"
                     },
     "generalClassification":  {
                                   "stage":  6,
-                                  "checkedAt":  "2026-07-10T16:48:02+03:00",
+                                  "checkedAt":  "2026-07-10T17:24:41+03:00",
                                   "status":  "official",
                                   "source":  "letour",
                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
@@ -1891,7 +2796,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  1,
                                                         "riderId":  "tadej-pogacar",
-                                                        "name":  "Tadej Pogacar",
+                                                        "officialIds":  {
+                                                                            "letour":  "1"
+                                                                        },
+                                                        "letourSlug":  "tadej-pogacar",
+                                                        "name":  "T. POGACAR",
+                                                        "rawName":  "Tadej POGACAR",
                                                         "team":  "UAE TEAM EMIRATES XRG",
                                                         "totalTime":  "21h 11\u0027 57\u0027\u0027",
                                                         "gap":  "-",
@@ -1900,7 +2810,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  2,
                                                         "riderId":  "jonas-vingegaard",
-                                                        "name":  "Jonas Vingegaard",
+                                                        "officialIds":  {
+                                                                            "letour":  "11"
+                                                                        },
+                                                        "letourSlug":  "jonas-vingegaard-hansen",
+                                                        "name":  "J. VINGEGAARD",
+                                                        "rawName":  "Jonas VINGEGAARD HANSEN",
                                                         "team":  "TEAM VISMA | LEASE A BIKE",
                                                         "totalTime":  "21h 14\u0027 39\u0027\u0027",
                                                         "gap":  "+ 00h 02\u0027 42\u0027\u0027",
@@ -1909,7 +2824,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  3,
                                                         "riderId":  "isaac-del-toro",
-                                                        "name":  "Isaac del Toro",
+                                                        "officialIds":  {
+                                                                            "letour":  "2"
+                                                                        },
+                                                        "letourSlug":  "isaac-del-toro-romero",
+                                                        "name":  "I. DEL TORO",
+                                                        "rawName":  "Isaac DEL TORO ROMERO",
                                                         "team":  "UAE TEAM EMIRATES XRG",
                                                         "totalTime":  "21h 15\u0027 24\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 27\u0027\u0027",
@@ -1918,7 +2838,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  4,
                                                         "riderId":  "remco-evenepoel",
-                                                        "name":  "Remco Evenepoel",
+                                                        "officialIds":  {
+                                                                            "letour":  "21"
+                                                                        },
+                                                        "letourSlug":  "remco-evenepoel",
+                                                        "name":  "R. EVENEPOEL",
+                                                        "rawName":  "R. EVENEPOEL",
                                                         "team":  "RED BULL - BORA - HANSGROHE",
                                                         "totalTime":  "21h 15\u0027 27\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 30\u0027\u0027",
@@ -1927,7 +2852,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  5,
                                                         "riderId":  "juan-ayuso",
-                                                        "name":  "Juan Ayuso",
+                                                        "officialIds":  {
+                                                                            "letour":  "31"
+                                                                        },
+                                                        "letourSlug":  "juan-ayuso-pesquera",
+                                                        "name":  "J. AYUSO",
+                                                        "rawName":  "J. AYUSO",
                                                         "team":  "LIDL-TREK",
                                                         "totalTime":  "21h 15\u0027 31\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 34\u0027\u0027",
@@ -1936,7 +2866,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  6,
                                                         "riderId":  "paul-seixas",
-                                                        "name":  "Paul Seixas",
+                                                        "officialIds":  {
+                                                                            "letour":  "51"
+                                                                        },
+                                                        "letourSlug":  "paul-seixas",
+                                                        "name":  "P. SEIXAS",
+                                                        "rawName":  "P. SEIXAS",
                                                         "team":  "DECATHLON CMA CGM TEAM",
                                                         "totalTime":  "21h 15\u0027 52\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 55\u0027\u0027",
@@ -1945,7 +2880,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  7,
                                                         "riderId":  "florian-lipowitz",
-                                                        "name":  "Florian Lipowitz",
+                                                        "officialIds":  {
+                                                                            "letour":  "25"
+                                                                        },
+                                                        "letourSlug":  "florian-lipowitz",
+                                                        "name":  "F. LIPOWITZ",
+                                                        "rawName":  "F. LIPOWITZ",
                                                         "team":  "RED BULL - BORA - HANSGROHE",
                                                         "totalTime":  "21h 15\u0027 57\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 00\u0027\u0027",
@@ -1954,7 +2894,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  8,
                                                         "riderId":  null,
-                                                        "name":  "L. Martinez",
+                                                        "officialIds":  {
+                                                                            "letour":  "71"
+                                                                        },
+                                                        "letourSlug":  "lenny-martinez",
+                                                        "name":  "L. MARTINEZ",
+                                                        "rawName":  "L. MARTINEZ",
                                                         "team":  "BAHRAIN VICTORIOUS",
                                                         "totalTime":  "21h 16\u0027 18\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 21\u0027\u0027",
@@ -1963,7 +2908,12 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  9,
                                                         "riderId":  null,
-                                                        "name":  "M. Skjelmose",
+                                                        "officialIds":  {
+                                                                            "letour":  "35"
+                                                                        },
+                                                        "letourSlug":  "mattias-skjelmose",
+                                                        "name":  "M. SKJELMOSE",
+                                                        "rawName":  "M. SKJELMOSE",
                                                         "team":  "LIDL-TREK",
                                                         "totalTime":  "21h 16\u0027 54\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 57\u0027\u0027",
@@ -1972,12 +2922,218 @@ window.TDF_DATA = {
                                                     {
                                                         "position":  10,
                                                         "riderId":  null,
-                                                        "name":  "M. Vacek",
+                                                        "officialIds":  {
+                                                                            "letour":  "37"
+                                                                        },
+                                                        "letourSlug":  "mathias-vacek",
+                                                        "name":  "M. VACEK",
+                                                        "rawName":  "M. VACEK",
                                                         "team":  "LIDL-TREK",
                                                         "totalTime":  "21h 19\u0027 07\u0027\u0027",
                                                         "gap":  "+ 00h 07\u0027 10\u0027\u0027",
                                                         "movement":  null
                                                     }
                                                 ]
-                              }
+                              },
+    "riderValidation":  {
+                            "checkedAt":  "2026-07-10T17:24:41+03:00",
+                            "status":  "review-needed",
+                            "duplicateIds":  [
+
+                                             ],
+                            "aliasConflicts":  [
+
+                                               ],
+                            "blockingIssues":  [
+
+                                               ],
+                            "fallbackIdentityRiders":  [
+                                                           {
+                                                               "id":  "derived-alex-baudin",
+                                                               "name":  "Alex Baudin",
+                                                               "entryType":  "derived"
+                                                           },
+                                                           {
+                                                               "id":  "derived-mathias-vacek",
+                                                               "name":  "Mathias Vacek",
+                                                               "entryType":  "derived"
+                                                           },
+                                                           {
+                                                               "id":  "derived-torstein-traeen",
+                                                               "name":  "Torstein Traeen",
+                                                               "entryType":  "derived"
+                                                           },
+                                                           {
+                                                               "id":  "derived-alex-molenaar",
+                                                               "name":  "Alex Molenaar",
+                                                               "entryType":  "derived"
+                                                           },
+                                                           {
+                                                               "id":  "derived-egan-bernal",
+                                                               "name":  "Egan Bernal",
+                                                               "entryType":  "derived"
+                                                           }
+                                                       ],
+                            "derivedRiders":  [
+                                                  {
+                                                      "id":  "derived-alex-baudin",
+                                                      "name":  "Alex Baudin",
+                                                      "letourId":  null,
+                                                      "reviewNeeded":  true,
+                                                      "latestQualifyingStage":  5
+                                                  },
+                                                  {
+                                                      "id":  "derived-mathias-vacek",
+                                                      "name":  "Mathias Vacek",
+                                                      "letourId":  null,
+                                                      "reviewNeeded":  true,
+                                                      "latestQualifyingStage":  5
+                                                  },
+                                                  {
+                                                      "id":  "letour-rider-55",
+                                                      "name":  "Olav Kooij",
+                                                      "letourId":  "55",
+                                                      "reviewNeeded":  false,
+                                                      "latestQualifyingStage":  5
+                                                  },
+                                                  {
+                                                      "id":  "derived-torstein-traeen",
+                                                      "name":  "Torstein Traeen",
+                                                      "letourId":  null,
+                                                      "reviewNeeded":  true,
+                                                      "latestQualifyingStage":  5
+                                                  },
+                                                  {
+                                                      "id":  "derived-alex-molenaar",
+                                                      "name":  "Alex Molenaar",
+                                                      "letourId":  null,
+                                                      "reviewNeeded":  true,
+                                                      "latestQualifyingStage":  2
+                                                  },
+                                                  {
+                                                      "id":  "derived-egan-bernal",
+                                                      "name":  "Egan Bernal",
+                                                      "letourId":  null,
+                                                      "reviewNeeded":  true,
+                                                      "latestQualifyingStage":  1
+                                                  }
+                                              ],
+                            "includedRiders":  [
+                                                   {
+                                                       "id":  "tadej-pogacar",
+                                                       "name":  "Tadej Pogacar",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "jonas-vingegaard",
+                                                       "name":  "Jonas Vingegaard",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "remco-evenepoel",
+                                                       "name":  "Remco Evenepoel",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "primoz-roglic",
+                                                       "name":  "Primoz Roglic",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "isaac-del-toro",
+                                                       "name":  "Isaac del Toro",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "paul-seixas",
+                                                       "name":  "Paul Seixas",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "florian-lipowitz",
+                                                       "name":  "Florian Lipowitz",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "juan-ayuso",
+                                                       "name":  "Juan Ayuso",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "richard-carapaz",
+                                                       "name":  "Richard Carapaz",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "mathieu-van-der-poel",
+                                                       "name":  "Mathieu van der Poel",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "jasper-philipsen",
+                                                       "name":  "Jasper Philipsen",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "mads-pedersen",
+                                                       "name":  "Mads Pedersen",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "tim-merlier",
+                                                       "name":  "Tim Merlier",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "biniam-girmay",
+                                                       "name":  "Biniam Girmay",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "tom-pidcock",
+                                                       "name":  "Tom Pidcock",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "julian-alaphilippe",
+                                                       "name":  "Julian Alaphilippe",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "ben-healy",
+                                                       "name":  "Ben Healy",
+                                                       "entryType":  "curated"
+                                                   },
+                                                   {
+                                                       "id":  "derived-alex-baudin",
+                                                       "name":  "Alex Baudin",
+                                                       "entryType":  "derived"
+                                                   },
+                                                   {
+                                                       "id":  "derived-mathias-vacek",
+                                                       "name":  "Mathias Vacek",
+                                                       "entryType":  "derived"
+                                                   },
+                                                   {
+                                                       "id":  "letour-rider-55",
+                                                       "name":  "Olav Kooij",
+                                                       "entryType":  "derived"
+                                                   },
+                                                   {
+                                                       "id":  "derived-torstein-traeen",
+                                                       "name":  "Torstein Traeen",
+                                                       "entryType":  "derived"
+                                                   },
+                                                   {
+                                                       "id":  "derived-alex-molenaar",
+                                                       "name":  "Alex Molenaar",
+                                                       "entryType":  "derived"
+                                                   },
+                                                   {
+                                                       "id":  "derived-egan-bernal",
+                                                       "name":  "Egan Bernal",
+                                                       "entryType":  "derived"
+                                                   }
+                                               ]
+                        }
 };

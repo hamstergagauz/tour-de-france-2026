@@ -7,6 +7,7 @@ wallpapers/
 *.ps1
 !scripts/Update-YoutubeHighlights.ps1
 !scripts/Update-StageResults.ps1
+!scripts/Validate-RiderRegistry.ps1
 *.log
 Thumbs.db
 Desktop.ini

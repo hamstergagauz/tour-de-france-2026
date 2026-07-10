@@ -154,6 +154,15 @@ main {
   overflow: hidden;
 }
 
+.photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top, rgba(247,209,23,.18), transparent 42%),
+    linear-gradient(140deg, #233545, #0b1722 70%);
+}
+
 .photo::before {
   content: "";
   position: absolute;
@@ -174,6 +183,14 @@ main {
   background: linear-gradient(180deg, rgba(7,23,38,.18), rgba(7,23,38,.48));
 }
 
+.photo-placeholder::before {
+  background-image:
+    linear-gradient(rgba(7,23,38,.18), rgba(7,23,38,.18)),
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+  filter: none;
+  transform: none;
+}
+
 .photo img {
   position: absolute;
   inset: 0;
@@ -183,6 +200,24 @@ main {
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 12px 24px rgba(0,0,0,.26));
+}
+
+.placeholder-mark {
+  position: relative;
+  z-index: 1;
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,.85);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.06);
 }
 
 .badge {
@@ -288,9 +323,20 @@ main {
 .tag.sprint { background: #dff2e8; color: var(--green); }
 .tag.stage { background: #e1edf8; color: var(--blue); }
 .tag.risk { background: #f8dfdc; color: var(--red); }
+.tag.info { background: #eef1f3; color: var(--dark); }
+.tag.derived { background: #eee7da; color: #745936; }
+.tag.warn { background: #fff1b8; color: #6d5100; }
+
+.source-meta {
+  margin-bottom: 10px;
+}
 
 .card p {
   margin: 0 0 10px;
+}
+
+.card-derived {
+  border-style: dashed;
 }
 
 .small {
