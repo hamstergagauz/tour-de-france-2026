@@ -1,6 +1,6 @@
 window.TDF_DATA = {
     "meta":  {
-                 "updatedAt":  "2026-07-09",
+                 "updatedAt":  "2026-07-10",
                  "routeCheckedAt":  "2026-06-30T13:04:40",
                  "dataStatus":  {
                                     "route":  "Verified",
@@ -9,7 +9,7 @@ window.TDF_DATA = {
                                     "highlights":  "RSS monitored",
                                     "results":  "Official / needs review"
                                 },
-                 "youtubeHighlightsCheckedAt":  "2026-07-09T07:02:30+03:00"
+                 "youtubeHighlightsCheckedAt":  "2026-07-10T16:47:51+03:00"
              },
     "links":  {
                   "officialRoute":  "https://www.letour.fr/en/overall-route",
@@ -384,9 +384,9 @@ window.TDF_DATA = {
                        "route":  "Pau \u003e Gavarnie-Gèdre",
                        "distance":  "186.2 км",
                        "type":  "Горный",
-                       "elevation":  "уточнить",
-                       "startTime":  "уточнить",
-                       "finishWindow":  "уточнить",
+                       "elevation":  "D+ 4100 m",
+                       "startTime":  "12:25",
+                       "finishWindow":  "17:29-18:05",
                        "difficulty":  "Очень высокая",
                        "gcImpact":  "Высокий",
                        "watchPriority":  "10/10",
@@ -1391,6 +1391,39 @@ window.TDF_DATA = {
                            "publishedAt":  "2026-07-08T18:52:11+03:00",
                            "discoveredAt":  "2026-07-09T07:02:30+03:00",
                            "isShort":  false
+                       },
+                       {
+                           "stage":  6,
+                           "type":  "Race Highlights",
+                           "title":  "DEMOLISHED ON TOURMALET! 🫨 | Men\u0027s Tour de France Stage 6 Race Highlights | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=cmjmMwnfX3c",
+                           "videoId":  "cmjmMwnfX3c",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-09T18:14:21+00:00",
+                           "discoveredAt":  "2026-07-10T16:47:51+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  6,
+                           "type":  "Reaction",
+                           "title":  "Tour de France Stage 6 REACTION: Rivals DEMOLISHED on Tourmalet 😲",
+                           "url":  "https://www.youtube.com/watch?v=qkAhZb9T5To",
+                           "videoId":  "qkAhZb9T5To",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-09T15:40:49+00:00",
+                           "discoveredAt":  "2026-07-10T16:47:51+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  6,
+                           "type":  "Final KM\u0027s",
+                           "title":  "DESTROYED! 🤯 | Men\u0027s Tour de France Stage 6 Final KM\u0027s | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=85VFfLmeJ9o",
+                           "videoId":  "85VFfLmeJ9o",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-09T15:21:21+00:00",
+                           "discoveredAt":  "2026-07-10T16:47:51+03:00",
+                           "isShort":  false
                        }
                    ],
     "stageResults":  {
@@ -1744,37 +1777,91 @@ window.TDF_DATA = {
                                    "decisions":  [
 
                                                  ]
+                               },
+                         "6":  {
+                                   "stage":  6,
+                                   "status":  "official",
+                                   "flags":  {
+
+                                             },
+                                   "source":  "letour",
+                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
+                                   "checkedAt":  "2026-07-10T16:48:01+03:00",
+                                   "distanceActual":  "186.2 км",
+                                   "winner":  {
+                                                  "riderId":  "tadej-pogacar",
+                                                  "name":  "Tadej Pogacar",
+                                                  "team":  "UAE TEAM EMIRATES XRG"
+                                              },
+                                   "top3":  [
+                                                {
+                                                    "rank":  1,
+                                                    "riderId":  "tadej-pogacar",
+                                                    "name":  "Tadej Pogacar",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
+                                                    "time":  "04h 32\u0027 07\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  2,
+                                                    "riderId":  "jonas-vingegaard",
+                                                    "name":  "Jonas Vingegaard",
+                                                    "team":  "TEAM VISMA | LEASE A BIKE",
+                                                    "time":  "04h 34\u0027 45\u0027\u0027",
+                                                    "gap":  "+ 00h 02\u0027 38\u0027\u0027"
+                                                },
+                                                {
+                                                    "rank":  3,
+                                                    "riderId":  "isaac-del-toro",
+                                                    "name":  "Isaac del Toro",
+                                                    "team":  "UAE TEAM EMIRATES XRG",
+                                                    "time":  "04h 35\u0027 04\u0027\u0027",
+                                                    "gap":  "+ 00h 02\u0027 57\u0027\u0027"
+                                                }
+                                            ],
+                                   "winningTime":  "04h 32\u0027 07\u0027\u0027",
+                                   "summary":  "Tadej Pogacar won stage 6 ahead of Jonas Vingegaard and Isaac del Toro on the Pau to Gavarnie-Gèdre mountain stage. After the official stage 6 rankings, Pogacar also held the yellow jersey and polka-dot jersey, Mads Pedersen led the points classification, and Isaac del Toro led the young rider classification.",
+                                   "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
+                                   "jerseysAfterStage":  {
+                                                             "yellow":  {
+                                                                            "riderId":  "tadej-pogacar",
+                                                                            "name":  "Tadej Pogacar",
+                                                                            "team":  "UAE TEAM EMIRATES XRG"
+                                                                        },
+                                                             "green":  {
+                                                                          "riderId":  "mads-pedersen",
+                                                                          "name":  "Mads Pedersen",
+                                                                          "team":  "LIDL-TREK"
+                                                                      },
+                                                             "polkaDot":  {
+                                                                              "riderId":  "tadej-pogacar",
+                                                                              "name":  "Tadej Pogacar",
+                                                                              "team":  "UAE TEAM EMIRATES XRG"
+                                                                          },
+                                                             "white":  {
+                                                                           "riderId":  "isaac-del-toro",
+                                                                           "name":  "Isaac del Toro",
+                                                                           "team":  "UAE TEAM EMIRATES XRG"
+                                                                       }
+                                                         },
+                                   "decisions":  {
+
+                                                 }
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-09T07:22:19+03:00",
+                        "checkedAt":  "2026-07-10T16:48:02+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
                                                "manualFallback"
                                            ],
-                        "latestCompletedStage":  5,
+                        "latestCompletedStage":  6,
                         "status":  "needs_review",
                         "unresolvedRiders":  [
                                                  {
                                                      "name":  "Filippo Ganna",
-                                                     "context":  "stage 1 top3"
-                                                 },
-                                                 {
-                                                     "name":  "A. Molenaar",
-                                                     "context":  "stage 2 polkaDot jersey"
-                                                 },
-                                                 {
-                                                     "name":  "Torstein Traeen",
-                                                     "context":  "stage 4 yellow jersey"
-                                                 },
-                                                 {
-                                                     "name":  "Alex Baudin",
-                                                     "context":  "stage 4 polka-dot jersey"
-                                                 },
-                                                 {
-                                                     "name":  "Mathias Vacek",
-                                                     "context":  "stage 4 white jersey"
+                                                     "context":  "stage 1 top3 rank 2"
                                                  },
                                                  {
                                                      "name":  "Quinn Simmons",
@@ -1791,118 +1878,106 @@ window.TDF_DATA = {
                                                  {
                                                      "name":  "Max Kanter",
                                                      "context":  "stage 5 top3 rank 2"
-                                                 },
-                                                 {
-                                                     "name":  "Torstein Traeen",
-                                                     "context":  "stage 5 yellow jersey"
-                                                 },
-                                                 {
-                                                     "name":  "Alex Baudin",
-                                                     "context":  "stage 5 polka-dot jersey"
-                                                 },
-                                                 {
-                                                     "name":  "Mathias Vacek",
-                                                     "context":  "stage 5 white jersey"
                                                  }
                                              ]
                     },
     "generalClassification":  {
-                                  "stage":  5,
-                                  "checkedAt":  "2026-07-09T07:22:18+03:00",
+                                  "stage":  6,
+                                  "checkedAt":  "2026-07-10T16:48:02+03:00",
                                   "status":  "official",
                                   "source":  "letour",
-                                  "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
+                                  "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
                                   "standings":  [
                                                     {
                                                         "position":  1,
-                                                        "riderId":  null,
-                                                        "name":  "Torstein Træen",
-                                                        "team":  "UNO-X MOBILITY",
-                                                        "totalTime":  "16h 32\u0027 07\u0027\u0027",
+                                                        "riderId":  "tadej-pogacar",
+                                                        "name":  "Tadej Pogacar",
+                                                        "team":  "UAE TEAM EMIRATES XRG",
+                                                        "totalTime":  "21h 11\u0027 57\u0027\u0027",
                                                         "gap":  "-",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  2,
-                                                        "riderId":  null,
-                                                        "name":  "Sean Quinn",
-                                                        "team":  "EF EDUCATION - EASYPOST",
-                                                        "totalTime":  "16h 32\u0027 35\u0027\u0027",
-                                                        "gap":  "+ 00h 00\u0027 28\u0027\u0027",
+                                                        "riderId":  "jonas-vingegaard",
+                                                        "name":  "Jonas Vingegaard",
+                                                        "team":  "TEAM VISMA | LEASE A BIKE",
+                                                        "totalTime":  "21h 14\u0027 39\u0027\u0027",
+                                                        "gap":  "+ 00h 02\u0027 42\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  3,
-                                                        "riderId":  null,
-                                                        "name":  "Mathias Vacek",
-                                                        "team":  "LIDL-TREK",
-                                                        "totalTime":  "16h 35\u0027 57\u0027\u0027",
-                                                        "gap":  "+ 00h 03\u0027 50\u0027\u0027",
+                                                        "riderId":  "isaac-del-toro",
+                                                        "name":  "Isaac del Toro",
+                                                        "team":  "UAE TEAM EMIRATES XRG",
+                                                        "totalTime":  "21h 15\u0027 24\u0027\u0027",
+                                                        "gap":  "+ 00h 03\u0027 27\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  4,
-                                                        "riderId":  "tadej-pogacar",
-                                                        "name":  "Tadej Pogacar",
-                                                        "team":  "UAE TEAM EMIRATES XRG",
-                                                        "totalTime":  "16h 40\u0027 00\u0027\u0027",
-                                                        "gap":  "+ 00h 07\u0027 53\u0027\u0027",
+                                                        "riderId":  "remco-evenepoel",
+                                                        "name":  "Remco Evenepoel",
+                                                        "team":  "RED BULL - BORA - HANSGROHE",
+                                                        "totalTime":  "21h 15\u0027 27\u0027\u0027",
+                                                        "gap":  "+ 00h 03\u0027 30\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  5,
-                                                        "riderId":  "jonas-vingegaard",
-                                                        "name":  "Jonas Vingegaard",
-                                                        "team":  "TEAM VISMA | LEASE A BIKE",
-                                                        "totalTime":  "16h 40\u0027 00\u0027\u0027",
-                                                        "gap":  "+ 00h 07\u0027 53\u0027\u0027",
+                                                        "riderId":  "juan-ayuso",
+                                                        "name":  "Juan Ayuso",
+                                                        "team":  "LIDL-TREK",
+                                                        "totalTime":  "21h 15\u0027 31\u0027\u0027",
+                                                        "gap":  "+ 00h 03\u0027 34\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  6,
-                                                        "riderId":  null,
-                                                        "name":  "R. Debruyne",
-                                                        "team":  "ALPECIN-PREMIER TECH",
-                                                        "totalTime":  "16h 40\u0027 13\u0027\u0027",
-                                                        "gap":  "+ 00h 08\u0027 06\u0027\u0027",
+                                                        "riderId":  "paul-seixas",
+                                                        "name":  "Paul Seixas",
+                                                        "team":  "DECATHLON CMA CGM TEAM",
+                                                        "totalTime":  "21h 15\u0027 52\u0027\u0027",
+                                                        "gap":  "+ 00h 03\u0027 55\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  7,
-                                                        "riderId":  "remco-evenepoel",
-                                                        "name":  "Remco Evenepoel",
+                                                        "riderId":  "florian-lipowitz",
+                                                        "name":  "Florian Lipowitz",
                                                         "team":  "RED BULL - BORA - HANSGROHE",
-                                                        "totalTime":  "16h 40\u0027 23\u0027\u0027",
-                                                        "gap":  "+ 00h 08\u0027 16\u0027\u0027",
+                                                        "totalTime":  "21h 15\u0027 57\u0027\u0027",
+                                                        "gap":  "+ 00h 04\u0027 00\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  8,
-                                                        "riderId":  "isaac-del-toro",
-                                                        "name":  "Isaac del Toro",
-                                                        "team":  "UAE TEAM EMIRATES XRG",
-                                                        "totalTime":  "16h 40\u0027 24\u0027\u0027",
-                                                        "gap":  "+ 00h 08\u0027 17\u0027\u0027",
+                                                        "riderId":  null,
+                                                        "name":  "L. Martinez",
+                                                        "team":  "BAHRAIN VICTORIOUS",
+                                                        "totalTime":  "21h 16\u0027 18\u0027\u0027",
+                                                        "gap":  "+ 00h 04\u0027 21\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  9,
-                                                        "riderId":  "juan-ayuso",
-                                                        "name":  "Juan Ayuso",
+                                                        "riderId":  null,
+                                                        "name":  "M. Skjelmose",
                                                         "team":  "LIDL-TREK",
-                                                        "totalTime":  "16h 40\u0027 27\u0027\u0027",
-                                                        "gap":  "+ 00h 08\u0027 20\u0027\u0027",
+                                                        "totalTime":  "21h 16\u0027 54\u0027\u0027",
+                                                        "gap":  "+ 00h 04\u0027 57\u0027\u0027",
                                                         "movement":  null
                                                     },
                                                     {
                                                         "position":  10,
-                                                        "riderId":  "paul-seixas",
-                                                        "name":  "Paul Seixas",
-                                                        "team":  "DECATHLON CMA CGM TEAM",
-                                                        "totalTime":  "16h 40\u0027 48\u0027\u0027",
-                                                        "gap":  "+ 00h 08\u0027 41\u0027\u0027",
+                                                        "riderId":  null,
+                                                        "name":  "M. Vacek",
+                                                        "team":  "LIDL-TREK",
+                                                        "totalTime":  "21h 19\u0027 07\u0027\u0027",
+                                                        "gap":  "+ 00h 07\u0027 10\u0027\u0027",
                                                         "movement":  null
                                                     }
                                                 ]
                               }
-}
+};
