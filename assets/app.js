@@ -51,12 +51,91 @@
     });
   }
 
-  function findRiderByFavorite(favorite) {
-    const needle = favorite.toLowerCase();
-    return data.riders.find((rider) => {
-      const name = rider.name.toLowerCase();
-      return name.includes(needle) || needle.includes(name);
+  function riderLinkHref(rider) {
+    return rider?.id ? `riders.html#rider-${encodeURIComponent(rider.id)}` : "riders.html";
+  }
+
+  function parseWatchStages(rider) {
+    return String(rider?.watch || "")
+      .split(",")
+      .map((value) => Number(value.trim()))
+      .filter((value) => Number.isInteger(value) && value > 0);
+  }
+
+  function riderHasStageInWatch(rider, stageNumber) {
+    return parseWatchStages(rider).includes(stageNumber);
+  }
+
+  function riderSortKey(rider) {
+    if (rider.entryType === "curated") return Number(rider.editorialOrder ?? 999);
+    return 1000 + Number(rider.latestQualifyingStage ?? 0);
+  }
+
+  function latestJerseyHolders() {
+    const result = latestCompletedResult();
+    const jerseys = result?.jerseysAfterStage;
+    if (!jerseys) return [];
+
+    return [jerseys.yellow, jerseys.green, jerseys.polkaDot, jerseys.white]
+      .map((entry) => entry?.riderId)
+      .filter(Boolean)
+      .map((riderId) => (data.riders || []).find((rider) => rider.id === riderId))
+      .filter(Boolean);
+  }
+
+  function previewContext(stage) {
+    const text = [
+      stage.type,
+      stage.gcImpact,
+      stage.difficulty,
+      stage.guide,
+      ...(stage.favorites || [])
+    ].join(" ").toLowerCase();
+
+    return {
+      isTimeTrial: /разделк|itt|time trial/.test(text),
+      isSprint: /спринт|спринтер/.test(text),
+      isMountain: /гор|альп|вогез|подъ[её]м|очень высок|максималь|gc-фаворит/.test(text),
+      isHilly: /холм|панчер|средн|классик|отрыв/.test(text)
+    };
+  }
+
+  function previewRelevance(rider, stage) {
+    const roles = rider.roles || [];
+    const context = previewContext(stage);
+    let score = 0;
+
+    if (riderHasStageInWatch(rider, stage.number)) score += 8;
+    if (roles.includes("GC")) score += context.isMountain || context.isTimeTrial ? 5 : 1;
+    if (roles.includes("Спринтер")) score += context.isSprint ? 6 : 0;
+    if (roles.includes("Разделка")) score += context.isTimeTrial ? 7 : 0;
+    if (roles.includes("Этапы")) score += context.isHilly || context.isMountain || context.isSprint ? 3 : 1;
+    if (roles.includes("Молодой") && (context.isMountain || context.isTimeTrial)) score += 1;
+    if (rider.entryType === "curated") score += 1;
+
+    return score;
+  }
+
+  function favoriteMatchedRiders(favorite, stage) {
+    const needle = String(favorite || "").trim().toLowerCase();
+    if (!needle) return [];
+
+    const directMatches = (data.riders || []).filter((rider) => {
+      const fields = [
+        rider.name,
+        rider.team,
+        ...(rider.aliases || [])
+      ].filter(Boolean).map((value) => String(value).toLowerCase());
+      return fields.some((value) => value.includes(needle) || needle.includes(value));
     });
+
+    return directMatches
+      .sort((left, right) => {
+        const scoreDelta = previewRelevance(right, stage) - previewRelevance(left, stage);
+        if (scoreDelta !== 0) return scoreDelta;
+        return riderSortKey(left) - riderSortKey(right);
+      })
+      .slice(0, 2);
   }
 
   function stageHighlights(stageNumber) {
@@ -200,21 +279,34 @@
 
   function renderRiderPreview(stage) {
     const picked = [];
+    const completedResult = stageResult(stage.number);
+    const addRider = (rider) => {
+      if (!rider || picked.some((item) => item.id === rider.id)) return;
+      picked.push(rider);
+    };
+    const addRiders = (riders) => riders.forEach(addRider);
 
-    stage.favorites.forEach((favorite) => {
-      const rider = findRiderByFavorite(favorite);
-      if (rider && !picked.some((item) => item.id === rider.id)) picked.push(rider);
-    });
+    if (completedResult && ["preliminary", "official"].includes(completedResult.status)) {
+      addRider(winnerRider(completedResult));
+      addRiders((completedResult.top3 || []).map((item) => (data.riders || []).find((rider) => rider.id === item.riderId)).filter(Boolean));
+    }
 
-    data.riders
-      .filter((rider) => (rider.roles || []).includes("GC"))
-      .forEach((rider) => {
-        if (picked.length < 6 && !picked.some((item) => item.id === rider.id)) picked.push(rider);
+    (stage.favorites || []).forEach((favorite) => addRiders(favoriteMatchedRiders(favorite, stage)));
+
+    const rankedRiders = [...(data.riders || [])]
+      .filter((rider) => (rider.inclusion?.editorial || rider.inclusion?.stageWinner || rider.inclusion?.jerseyHolder))
+      .sort((left, right) => {
+        const scoreDelta = previewRelevance(right, stage) - previewRelevance(left, stage);
+        if (scoreDelta !== 0) return scoreDelta;
+        return riderSortKey(left) - riderSortKey(right);
       });
+
+    rankedRiders.forEach(addRider);
+    addRiders(latestJerseyHolders());
 
     byId("ridersPreview").innerHTML = picked.slice(0, 6).map((rider) => `
       <li>
-        <a href="riders.html">${rider.name}</a>
+        <a href="${riderLinkHref(rider)}">${rider.name}</a>
         <span>${rider.team} · ${(rider.roles || []).join(", ")}</span>
       </li>
     `).join("");
