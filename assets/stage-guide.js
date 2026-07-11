@@ -35,6 +35,16 @@
     return results[results.length - 1];
   }
 
+  function stageByNumber(stageNumber) {
+    return (data.stages || []).find((stage) => stage.number === stageNumber) || null;
+  }
+
+  function nextStagesFrom(stageNumber, limit = 3) {
+    return (data.stages || [])
+      .filter((stage) => stage.number > stageNumber)
+      .slice(0, limit);
+  }
+
   function setLeader(id, value) {
     const element = byId(id);
     if (element) element.textContent = value || "не подтверждено";
@@ -86,6 +96,33 @@
     section.hidden = false;
   }
 
+  function renderLiveGuide() {
+    const latest = latestCompletedResult();
+    const latestStage = latest ? stageByNumber(latest.stage) : null;
+    const nextStages = latest ? nextStagesFrom(latest.stage, 3) : (data.stages || []).slice(0, 3);
+    const nextStage = nextStages[0] || null;
+
+    if (latest && latestStage) {
+      byId("liveLatestStageTitle").textContent = `Последний этап: ${latest.stage}`;
+      byId("liveLatestStageText").textContent = `${latestStage.route}. ${latest.summary || "Итог этапа пока без короткого резюме."}`;
+    }
+
+    if (nextStage) {
+      byId("liveNextStageTitle").textContent = `Следующий этап: ${nextStage.number}`;
+      byId("liveNextStageText").textContent = `${nextStage.route} · ${nextStage.type} · ${nextStage.distance}. ${nextStage.viewingAdvice || "Смотреть по ситуации."}`;
+      byId("liveWatchFocusText").textContent = nextStage.guide || "Ориентир по просмотру пока не задан.";
+    } else {
+      byId("liveNextStageText").textContent = "Гонка дошла до финального дня или уже завершена.";
+      byId("liveWatchFocusText").textContent = "Следить за итоговым закреплением общего зачёта и архивом лучших этапов.";
+    }
+
+    const watchList = byId("liveWatchList");
+    watchList.innerHTML = nextStages.length
+      ? nextStages.map((stage) => `<li><strong>Этап ${stage.number}</strong> — ${stage.route}. ${stage.viewingAdvice || "Смотреть по ситуации."} ${stage.guide || ""}</li>`).join("")
+      : "<li>Ближайшие этапы уже завершены.</li>";
+  }
+
   renderClassificationLeaders();
   renderGeneralClassification();
+  renderLiveGuide();
 })();

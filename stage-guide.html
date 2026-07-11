@@ -10,8 +10,8 @@
   <header class="hero stage-hero">
     <div>
       <p class="eyebrow">Tour de France 2026</p>
-      <h1>Краткий гид по этапам</h1>
-      <p class="lead">Что смотреть полностью, где достаточно финала и какие дни могут решить общий зачет.</p>
+      <h1>Гид по этапам и текущему ходу гонки</h1>
+      <p class="lead">Страница для быстрого чтения гонки: общий зачёт, майки, свежий итог последнего этапа и ближайший контекст следующего дня.</p>
     </div>
     <nav>
       <a href="index.html">Главная</a>
@@ -31,19 +31,19 @@
       </div>
       <div class="leader-grid" id="classificationLeaders" hidden>
         <article class="leader-card leader-yellow">
-          <span>Yellow jersey</span>
+          <span>Жёлтая майка</span>
           <strong id="leaderYellow"></strong>
         </article>
         <article class="leader-card leader-green">
-          <span>Green jersey</span>
+          <span>Зелёная майка</span>
           <strong id="leaderGreen"></strong>
         </article>
         <article class="leader-card leader-polka">
-          <span>Polka-dot jersey</span>
+          <span>Гороховая майка</span>
           <strong id="leaderPolkaDot"></strong>
         </article>
         <article class="leader-card leader-white">
-          <span>White jersey</span>
+          <span>Белая майка</span>
           <strong id="leaderWhite"></strong>
         </article>
       </div>
@@ -62,35 +62,24 @@
       </div>
     </section>
 
+    <section class="summary guide-summary" id="liveRaceSummary">
+      <article>
+        <strong id="liveLatestStageTitle">Последний этап</strong>
+        <span id="liveLatestStageText">Обновляем...</span>
+      </article>
+      <article>
+        <strong id="liveNextStageTitle">Следующий этап</strong>
+        <span id="liveNextStageText">Обновляем...</span>
+      </article>
+      <article>
+        <strong id="liveWatchFocusTitle">Как смотреть дальше</strong>
+        <span id="liveWatchFocusText">Обновляем...</span>
+      </article>
+    </section>
+
     <section class="table-section guide">
-      <h2>Главные дни для просмотра</h2>
-      <ul>
-        <li><strong>Этап 1</strong> — командная разделка в Барселоне, первые разрывы GC.</li>
-        <li><strong>Этап 3</strong> — первый горный тест.</li>
-        <li><strong>Этап 6</strong> — серьезная проверка фаворитов на Gavarnie-Gedre.</li>
-        <li><strong>Этапы 14-15</strong> — ключевая связка Вогезы/Юра.</li>
-        <li><strong>Этап 16</strong> — индивидуальная разделка.</li>
-        <li><strong>Этапы 18-20</strong> — решающий альпийский блок, включая два финиша на Alpe d'Huez.</li>
-      </ul>
-    </section>
-
-    <section class="summary guide-summary">
-      <article>
-        <strong>Финал достаточно</strong>
-        <span>Этапы 5, 7, 8, 11, 12, 17 — вероятные спринтерские или переходные этапы.</span>
-      </article>
-      <article>
-        <strong>Отрывы</strong>
-        <span>Этапы 4, 9, 10, 13 — холмы/средние горы, где отрыв может получить шанс.</span>
-      </article>
-      <article>
-        <strong>Париж</strong>
-        <span>Этап 21 — финальные круги, церемония и контроль последнего спринта.</span>
-      </article>
-    </section>
-
-    <section class="source-note">
-      <p>Маршрут: <a href="https://www.letour.fr/en/overall-route" target="_blank" rel="noopener">letour.fr</a> · Документация гида: <code>reports/stage-guide.md</code></p>
+      <h2>Ближайшие этапы</h2>
+      <ul id="liveWatchList"></ul>
     </section>
   </main>
   <script src="assets/data.js"></script>

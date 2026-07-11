@@ -2599,7 +2599,7 @@ window.TDF_DATA = {
                                                 }
                                             ],
                                    "winningTime":  "04h 10\u0027 45\u0027\u0027",
-                                   "summary":  "Mads Pedersen выиграл 4-й этап «Тур де Франс» (Carcassonne → Foix) после большого отрыва и мощной работы Lidl-Trek. Команда оформила дубль: вторым финишировал Quinn Simmons, третьим — Raul Garcia Pierna. Важнейший сдвиг в генеральной классификации произошёл за счёт отрыва: Torstein Traeen забрал жёлтую майку у Tadej Pogacar, Pedersen вышел в лидеры очковой классификации, Alex Baudin сохранил гороховую, а Mathias Vacek взял белую. Пелотон проиграл более 13 минут, так что этап резко перетряхнул общий зачёт.",
+                                   "summary":  "Мадс Педерсен выиграл 4-й этап «Тур де Франс» (Каркассон → Фуа) после большого отрыва и мощной работы Lidl-Trek. Команда оформила дубль: вторым финишировал Куинн Симмонс, третьим — Рауль Гарсия Пьерна. За счёт огромного преимущества отрыва генеральная классификация резко изменилась: Торстейн Трэн забрал жёлтую майку у Тадея Погачара, Педерсен вышел в лидеры очковой классификации, Алекс Боден сохранил гороховую, а Матиас Вацек взял белую.",
                                    "summarySourceUrl":  "https://www.letour.fr/en/news/2026/pedersen-and-traeen-northern-power-rules-foix/1337325",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {
@@ -2689,7 +2689,7 @@ window.TDF_DATA = {
                                                 }
                                             ],
                                    "winningTime":  "03h 29\u0027 07\u0027\u0027",
-                                   "summary":  "Olav Kooij выиграл 5-й этап Tour de France 2026 из Lannemezan в Pau, опередив Max Kanter и Tim Merlier в спринтерском финише. После этапа Torstein Traeen сохранил жёлтую майку, Mads Pedersen остался лидером очковой классификации, Alex Baudin удержал гороховую майку, а Mathias Vacek сохранил белую.",
+                                   "summary":  "Олав Кой выиграл 5-й этап «Тур де Франс» 2026 из Ланнемезана в По, опередив Макса Кантера и Тима Мерлира в спринтерском финише. После этапа Торстейн Трэн сохранил жёлтую майку, Мадс Педерсен остался лидером очковой классификации, Алекс Боден удержал гороховую майку, а Матиас Вацек сохранил белую.",
                                    "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {
@@ -2779,7 +2779,7 @@ window.TDF_DATA = {
                                                 }
                                             ],
                                    "winningTime":  "04h 32\u0027 07\u0027\u0027",
-                                   "summary":  "Tadej Pogacar won stage 6 ahead of Jonas Vingegaard and Isaac del Toro on the Pau to Gavarnie-Gèdre mountain stage. After the official stage 6 rankings, Pogacar also held the yellow jersey and polka-dot jersey, Mads Pedersen led the points classification, and Isaac del Toro led the young rider classification.",
+                                   "summary":  "Тадей Погачар выиграл 6-й этап горного блока из По в Гаварни-Жедр, опередив Йонаса Вингегора и Исаака дель Торо. После официальных результатов этапа Погачар удержал жёлтую и гороховую майки, Мадс Педерсен остался лидером очковой классификации, а Исаак дель Торо сохранил белую майку.",
                                    "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {

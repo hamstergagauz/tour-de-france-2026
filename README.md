@@ -151,7 +151,7 @@ https://tdf.halktoplushu.md
 - GitHub Pages и custom domain `https://tdf.halktoplushu.md` подтверждены как рабочие.
 - Реализована единая live-модель данных в `assets/data.js`.
 - Главная страница переведена на ежедневный dashboard.
-- `riders.html` использует `assets/data.js`; `assets/riders-data.js` оставлен как legacy/unused файл.
+- `riders.html` использует единую модель `assets/data.js`; legacy-файл `assets/riders-data.js` удалён.
 - Адаптивное поведение проверено для мобильного, планшета и desktop.
 - Проект переведен в состояние `WAITING_FOR_TOUR_START`.
 

@@ -400,8 +400,6 @@
     byId("routeStatus").textContent = status.route;
     byId("resultsStatus").textContent = status.results || "не настроено";
     byId("highlightsStatus").textContent = status.highlights || "не настроено";
-    byId("predictionStatus").textContent = status.predictions;
-    byId("routeCheckedAt").textContent = formatDateTime(data.meta.routeCheckedAt);
     byId("highlightsCheckedAt").textContent = data.meta.youtubeHighlightsCheckedAt || "еще не проверялось";
   }
 

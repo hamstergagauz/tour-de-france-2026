@@ -64,6 +64,37 @@
       .sort((a, b) => b.stage - a.stage)[0];
   }
 
+  function renderSummary() {
+    const latest = latestCompletedResult();
+    const latestWinner = latest ? allRiders.find((rider) => rider.id === latest.winner?.riderId) : null;
+    const latestDerived = includedRiders()
+      .filter((rider) => rider.entryType === "derived")
+      .sort((left, right) => Number(right.latestQualifyingStage || 0) - Number(left.latestQualifyingStage || 0))
+      .slice(0, 3)
+      .map((rider) => rider.name);
+
+    if (latest && latestWinner) {
+      document.getElementById("ridersSummaryWinnerTitle").textContent = `Победитель этапа ${latest.stage}`;
+      document.getElementById("ridersSummaryWinnerText").textContent = `${latestWinner.name} · ${latestWinner.team || "команда не подтверждена"}`;
+    }
+
+    if (latest && latest.jerseysAfterStage) {
+      const jerseys = latest.jerseysAfterStage;
+      const jerseyText = [
+        `жёлтая — ${jerseys.yellow?.name || "уточнить"}`,
+        `зелёная — ${jerseys.green?.name || "уточнить"}`,
+        `гороховая — ${jerseys.polkaDot?.name || "уточнить"}`,
+        `белая — ${jerseys.white?.name || "уточнить"}`
+      ].join("; ");
+      document.getElementById("ridersSummaryJerseysTitle").textContent = `Майки после этапа ${latest.stage}`;
+      document.getElementById("ridersSummaryJerseysText").textContent = jerseyText;
+    }
+
+    document.getElementById("ridersSummaryFreshText").textContent = latestDerived.length
+      ? latestDerived.join(", ")
+      : "Пока без новых автодобавленных профилей.";
+  }
+
   function raceSourceTags(rider) {
     const tags = [];
     const inclusion = rider.inclusion || {};
@@ -263,5 +294,6 @@
 
   window.addEventListener("hashchange", focusRiderFromHash);
 
+  renderSummary();
   render();
 })();
