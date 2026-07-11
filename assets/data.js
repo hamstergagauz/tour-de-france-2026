@@ -1,6 +1,6 @@
 window.TDF_DATA = {
     "meta":  {
-                 "updatedAt":  "2026-07-10",
+                 "updatedAt":  "2026-07-11",
                  "routeCheckedAt":  "2026-06-30T13:04:40",
                  "dataStatus":  {
                                     "route":  "Verified",
@@ -9,7 +9,7 @@ window.TDF_DATA = {
                                     "highlights":  "RSS monitored",
                                     "results":  "Official / review needed"
                                 },
-                 "youtubeHighlightsCheckedAt":  "2026-07-10T16:47:51+03:00"
+                 "youtubeHighlightsCheckedAt":  "2026-07-11T07:02:20+03:00"
              },
     "links":  {
                   "officialRoute":  "https://www.letour.fr/en/overall-route",
@@ -411,9 +411,9 @@ window.TDF_DATA = {
                        "route":  "Hagetmau \u003e Bordeaux",
                        "distance":  "175.1 км",
                        "type":  "Равнинный",
-                       "elevation":  "уточнить",
-                       "startTime":  "уточнить",
-                       "finishWindow":  "уточнить",
+                       "elevation":  "D+ 850 m",
+                       "startTime":  "13:15",
+                       "finishWindow":  "17:13-17:35",
                        "difficulty":  "Низкая",
                        "gcImpact":  "Низкий",
                        "watchPriority":  "5/10",
@@ -1496,16 +1496,16 @@ window.TDF_DATA = {
                                   },
                        "entryType":  "curated",
                        "officialIds":  {
-                                           "letour":  null
+                                           "letour":  "91"
                                        },
                        "reviewNeeded":  false,
                        "inclusion":  {
                                          "editorial":  true,
-                                         "stageWinner":  false,
+                                         "stageWinner":  true,
                                          "jerseyHolder":  false
                                      },
                        "stageWinnerStages":  [
-
+                                                 7
                                              ],
                        "jerseyHistory":  {
                                              "yellow":  [
@@ -1521,7 +1521,7 @@ window.TDF_DATA = {
 
                                                        ]
                                          },
-                       "latestQualifyingStage":  null,
+                       "latestQualifyingStage":  7,
                        "editorialOrder":  13,
                        "derivedFrom":  null
                    },
@@ -2230,6 +2230,39 @@ window.TDF_DATA = {
                            "publishedAt":  "2026-07-09T15:21:21+00:00",
                            "discoveredAt":  "2026-07-10T16:47:51+03:00",
                            "isShort":  false
+                       },
+                       {
+                           "stage":  7,
+                           "type":  "Race Highlights",
+                           "title":  "BORDEAUX SPRINT! 💨 | Men\u0027s Tour de France Stage 7 Race Highlights | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=xcVNmybsHCI",
+                           "videoId":  "xcVNmybsHCI",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-10T17:10:03+00:00",
+                           "discoveredAt":  "2026-07-11T07:02:20+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  7,
+                           "type":  "Reaction",
+                           "title":  "Tour de France Stage 7 REACTION: Frantic bunch Bordeaux sprint 🔥",
+                           "url":  "https://www.youtube.com/watch?v=MWtAE-Or1Aw",
+                           "videoId":  "MWtAE-Or1Aw",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-10T15:34:04+00:00",
+                           "discoveredAt":  "2026-07-11T07:02:20+03:00",
+                           "isShort":  false
+                       },
+                       {
+                           "stage":  7,
+                           "type":  "Final KM\u0027s",
+                           "title":  "IT\u0027S WHAT HE DOES BEST! 🔥 | Men\u0027s Tour de France Stage 7 Final KM\u0027s | TNT Sports Cycling",
+                           "url":  "https://www.youtube.com/watch?v=bS6L8giGyMY",
+                           "videoId":  "bS6L8giGyMY",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-10T15:14:18+00:00",
+                           "discoveredAt":  "2026-07-11T07:02:20+03:00",
+                           "isShort":  false
                        }
                    ],
     "stageResults":  {
@@ -2241,7 +2274,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-1",
-                                   "checkedAt":  "2026-07-10T17:24:36+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:27+03:00",
                                    "distanceActual":  "19.6 км",
                                    "winner":  {
                                                   "riderId":  "jonas-vingegaard",
@@ -2331,7 +2364,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings",
-                                   "checkedAt":  "2026-07-10T17:24:37+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:28+03:00",
                                    "distanceActual":  "168.5 км",
                                    "winner":  {
                                                   "riderId":  "isaac-del-toro",
@@ -2422,7 +2455,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-3",
-                                   "checkedAt":  "2026-07-10T17:24:37+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:29+03:00",
                                    "distanceActual":  "195.9 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
@@ -2512,7 +2545,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-4",
-                                   "checkedAt":  "2026-07-10T17:24:38+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:30+03:00",
                                    "distanceActual":  "181.9 км",
                                    "winner":  {
                                                   "riderId":  "mads-pedersen",
@@ -2602,7 +2635,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
-                                   "checkedAt":  "2026-07-10T17:24:39+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:30+03:00",
                                    "distanceActual":  "158.3 км",
                                    "winner":  {
                                                   "riderId":  "letour-rider-55",
@@ -2692,7 +2725,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
-                                   "checkedAt":  "2026-07-10T17:24:40+03:00",
+                                   "checkedAt":  "2026-07-11T07:02:31+03:00",
                                    "distanceActual":  "186.2 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
@@ -2773,25 +2806,115 @@ window.TDF_DATA = {
                                    "decisions":  {
 
                                                  }
+                               },
+                         "7":  {
+                                   "stage":  7,
+                                   "status":  "official",
+                                   "flags":  {
+
+                                             },
+                                   "source":  "letour",
+                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-7",
+                                   "checkedAt":  "2026-07-11T07:02:32+03:00",
+                                   "distanceActual":  "175.1 км",
+                                   "winner":  {
+                                                  "riderId":  "tim-merlier",
+                                                  "officialIds":  {
+                                                                      "letour":  "91"
+                                                                  },
+                                                  "letourSlug":  "tim-merlier",
+                                                  "name":  "T. MERLIER",
+                                                  "rawName":  "Tim MERLIER",
+                                                  "team":  "SOUDAL QUICK-STEP"
+                                              },
+                                   "top3":  [
+                                                {
+                                                    "rank":  1,
+                                                    "riderId":  "tim-merlier",
+                                                    "officialIds":  {
+                                                                        "letour":  "91"
+                                                                    },
+                                                    "letourSlug":  "tim-merlier",
+                                                    "name":  "T. MERLIER",
+                                                    "rawName":  "Tim MERLIER",
+                                                    "team":  "SOUDAL QUICK-STEP",
+                                                    "time":  "03h 44\u0027 20\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  2,
+                                                    "riderId":  null,
+                                                    "officialIds":  {
+                                                                        "letour":  "128"
+                                                                    },
+                                                    "letourSlug":  "soeren-waerenskjold",
+                                                    "name":  "S. WAERENSKJOLD",
+                                                    "rawName":  "Søren WÆRENSKJOLD",
+                                                    "team":  "UNO-X MOBILITY",
+                                                    "time":  "03h 44\u0027 20\u0027\u0027",
+                                                    "gap":  "-"
+                                                },
+                                                {
+                                                    "rank":  3,
+                                                    "riderId":  "biniam-girmay",
+                                                    "officialIds":  {
+                                                                        "letour":  "131"
+                                                                    },
+                                                    "letourSlug":  "biniam-girmay",
+                                                    "name":  "B. GIRMAY",
+                                                    "rawName":  "Biniam GIRMAY",
+                                                    "team":  "NSN CYCLING TEAM",
+                                                    "time":  "03h 44\u0027 20\u0027\u0027",
+                                                    "gap":  "-"
+                                                }
+                                            ],
+                                   "winningTime":  "03h 44\u0027 20\u0027\u0027",
+                                   "summary":  "T. MERLIER won stage 7 ahead of S. WAERENSKJOLD and B. GIRMAY in the Bordeaux sprint. Tadej Pogacar retained the yellow jersey.",
+                                   "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-7",
+                                   "jerseysAfterStage":  {
+                                                             "yellow":  {
+                                                                            "riderId":  "tadej-pogacar",
+                                                                            "name":  "Tadej Pogacar",
+                                                                            "team":  "UAE TEAM EMIRATES XRG"
+                                                                        },
+                                                             "green":  {
+                                                                           "riderId":  "mads-pedersen",
+                                                                           "name":  "Mads Pedersen",
+                                                                           "team":  "LIDL-TREK"
+                                                                       },
+                                                             "polkaDot":  {
+                                                                              "riderId":  "tadej-pogacar",
+                                                                              "name":  "Tadej Pogacar",
+                                                                              "team":  "UAE TEAM EMIRATES XRG"
+                                                                          },
+                                                             "white":  {
+                                                                           "riderId":  "isaac-del-toro",
+                                                                           "name":  "Isaac del Toro",
+                                                                           "team":  "UAE TEAM EMIRATES XRG"
+                                                                       }
+                                                         },
+                                   "decisions":  {
+
+                                                 }
                                }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-10T17:24:41+03:00",
+                        "checkedAt":  "2026-07-11T07:02:33+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
                                                "manualFallback"
                                            ],
-                        "latestCompletedStage":  6,
+                        "latestCompletedStage":  7,
                         "status":  "review-needed",
                         "riderRegistryStatus":  "review-needed"
                     },
     "generalClassification":  {
-                                  "stage":  6,
-                                  "checkedAt":  "2026-07-10T17:24:41+03:00",
+                                  "stage":  7,
+                                  "checkedAt":  "2026-07-11T07:02:33+03:00",
                                   "status":  "official",
                                   "source":  "letour",
-                                  "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
+                                  "sourceUrl":  "https://www.letour.fr/en/rankings/stage-7",
                                   "standings":  [
                                                     {
                                                         "position":  1,
@@ -2803,7 +2926,7 @@ window.TDF_DATA = {
                                                         "name":  "T. POGACAR",
                                                         "rawName":  "Tadej POGACAR",
                                                         "team":  "UAE TEAM EMIRATES XRG",
-                                                        "totalTime":  "21h 11\u0027 57\u0027\u0027",
+                                                        "totalTime":  "24h 56\u0027 17\u0027\u0027",
                                                         "gap":  "-",
                                                         "movement":  null
                                                     },
@@ -2817,7 +2940,7 @@ window.TDF_DATA = {
                                                         "name":  "J. VINGEGAARD",
                                                         "rawName":  "Jonas VINGEGAARD HANSEN",
                                                         "team":  "TEAM VISMA | LEASE A BIKE",
-                                                        "totalTime":  "21h 14\u0027 39\u0027\u0027",
+                                                        "totalTime":  "24h 58\u0027 59\u0027\u0027",
                                                         "gap":  "+ 00h 02\u0027 42\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2831,7 +2954,7 @@ window.TDF_DATA = {
                                                         "name":  "I. DEL TORO",
                                                         "rawName":  "Isaac DEL TORO ROMERO",
                                                         "team":  "UAE TEAM EMIRATES XRG",
-                                                        "totalTime":  "21h 15\u0027 24\u0027\u0027",
+                                                        "totalTime":  "24h 59\u0027 44\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 27\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2845,7 +2968,7 @@ window.TDF_DATA = {
                                                         "name":  "R. EVENEPOEL",
                                                         "rawName":  "R. EVENEPOEL",
                                                         "team":  "RED BULL - BORA - HANSGROHE",
-                                                        "totalTime":  "21h 15\u0027 27\u0027\u0027",
+                                                        "totalTime":  "24h 59\u0027 47\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 30\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2859,7 +2982,7 @@ window.TDF_DATA = {
                                                         "name":  "J. AYUSO",
                                                         "rawName":  "J. AYUSO",
                                                         "team":  "LIDL-TREK",
-                                                        "totalTime":  "21h 15\u0027 31\u0027\u0027",
+                                                        "totalTime":  "24h 59\u0027 51\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 34\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2873,7 +2996,7 @@ window.TDF_DATA = {
                                                         "name":  "P. SEIXAS",
                                                         "rawName":  "P. SEIXAS",
                                                         "team":  "DECATHLON CMA CGM TEAM",
-                                                        "totalTime":  "21h 15\u0027 52\u0027\u0027",
+                                                        "totalTime":  "25h 00\u0027 12\u0027\u0027",
                                                         "gap":  "+ 00h 03\u0027 55\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2887,7 +3010,7 @@ window.TDF_DATA = {
                                                         "name":  "F. LIPOWITZ",
                                                         "rawName":  "F. LIPOWITZ",
                                                         "team":  "RED BULL - BORA - HANSGROHE",
-                                                        "totalTime":  "21h 15\u0027 57\u0027\u0027",
+                                                        "totalTime":  "25h 00\u0027 17\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 00\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2901,7 +3024,7 @@ window.TDF_DATA = {
                                                         "name":  "L. MARTINEZ",
                                                         "rawName":  "L. MARTINEZ",
                                                         "team":  "BAHRAIN VICTORIOUS",
-                                                        "totalTime":  "21h 16\u0027 18\u0027\u0027",
+                                                        "totalTime":  "25h 00\u0027 38\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 21\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2915,7 +3038,7 @@ window.TDF_DATA = {
                                                         "name":  "M. SKJELMOSE",
                                                         "rawName":  "M. SKJELMOSE",
                                                         "team":  "LIDL-TREK",
-                                                        "totalTime":  "21h 16\u0027 54\u0027\u0027",
+                                                        "totalTime":  "25h 01\u0027 14\u0027\u0027",
                                                         "gap":  "+ 00h 04\u0027 57\u0027\u0027",
                                                         "movement":  null
                                                     },
@@ -2929,14 +3052,14 @@ window.TDF_DATA = {
                                                         "name":  "M. VACEK",
                                                         "rawName":  "M. VACEK",
                                                         "team":  "LIDL-TREK",
-                                                        "totalTime":  "21h 19\u0027 07\u0027\u0027",
+                                                        "totalTime":  "25h 03\u0027 27\u0027\u0027",
                                                         "gap":  "+ 00h 07\u0027 10\u0027\u0027",
                                                         "movement":  null
                                                     }
                                                 ]
                               },
     "riderValidation":  {
-                            "checkedAt":  "2026-07-10T17:24:41+03:00",
+                            "checkedAt":  "2026-07-11T07:02:33+03:00",
                             "status":  "review-needed",
                             "duplicateIds":  [
 
