@@ -28,12 +28,17 @@
   }
 
   function includedRiders() {
+    const latestWinnerId = latestCompletedResult()?.winner?.riderId;
+
     return allRiders
       .filter((rider) => {
         const inclusion = rider.inclusion || {};
         return inclusion.editorial || inclusion.stageWinner || inclusion.jerseyHolder;
       })
       .sort((left, right) => {
+        if (left.id === latestWinnerId && right.id !== latestWinnerId) return -1;
+        if (right.id === latestWinnerId && left.id !== latestWinnerId) return 1;
+
         const leftCurated = left.entryType === "curated";
         const rightCurated = right.entryType === "curated";
         if (leftCurated && rightCurated) {

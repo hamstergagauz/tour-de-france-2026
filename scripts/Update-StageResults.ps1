@@ -402,7 +402,7 @@ function New-GeneratedSummary {
   )
 
   if ($Top3.Count -lt 3) { return "" }
-  return "$($Top3[0].name) won stage $Stage ahead of $($Top3[1].name) and $($Top3[2].name). The result has been imported from the official Tour de France rankings. Add or update the race narrative later if an official stage report is available."
+  return "$($Top3[0].name) выиграл $Stage-й этап «Тур де Франс». Вторым финишировал $($Top3[1].name), третьим — $($Top3[2].name). Результат импортирован из официального протокола Tour de France."
 }
 
 function New-RiderRegistryContext {

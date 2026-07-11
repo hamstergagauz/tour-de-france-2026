@@ -2869,7 +2869,7 @@ window.TDF_DATA = {
                                                 }
                                             ],
                                    "winningTime":  "03h 44\u0027 20\u0027\u0027",
-                                   "summary":  "T. MERLIER won stage 7 ahead of S. WAERENSKJOLD and B. GIRMAY in the Bordeaux sprint. Tadej Pogacar retained the yellow jersey.",
+                                   "summary":  "Тим Мерлир (T. MERLIER) выиграл 7-й этап «Тур де Франс» между Хагетмо и Бордо в массовом спринте. Вторым финишировал Сёрен Вэренскьольд (S. WAERENSKJOLD), третьим — Биниам Гирмай (B. GIRMAY). Тадей Погачар (Tadej Pogacar) сохранил жёлтую майку.",
                                    "summarySourceUrl":  "https://www.letour.fr/en/rankings/stage-7",
                                    "jerseysAfterStage":  {
                                                              "yellow":  {
