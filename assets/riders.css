@@ -145,6 +145,14 @@ main {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  scroll-margin-block: 24px;
+}
+
+.card:target,
+.card:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 3px rgba(247, 209, 23, .35), var(--shadow);
+  outline: none;
 }
 
 .photo {

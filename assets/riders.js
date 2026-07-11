@@ -212,7 +212,7 @@
     const filtered = filter === "all" ? riders : riders.filter((rider) => (rider.roles || []).includes(filter));
 
     grid.innerHTML = filtered.map((rider) => `
-      <article class="card ${rider.entryType === "derived" ? "card-derived" : ""}">
+      <article id="rider-${rider.id}" class="card ${rider.entryType === "derived" ? "card-derived" : ""}" tabindex="-1">
         ${riderImageHtml(rider)}
         <div class="card-body">
           <h3>${rider.name}</h3>
@@ -224,6 +224,8 @@
         </div>
       </article>
     `).join("");
+
+    focusRiderFromHash();
 
     tbody.innerHTML = riders.map((rider) => `
       <tr>
@@ -238,6 +240,19 @@
     `).join("");
   }
 
+  function focusRiderFromHash() {
+    const targetId = window.location.hash.slice(1);
+    if (!targetId.startsWith("rider-")) return;
+
+    const card = document.getElementById(targetId);
+    if (!card) return;
+
+    requestAnimationFrame(() => {
+      card.scrollIntoView({ block: "center" });
+      card.focus({ preventScroll: true });
+    });
+  }
+
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       buttons.forEach((item) => item.classList.remove("active"));
@@ -245,6 +260,8 @@
       render(button.dataset.filter);
     });
   });
+
+  window.addEventListener("hashchange", focusRiderFromHash);
 
   render();
 })();

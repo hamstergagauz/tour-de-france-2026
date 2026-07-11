@@ -137,7 +137,17 @@
     card.hidden = false;
     byId("stageResultPill").textContent = resultStatusLabel(result.status);
     byId("stageResultPill").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
-    byId("stageWinner").textContent = `${result.winner.name}: победа на этапе ${stage.number}`;
+    const winnerHeading = byId("stageWinner");
+    const winnerRider = (data.riders || []).find((rider) => rider.id === result.winner.riderId);
+    winnerHeading.replaceChildren();
+    if (winnerRider) {
+      const winnerLink = document.createElement("a");
+      winnerLink.href = `riders.html#rider-${encodeURIComponent(winnerRider.id)}`;
+      winnerLink.textContent = result.winner.name;
+      winnerHeading.append(winnerLink, `: победа на этапе ${stage.number}`);
+    } else {
+      winnerHeading.textContent = `${result.winner.name}: победа на этапе ${stage.number}`;
+    }
     byId("stageResultStatus").textContent = resultStatusLabel(result.status);
     byId("stageResultStatus").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
     byId("stageWinnerTeam").textContent = result.winner.team || "не подтверждено";
