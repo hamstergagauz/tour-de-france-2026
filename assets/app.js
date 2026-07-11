@@ -123,6 +123,15 @@
     return data.stages.find((item) => item.number > stage.number) || null;
   }
 
+  function winnerRider(result) {
+    return (data.riders || []).find((rider) => rider.id === result?.winner?.riderId) || null;
+  }
+
+  function winnerLinkHref(result) {
+    const rider = winnerRider(result);
+    return rider ? `riders.html#rider-${encodeURIComponent(rider.id)}` : null;
+  }
+
   function renderStageResult(stage) {
     const result = stageResult(stage.number);
     const card = byId("stageSummaryCard");
@@ -138,11 +147,11 @@
     byId("stageResultPill").textContent = resultStatusLabel(result.status);
     byId("stageResultPill").className = `tag ${result.status === "official" ? "ok" : "warn"}`;
     const winnerHeading = byId("stageWinner");
-    const winnerRider = (data.riders || []).find((rider) => rider.id === result.winner.riderId);
+    const winnerHref = winnerLinkHref(result);
     winnerHeading.replaceChildren();
-    if (winnerRider) {
+    if (winnerHref) {
       const winnerLink = document.createElement("a");
-      winnerLink.href = `riders.html#rider-${encodeURIComponent(winnerRider.id)}`;
+      winnerLink.href = winnerHref;
       winnerLink.textContent = result.winner.name;
       winnerHeading.append(winnerLink, `: победа на этапе ${stage.number}`);
     } else {
@@ -256,8 +265,9 @@
       .map((stage) => {
         const result = stageResult(stage.number);
         const highlights = stageHighlights(stage.number).filter((item) => !item.isShort);
+        const winnerHref = result ? winnerLinkHref(result) : null;
         const resultCell = result && ["preliminary", "official"].includes(result.status)
-          ? `${tag(resultStatusLabel(result.status), result.status === "official" ? "ok" : "warn")} ${result.winner.name}`
+          ? `${tag(resultStatusLabel(result.status), result.status === "official" ? "ok" : "warn")} ${winnerHref ? `<a href="${winnerHref}">${result.winner.name}</a>` : result.winner.name}`
           : tag("Ожидается", "warn");
         const highlightCell = highlights.length
           ? `<a href="${highlights[0].url}" target="_blank" rel="noreferrer">${highlights.length} видео</a>`
