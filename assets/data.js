@@ -511,8 +511,8 @@ window.TDF_DATA = {
       "distance": "161.3 км",
       "type": "Равнинный",
       "elevation": "уточнить",
-      "startTime": "уточнить",
-      "finishWindow": "уточнить",
+      "startTime": "13:50",
+      "finishWindow": "17:31",
       "difficulty": "Низкая",
       "gcImpact": "Низкий",
       "watchPriority": "4/10",
@@ -523,7 +523,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-11",
       "viewingAdvice": "Достаточно финала",
-      "status": "Verified route / Forecast notes"
+      "status": "Verified route / Official timing"
     },
     {
       "number": 12,
@@ -3034,11 +3034,27 @@ window.TDF_DATA = {
       "winningTime": "03h 58' 08''",
       "summary": "T. POGACAR выиграл 10-й этап «Тур де Франс». Вторым финишировал R. EVENEPOEL, третьим — P. SEIXAS. Результат импортирован из официального протокола Tour de France.",
       "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-10",
-      "jerseysAfterStage": {
-        "yellow": null,
-        "green": null,
-        "polkaDot": null,
-        "white": null
+    "jerseysAfterStage": {
+      "yellow": {
+        "riderId": "tadej-pogacar",
+        "name": "Tadej Pogacar",
+        "team": "UAE TEAM EMIRATES XRG"
+      },
+      "green": {
+        "riderId": "mads-pedersen",
+        "name": "Mads Pedersen",
+        "team": "LIDL-TREK"
+      },
+      "polkaDot": {
+        "riderId": "tadej-pogacar",
+        "name": "Tadej Pogacar",
+        "team": "UAE TEAM EMIRATES XRG"
+      },
+      "white": {
+        "riderId": "juan-ayuso",
+        "name": "Juan Ayuso",
+        "team": "LIDL-TREK"
+      }
       },
       "decisions": null
     }
