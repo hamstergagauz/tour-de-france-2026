@@ -9,7 +9,7 @@ window.TDF_DATA = {
       "highlights": "RSS monitored",
       "results": "Official / review needed"
     },
-    "youtubeHighlightsCheckedAt": "2026-07-13T07:01:00+03:00"
+    "youtubeHighlightsCheckedAt": "2026-07-15T07:00:51+03:00"
   },
   "links": {
     "officialRoute": "https://www.letour.fr/en/overall-route",
@@ -1849,9 +1849,9 @@ window.TDF_DATA = {
     "channelUrl": "https://www.youtube.com/@TNTSportsCycling",
     "channelId": "UCfDfvvMARk4TKcC62ALi6eA",
     "playlistId": "PLXJfHJFBpClY",
-    "feedUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLXJfHJFBpClY",
-    "sourceType": "playlist",
-    "note": "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."
+    "feedUrl": "https://www.youtube.com/playlist?list=PLXJfHJFBpClY",
+    "sourceType": "playlist-page",
+    "note": "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
   },
   "highlights": [
     {
@@ -2138,6 +2138,61 @@ window.TDF_DATA = {
       "source": "TNT Sports Cycling",
       "publishedAt": "2026-07-12T18:28:19+03:00",
       "discoveredAt": "2026-07-13T07:01:00+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 10,
+      "type": "Reaction",
+      "title": "Tour de France Stage 10 REACTION: DRAMATIC Bastille Day showdown 🍿",
+      "url": "https://www.youtube.com/watch?v=5k7jdQQYXxU",
+      "videoId": "5k7jdQQYXxU",
+      "source": "TNT Sports Cycling",
+      "publishedAt": null,
+      "discoveredAt": "2026-07-15T07:00:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 10,
+      "type": "Race Highlights",
+      "title": "BRILLIANCE ON BASTILLE DAY! 😮‍💨 | Men's Tour de France Stage 10 Race Highlights | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=GWXXiHlnHKw",
+      "videoId": "GWXXiHlnHKw",
+      "source": "TNT Sports Cycling",
+      "publishedAt": null,
+      "discoveredAt": "2026-07-15T07:00:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 1,
+      "type": "Reaction",
+      "title": "Tour de France Stage 1 REACTION: Barcelona hosts Team Time Trial Grand Départ",
+      "url": "https://www.youtube.com/watch?v=rz6i-n3asfc",
+      "videoId": "rz6i-n3asfc",
+      "source": "TNT Sports Cycling",
+      "publishedAt": null,
+      "discoveredAt": "2026-07-15T07:00:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 1,
+      "type": "Final KM's",
+      "title": "TEAM TIME TRIAL OPENER! 🤩 | Men's Tour de France Stage 1 Final KM's | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=tucGM7d23eI",
+      "videoId": "tucGM7d23eI",
+      "source": "TNT Sports Cycling",
+      "publishedAt": null,
+      "discoveredAt": "2026-07-15T07:00:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 10,
+      "type": "Final KM's",
+      "title": "A LEVEL ABOVE THE REST! 🔥 | Men's Tour de France Stage 10 Final KM's | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=XXhkp3TUKQQ",
+      "videoId": "XXhkp3TUKQQ",
+      "source": "TNT Sports Cycling",
+      "publishedAt": null,
+      "discoveredAt": "2026-07-15T07:00:51+03:00",
       "isShort": false
     }
   ],

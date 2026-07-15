@@ -114,7 +114,46 @@ function Get-FirstAvailableYoutubeRssFeed {
     $failureLines += "$($failure.Url) failed: $($failure.Error)"
   }
 
-  throw ($failureLines -join [Environment]::NewLine)
+  Write-Warning "No YouTube RSS source worked. Falling back to playlist page scraping."
+  return [pscustomobject]@{
+    Feed = $null
+    Source = [pscustomobject]@{
+      Name = "playlist-page"
+      Url = "https://www.youtube.com/playlist?list=$PlaylistId"
+    }
+    Failures = $failures
+  }
+}
+
+function Get-YoutubePlaylistPageItems {
+  param(
+    [string]$PlaylistUrl,
+    [string]$ChannelName
+  )
+
+  $headers = @{ "User-Agent" = "Mozilla/5.0" }
+  $content = (Invoke-WebRequest -Uri $PlaylistUrl -UseBasicParsing -TimeoutSec 30 -Headers $headers).Content
+  $videoIds = [regex]::Matches($content, '"videoId":"([A-Za-z0-9_-]{11})"') |
+    ForEach-Object { $_.Groups[1].Value } |
+    Sort-Object -Unique
+
+  $items = @()
+  foreach ($videoId in $videoIds) {
+    try {
+      $oembedUrl = "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=$videoId&format=json"
+      $video = Invoke-RestMethod -Uri $oembedUrl -TimeoutSec 15
+      $items += [pscustomobject]@{
+        Title = [string]$video.title
+        VideoId = $videoId
+        Link = "https://www.youtube.com/watch?v=$videoId"
+        PublishedAt = $null
+      }
+    } catch {
+      Write-Warning "Could not read YouTube video ${videoId}: $($_.Exception.Message)"
+    }
+  }
+
+  return $items
 }
 
 $playlistFeedUrl = "https://www.youtube.com/feeds/videos.xml?playlist_id=$PlaylistId"
@@ -132,9 +171,12 @@ $feedResult = Get-FirstAvailableYoutubeRssFeed -Sources @(
 
 $feedUrl = $feedResult.Source.Url
 $feed = $feedResult.Feed
-$ns = [System.Xml.XmlNamespaceManager]::new($feed.NameTable)
-$ns.AddNamespace("a", "http://www.w3.org/2005/Atom")
-$ns.AddNamespace("yt", "http://www.youtube.com/xml/schemas/2015")
+$ns = $null
+if ($feed) {
+  $ns = [System.Xml.XmlNamespaceManager]::new($feed.NameTable)
+  $ns.AddNamespace("a", "http://www.w3.org/2005/Atom")
+  $ns.AddNamespace("yt", "http://www.youtube.com/xml/schemas/2015")
+}
 
 $data = Read-TdfData -Path $DataPath
 
@@ -152,12 +194,25 @@ $existingIds = @{}
 }
 
 $newItems = @()
-$entries = $feed.SelectNodes("//a:entry", $ns)
-foreach ($entry in $entries) {
-  $title = $entry.SelectSingleNode("a:title", $ns).InnerText
-  $videoId = $entry.SelectSingleNode("yt:videoId", $ns).InnerText
-  $link = $entry.SelectSingleNode("a:link", $ns).href
-  $publishedAt = $entry.SelectSingleNode("a:published", $ns).InnerText
+$candidates = @()
+if ($feed) {
+  $candidates = $feed.SelectNodes("//a:entry", $ns) | ForEach-Object {
+    [pscustomobject]@{
+      Title = $_.SelectSingleNode("a:title", $ns).InnerText
+      VideoId = $_.SelectSingleNode("yt:videoId", $ns).InnerText
+      Link = $_.SelectSingleNode("a:link", $ns).href
+      PublishedAt = $_.SelectSingleNode("a:published", $ns).InnerText
+    }
+  }
+} else {
+  $candidates = Get-YoutubePlaylistPageItems -PlaylistUrl $feedUrl -ChannelName $ChannelName
+}
+
+foreach ($candidate in $candidates) {
+  $title = $candidate.Title
+  $videoId = $candidate.VideoId
+  $link = $candidate.Link
+  $publishedAt = $candidate.PublishedAt
   $stage = Get-StageNumber -Title $title
 
   if (-not $stage) { continue }
@@ -191,10 +246,10 @@ if ($newItems.Count -eq 0) {
   $data.highlights = @($data.highlights) + $newItems
 }
 
-$sourceNote = if ($feedResult.Source.Name -eq "playlist") {
-  "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."
-} else {
-  "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
+$sourceNote = switch ($feedResult.Source.Name) {
+  "playlist" { "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."; break }
+  "channel" { "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."; break }
+  default { "Fallback source for Tour de France highlights. RSS failed, so the public playlist page and oEmbed were used." }
 }
 
 $data.videoSource = [pscustomobject]@{
