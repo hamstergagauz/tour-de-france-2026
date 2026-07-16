@@ -170,6 +170,99 @@ function Ensure-RiderRegistryShape {
   }
 }
 
+function Merge-KnownRiderDuplicates {
+  param([object]$Data)
+
+  $target = @($Data.riders | Where-Object { $_.id -eq "juan-ayuso" })[0]
+  $duplicate = @($Data.riders | Where-Object { $_.id -eq "letour-rider-31" })[0]
+  if (-not $target) { return }
+
+  $target.officialIds.letour = "31"
+  Merge-Alias -Rider $target -Values @("Juan AYUSO PESQUERA", "Juan Ayuso Pesquera")
+
+  if (-not $duplicate) { return }
+
+  $target.inclusion.stageWinner = [bool]($target.inclusion.stageWinner -or $duplicate.inclusion.stageWinner)
+  $target.inclusion.jerseyHolder = [bool]($target.inclusion.jerseyHolder -or $duplicate.inclusion.jerseyHolder)
+  $target.stageWinnerStages = New-IntArray (@($target.stageWinnerStages) + @($duplicate.stageWinnerStages))
+  foreach ($jerseyType in @("yellow", "green", "polkaDot", "white")) {
+    $target.jerseyHistory.$jerseyType = New-IntArray (@($target.jerseyHistory.$jerseyType) + @($duplicate.jerseyHistory.$jerseyType))
+  }
+  $target.latestQualifyingStage = [Math]::Max([int]$target.latestQualifyingStage, [int]$duplicate.latestQualifyingStage)
+
+  foreach ($result in @($Data.stageResults.PSObject.Properties | ForEach-Object { $_.Value })) {
+    if ($result.winner.riderId -eq $duplicate.id) { $result.winner.riderId = $target.id }
+    foreach ($entry in @($result.top3)) {
+      if ($entry.riderId -eq $duplicate.id) { $entry.riderId = $target.id }
+    }
+    foreach ($jerseyType in @("yellow", "green", "polkaDot", "white")) {
+      if ($result.jerseysAfterStage.$jerseyType.riderId -eq $duplicate.id) {
+        $result.jerseysAfterStage.$jerseyType.riderId = $target.id
+      }
+    }
+  }
+  foreach ($entry in @($Data.generalClassification.standings)) {
+    if ($entry.riderId -eq $duplicate.id) { $entry.riderId = $target.id }
+  }
+
+  $Data.riders = @($Data.riders | Where-Object { $_.id -ne $duplicate.id })
+}
+
+function Set-RiderEditorialProfiles {
+  param([object]$Data)
+
+  $officialLetourIds = @{
+    "derived-alex-baudin" = "43"
+    "derived-mathias-vacek" = "37"
+    "derived-torstein-traeen" = "127"
+    "derived-alex-molenaar" = "224"
+    "derived-egan-bernal" = "81"
+  }
+
+  $profiles = @{
+    "letour-rider-128" = @{
+      image = "assets/riders/soren-waerenskjold.jpg"; imagePosition = "center 18%"; country = "Норвегия"; roles = @("Спринтер", "Этапы", "Разделка"); watch = "равнинные этапы и разделки"; chance = "Спринт/разделка";
+      results = "Победитель 11-го этапа Tour de France 2026; силён в спринте и индивидуальной разделке."; why = "Мощный универсал для скоростных финишей, ветра и коротких разделок."; risk = "На чисто горных этапах его возможности ограничены."
+    }
+    "letour-rider-55" = @{
+      image = "assets/riders/olav-kooij.jpg"; imagePosition = "center 16%"; country = "Нидерланды"; roles = @("Спринтер", "Молодой", "Этапы"); watch = "равнинные этапы"; chance = "Спринт";
+      results = "Победитель 5-го этапа Tour de France 2026 и трёх этапов Giro d’Italia в 2024–2025 годах."; why = "Один из сильнейших молодых чистых спринтеров пелотона."; risk = "Зависит от работы развозящего поезда и позиции перед финишем."
+    }
+    "derived-alex-baudin" = @{
+      image = "assets/riders/alex-baudin.jpg"; imagePosition = "center 18%"; country = "Франция"; roles = @("Этапы", "Молодой", "GC"); watch = "холмистые и среднегорные этапы"; chance = "Отрыв/горы";
+      results = "Победитель Tour du Limousin 2024; вошёл в сезон Tour 2026 после сильных результатов в недельных гонках."; why = "Лёгкий универсал, способный уехать в отрыв и бороться на холмистом финише."; risk = "В генеральной классификации уступает главным горным лидерам."
+    }
+    "derived-mathias-vacek" = @{
+      image = "assets/riders/mathias-vacek.jpg"; imagePosition = "center 16%"; country = "Чехия"; roles = @("Молодой", "Разделка", "Этапы"); watch = "разделки, классики и холмистые этапы"; chance = "Разделка/универсал";
+      results = "Чемпион Чехии в групповой гонке и разделке; призёр этапов Grand Tour."; why = "Сильный молодой универсал с хорошей разделкой и мощным финишем из небольшой группы."; risk = "На длинных подъёмах может терять время относительно чистых горняков."
+    }
+    "derived-torstein-traeen" = @{
+      name = "Torstein Træen"; image = "assets/riders/torstein-traeen.jpg"; imagePosition = "center 17%"; country = "Норвегия"; roles = @("GC", "Этапы", "Горы"); watch = "горные этапы и отрывы"; chance = "Горы/отрыв";
+      results = "Победитель горного этапа Tour de Suisse 2024 и девятый в общем зачёте Vuelta a España 2025."; why = "Опытный горняк, опасный в отрывах и на затяжных подъёмах."; risk = "Спринт и равнинные финиши ему не подходят."
+    }
+    "derived-alex-molenaar" = @{
+      image = "assets/riders/alex-molenaar.jpg"; imagePosition = "center 16%"; country = "Нидерланды"; roles = @("Этапы", "Горы"); watch = "отрывы и холмистые этапы"; chance = "Отрыв";
+      results = "Победитель Tour of Romania 2019 и этапа Tour de Langkawi 2022."; why = "Активный гонщик для дальних отрывов и сложных переходных этапов."; risk = "Редко имеет поддержку команды для борьбы с лидерами общего зачёта."
+    }
+    "derived-egan-bernal" = @{
+      image = "assets/riders/egan-bernal.jpg"; imagePosition = "center 15%"; country = "Колумбия"; roles = @("GC", "Горы", "Этапы"); watch = "горные этапы"; chance = "GC/горы";
+      results = "Победитель Tour de France 2019 и Giro d’Italia 2021."; why = "Проверенный лидер многодневок и один из самых известных горняков поколения."; risk = "Форма после тяжёлой травмы может быть менее стабильной, чем в лучшие сезоны."
+    }
+  }
+
+  foreach ($rider in @($Data.riders)) {
+    if (-not $profiles.ContainsKey($rider.id)) { continue }
+    if ($officialLetourIds.ContainsKey($rider.id)) {
+      $rider.officialIds.letour = $officialLetourIds[$rider.id]
+      $rider.reviewNeeded = $false
+      $rider.derivedFrom.type = "letour-official"
+    }
+    foreach ($property in $profiles[$rider.id].GetEnumerator()) {
+      $rider | Add-Member -NotePropertyName $property.Key -NotePropertyValue $property.Value -Force
+    }
+  }
+}
+
 function Get-RankingPageUrl {
   param([int]$Stage)
 
@@ -682,7 +775,7 @@ function Merge-RiderCoverage {
     $Rider.latestQualifyingStage = [int]$Stage
   }
 
-  if ($Rider.entryType -eq "derived" -and -not $Candidate.officialIds.letour) {
+  if ($Rider.entryType -eq "derived" -and -not $Candidate.officialIds.letour -and -not $Rider.officialIds.letour) {
     $Rider.reviewNeeded = $true
   }
 }
@@ -1060,6 +1153,8 @@ function Set-CompactResultsMeta {
 
 $data = Read-TdfData -Path $DataPath
 Ensure-RiderRegistryShape -Data $data
+Merge-KnownRiderDuplicates -Data $data
+Set-RiderEditorialProfiles -Data $data
 $rankingHtmlByStage = @{}
 $changed = $false
 

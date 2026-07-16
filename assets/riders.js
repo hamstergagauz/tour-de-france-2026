@@ -220,6 +220,18 @@
 
   function riderDescriptionHtml(rider) {
     if (rider.entryType === "derived") {
+      if (rider.why || rider.results || (rider.roles || []).length) {
+        return `
+          <div class="meta">
+            ${(rider.roles || []).map((role) => `<span class="tag ${roleClass(role)}">${role}</span>`).join("")}
+          </div>
+          <p>${rider.why || "Профиль добавлен по официальным результатам Tour de France."}</p>
+          <p class="small"><strong>Результаты:</strong> ${rider.results || "уточнить"}</p>
+          <p class="small"><strong>Смотреть:</strong> ${rider.watch || "ближайшие подходящие этапы"}</p>
+          <p class="small"><strong>Риск:</strong> ${rider.risk || "уточнить"}</p>
+          <p class="small"><strong>Статус:</strong> ${rider.reviewNeeded ? "нужна ручная проверка личности" : "личность подтверждена официальными результатами"}</p>
+        `;
+      }
       return `
         <p>Этот профиль был добавлен автоматически по официальным результатам Tour de France, чтобы страница включала победителей этапов и держателей маек без ручной задержки.</p>
         <p class="small"><strong>Статус:</strong> ${rider.reviewNeeded ? "нужна ручная проверка личности и карточки" : "официально добавлен по результатам"}</p>
@@ -262,10 +274,10 @@
       <tr>
         <td><strong>${rider.name}</strong><br><span class="small">${rider.country || "страна не подтверждена"}</span>${sourceTagsHtml(rider)}${resultBadgesHtml(rider)}${riderHistoryHtml(rider)}</td>
         <td>${rider.team || "не подтверждено"}</td>
-        <td>${rider.entryType === "derived" ? "Добавлен по ходу гонки" : ((rider.roles || []).join(", ") || "Редакция")}</td>
-        <td>${rider.entryType === "derived" ? "Автодобавлен по официальным результатам Tour de France." : (rider.why || "—")}</td>
-        <td>${rider.entryType === "derived" ? (rider.reviewNeeded ? "Нужна проверка" : "Покрытие по официальным результатам") : (rider.results || "—")}</td>
-        <td>${rider.entryType === "derived" ? (rider.latestQualifyingStage ? `последний этап включения ${rider.latestQualifyingStage}` : "—") : (rider.watch || "—")}</td>
+        <td>${(rider.roles || []).join(", ") || (rider.entryType === "derived" ? "Добавлен по ходу гонки" : "Редакция")}</td>
+        <td>${rider.why || (rider.entryType === "derived" ? "Автодобавлен по официальным результатам Tour de France." : "—")}</td>
+        <td>${rider.results || (rider.entryType === "derived" ? (rider.reviewNeeded ? "Нужна проверка" : "Покрытие по официальным результатам") : "—")}</td>
+        <td>${rider.watch || (rider.entryType === "derived" && rider.latestQualifyingStage ? `последний этап включения ${rider.latestQualifyingStage}` : "—")}</td>
         <td class="social">${rider.entryType === "derived" ? `<span class="small">нет curated links</span>` : socialLinks(rider)}</td>
       </tr>
     `).join("");

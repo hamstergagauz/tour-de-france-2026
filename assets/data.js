@@ -7,7 +7,7 @@ window.TDF_DATA = {
       "broadcasters": "Preliminary",
       "predictions": "Forecast",
       "highlights": "YouTube RSS monitored",
-      "results": "Official / review needed"
+      "results": "Official"
     },
     "youtubeHighlightsCheckedAt": "2026-07-16T07:48:51+03:00"
   },
@@ -1155,7 +1155,9 @@ window.TDF_DATA = {
       "aliases": [
         "Juan Ayuso",
         "Juan AYUSO",
-        "J. AYUSO"
+        "J. AYUSO",
+        "Juan AYUSO PESQUERA",
+        "Juan Ayuso Pesquera"
       ],
       "name": "Juan Ayuso",
       "image": "assets/riders/juan-ayuso.jpg",
@@ -1178,7 +1180,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "31"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1193,10 +1195,11 @@ window.TDF_DATA = {
         "polkaDot": [],
         "white": [
           1,
-          10
+          10,
+          11
         ]
       },
-      "latestQualifyingStage": 10,
+      "latestQualifyingStage": 11,
       "editorialOrder": 8,
       "derivedFrom": null
     },
@@ -1623,58 +1626,19 @@ window.TDF_DATA = {
       "derivedFrom": null
     },
     {
-      "id": "letour-rider-31",
-      "aliases": [
-        "Juan AYUSO PESQUERA",
-        "Juan Ayuso Pesquera"
-      ],
-      "name": "Juan Ayuso Pesquera",
-      "team": "LIDL-TREK",
-      "country": "",
-      "roles": [],
-      "entryType": "derived",
-      "reviewNeeded": false,
-      "officialIds": {
-        "letour": "31"
-      },
-      "inclusion": {
-        "editorial": false,
-        "stageWinner": false,
-        "jerseyHolder": true
-      },
-      "stageWinnerStages": [],
-      "jerseyHistory": {
-        "yellow": [],
-        "green": [],
-        "polkaDot": [],
-        "white": [
-          11
-        ]
-      },
-      "latestQualifyingStage": 11,
-      "editorialOrder": null,
-      "derivedFrom": {
-        "type": "letour-official",
-        "source": "jersey-holder",
-        "createdAtStage": 11,
-        "jerseyType": "white"
-      }
-    },
-    {
       "id": "letour-rider-128",
       "aliases": [
         "Søren WÆRENSKJOLD",
-        "S. WAERENSKJOLD"
+        "S. WAERENSKJOLD",
+        "Søren Wærenskjold"
       ],
       "name": "Søren Wærenskjold",
       "team": "UNO-X MOBILITY",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
-      "reviewNeeded": false,
       "officialIds": {
         "letour": "128"
       },
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": true,
@@ -1696,7 +1660,20 @@ window.TDF_DATA = {
         "source": "stage-winner",
         "createdAtStage": 11,
         "jerseyType": ""
-      }
+      },
+      "chance": "Спринт/разделка",
+      "watch": "равнинные этапы и разделки",
+      "roles": [
+        "Спринтер",
+        "Этапы",
+        "Разделка"
+      ],
+      "country": "Норвегия",
+      "results": "Победитель 11-го этапа Tour de France 2026; силён в спринте и индивидуальной разделке.",
+      "risk": "На чисто горных этапах его возможности ограничены.",
+      "image": "assets/riders/soren-waerenskjold.jpg",
+      "imagePosition": "center 18%",
+      "why": "Мощный универсал для скоростных финишей, ветра и коротких разделок."
     },
     {
       "id": "derived-alex-baudin",
@@ -1705,13 +1682,11 @@ window.TDF_DATA = {
       ],
       "name": "Alex Baudin",
       "team": "EF Education - EasyPost",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
-        "letour": null
+        "letour": "43"
       },
-      "reviewNeeded": true,
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": false,
@@ -1731,11 +1706,24 @@ window.TDF_DATA = {
       "latestQualifyingStage": 5,
       "editorialOrder": null,
       "derivedFrom": {
-        "type": "fallback-name",
+        "type": "letour-official",
         "source": "jersey-holder",
         "createdAtStage": 3,
         "jerseyType": "polkaDot"
-      }
+      },
+      "chance": "Отрыв/горы",
+      "watch": "холмистые и среднегорные этапы",
+      "roles": [
+        "Этапы",
+        "Молодой",
+        "GC"
+      ],
+      "country": "Франция",
+      "results": "Победитель Tour du Limousin 2024; вошёл в сезон Tour 2026 после сильных результатов в недельных гонках.",
+      "risk": "В генеральной классификации уступает главным горным лидерам.",
+      "image": "assets/riders/alex-baudin.jpg",
+      "imagePosition": "center 18%",
+      "why": "Лёгкий универсал, способный уехать в отрыв и бороться на холмистом финише."
     },
     {
       "id": "derived-mathias-vacek",
@@ -1744,13 +1732,11 @@ window.TDF_DATA = {
       ],
       "name": "Mathias Vacek",
       "team": "Lidl-Trek",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
-        "letour": null
+        "letour": "37"
       },
-      "reviewNeeded": true,
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": false,
@@ -1769,11 +1755,24 @@ window.TDF_DATA = {
       "latestQualifyingStage": 5,
       "editorialOrder": null,
       "derivedFrom": {
-        "type": "fallback-name",
+        "type": "letour-official",
         "source": "jersey-holder",
         "createdAtStage": 4,
         "jerseyType": "white"
-      }
+      },
+      "chance": "Разделка/универсал",
+      "watch": "разделки, классики и холмистые этапы",
+      "roles": [
+        "Молодой",
+        "Разделка",
+        "Этапы"
+      ],
+      "country": "Чехия",
+      "results": "Чемпион Чехии в групповой гонке и разделке; призёр этапов Grand Tour.",
+      "risk": "На длинных подъёмах может терять время относительно чистых горняков.",
+      "image": "assets/riders/mathias-vacek.jpg",
+      "imagePosition": "center 16%",
+      "why": "Сильный молодой универсал с хорошей разделкой и мощным финишем из небольшой группы."
     },
     {
       "id": "letour-rider-55",
@@ -1784,8 +1783,6 @@ window.TDF_DATA = {
       ],
       "name": "Olav Kooij",
       "team": "DECATHLON CMA CGM TEAM",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
         "letour": "55"
@@ -1812,22 +1809,33 @@ window.TDF_DATA = {
         "source": "stage-winner",
         "createdAtStage": 5,
         "jerseyType": ""
-      }
+      },
+      "chance": "Спринт",
+      "watch": "равнинные этапы",
+      "roles": [
+        "Спринтер",
+        "Молодой",
+        "Этапы"
+      ],
+      "country": "Нидерланды",
+      "results": "Победитель 5-го этапа Tour de France 2026 и трёх этапов Giro d’Italia в 2024–2025 годах.",
+      "risk": "Зависит от работы развозящего поезда и позиции перед финишем.",
+      "image": "assets/riders/olav-kooij.jpg",
+      "imagePosition": "center 16%",
+      "why": "Один из сильнейших молодых чистых спринтеров пелотона."
     },
     {
       "id": "derived-torstein-traeen",
       "aliases": [
-        "Torstein Traeen"
+        "Torstein Traeen",
+        "Torstein Træen"
       ],
-      "name": "Torstein Traeen",
       "team": "Uno-X Mobility",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
-        "letour": null
+        "letour": "127"
       },
-      "reviewNeeded": true,
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": false,
@@ -1846,11 +1854,25 @@ window.TDF_DATA = {
       "latestQualifyingStage": 5,
       "editorialOrder": null,
       "derivedFrom": {
-        "type": "fallback-name",
+        "type": "letour-official",
         "source": "jersey-holder",
         "createdAtStage": 4,
         "jerseyType": "yellow"
-      }
+      },
+      "results": "Победитель горного этапа Tour de Suisse 2024 и девятый в общем зачёте Vuelta a España 2025.",
+      "chance": "Горы/отрыв",
+      "watch": "горные этапы и отрывы",
+      "roles": [
+        "GC",
+        "Этапы",
+        "Горы"
+      ],
+      "country": "Норвегия",
+      "name": "Torstein Træen",
+      "risk": "Спринт и равнинные финиши ему не подходят.",
+      "image": "assets/riders/torstein-traeen.jpg",
+      "imagePosition": "center 17%",
+      "why": "Опытный горняк, опасный в отрывах и на затяжных подъёмах."
     },
     {
       "id": "derived-alex-molenaar",
@@ -1859,13 +1881,11 @@ window.TDF_DATA = {
       ],
       "name": "Alex Molenaar",
       "team": "Caja Rural-Seguros RGA",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
-        "letour": null
+        "letour": "224"
       },
-      "reviewNeeded": true,
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": false,
@@ -1883,11 +1903,23 @@ window.TDF_DATA = {
       "latestQualifyingStage": 2,
       "editorialOrder": null,
       "derivedFrom": {
-        "type": "fallback-name",
+        "type": "letour-official",
         "source": "jersey-holder",
         "createdAtStage": 2,
         "jerseyType": "polkaDot"
-      }
+      },
+      "chance": "Отрыв",
+      "watch": "отрывы и холмистые этапы",
+      "roles": [
+        "Этапы",
+        "Горы"
+      ],
+      "country": "Нидерланды",
+      "results": "Победитель Tour of Romania 2019 и этапа Tour de Langkawi 2022.",
+      "risk": "Редко имеет поддержку команды для борьбы с лидерами общего зачёта.",
+      "image": "assets/riders/alex-molenaar.jpg",
+      "imagePosition": "center 16%",
+      "why": "Активный гонщик для дальних отрывов и сложных переходных этапов."
     },
     {
       "id": "derived-egan-bernal",
@@ -1896,13 +1928,11 @@ window.TDF_DATA = {
       ],
       "name": "Egan Bernal",
       "team": "Netcompany Ineos Cycling Team",
-      "country": "",
-      "roles": [],
       "entryType": "derived",
       "officialIds": {
-        "letour": null
+        "letour": "81"
       },
-      "reviewNeeded": true,
+      "reviewNeeded": false,
       "inclusion": {
         "editorial": false,
         "stageWinner": false,
@@ -1920,11 +1950,24 @@ window.TDF_DATA = {
       "latestQualifyingStage": 1,
       "editorialOrder": null,
       "derivedFrom": {
-        "type": "fallback-name",
+        "type": "letour-official",
         "source": "jersey-holder",
         "createdAtStage": 1,
         "jerseyType": "green"
-      }
+      },
+      "chance": "GC/горы",
+      "watch": "горные этапы",
+      "roles": [
+        "GC",
+        "Горы",
+        "Этапы"
+      ],
+      "country": "Колумбия",
+      "results": "Победитель Tour de France 2019 и Giro d’Italia 2021.",
+      "risk": "Форма после тяжёлой травмы может быть менее стабильной, чем в лучшие сезоны.",
+      "image": "assets/riders/egan-bernal.jpg",
+      "imagePosition": "center 15%",
+      "why": "Проверенный лидер многодневок и один из самых известных горняков поколения."
     }
   ],
   "videoSource": {
@@ -3180,7 +3223,7 @@ window.TDF_DATA = {
       "flags": null,
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
-      "checkedAt": "2026-07-16T07:49:05+03:00",
+      "checkedAt": "2026-07-16T10:20:16+03:00",
       "distanceActual": "161.3 км",
       "winner": {
         "riderId": "letour-rider-128",
@@ -3268,7 +3311,7 @@ window.TDF_DATA = {
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
-          "riderId": "letour-rider-31",
+          "riderId": "juan-ayuso",
           "officialIds": {
             "letour": "31"
           },
@@ -3282,19 +3325,19 @@ window.TDF_DATA = {
     }
   },
   "resultsMeta": {
-    "checkedAt": "2026-07-16T07:49:05+03:00",
+    "checkedAt": "2026-07-16T10:20:17+03:00",
     "sourcePriority": [
       "letour",
       "pcs",
       "manualFallback"
     ],
     "latestCompletedStage": 11,
-    "status": "review-needed",
-    "riderRegistryStatus": "review-needed"
+    "status": "complete",
+    "riderRegistryStatus": "complete"
   },
   "generalClassification": {
     "stage": 11,
-    "checkedAt": "2026-07-16T07:49:05+03:00",
+    "checkedAt": "2026-07-16T10:20:16+03:00",
     "status": "official",
     "source": "letour",
     "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
@@ -3343,7 +3386,7 @@ window.TDF_DATA = {
       },
       {
         "position": 4,
-        "riderId": "letour-rider-31",
+        "riderId": "juan-ayuso",
         "officialIds": {
           "letour": "31"
         },
@@ -3442,46 +3485,13 @@ window.TDF_DATA = {
     ]
   },
   "riderValidation": {
-    "checkedAt": "2026-07-16T07:49:05+03:00",
-    "status": "review-needed",
+    "checkedAt": "2026-07-16T10:20:17+03:00",
+    "status": "complete",
     "duplicateIds": [],
     "aliasConflicts": [],
     "blockingIssues": [],
-    "fallbackIdentityRiders": [
-      {
-        "id": "derived-alex-baudin",
-        "name": "Alex Baudin",
-        "entryType": "derived"
-      },
-      {
-        "id": "derived-mathias-vacek",
-        "name": "Mathias Vacek",
-        "entryType": "derived"
-      },
-      {
-        "id": "derived-torstein-traeen",
-        "name": "Torstein Traeen",
-        "entryType": "derived"
-      },
-      {
-        "id": "derived-alex-molenaar",
-        "name": "Alex Molenaar",
-        "entryType": "derived"
-      },
-      {
-        "id": "derived-egan-bernal",
-        "name": "Egan Bernal",
-        "entryType": "derived"
-      }
-    ],
+    "fallbackIdentityRiders": [],
     "derivedRiders": [
-      {
-        "id": "letour-rider-31",
-        "name": "Juan Ayuso Pesquera",
-        "letourId": "31",
-        "reviewNeeded": false,
-        "latestQualifyingStage": 11
-      },
       {
         "id": "letour-rider-128",
         "name": "Søren Wærenskjold",
@@ -3492,15 +3502,15 @@ window.TDF_DATA = {
       {
         "id": "derived-alex-baudin",
         "name": "Alex Baudin",
-        "letourId": null,
-        "reviewNeeded": true,
+        "letourId": "43",
+        "reviewNeeded": false,
         "latestQualifyingStage": 5
       },
       {
         "id": "derived-mathias-vacek",
         "name": "Mathias Vacek",
-        "letourId": null,
-        "reviewNeeded": true,
+        "letourId": "37",
+        "reviewNeeded": false,
         "latestQualifyingStage": 5
       },
       {
@@ -3512,23 +3522,23 @@ window.TDF_DATA = {
       },
       {
         "id": "derived-torstein-traeen",
-        "name": "Torstein Traeen",
-        "letourId": null,
-        "reviewNeeded": true,
+        "name": "Torstein Træen",
+        "letourId": "127",
+        "reviewNeeded": false,
         "latestQualifyingStage": 5
       },
       {
         "id": "derived-alex-molenaar",
         "name": "Alex Molenaar",
-        "letourId": null,
-        "reviewNeeded": true,
+        "letourId": "224",
+        "reviewNeeded": false,
         "latestQualifyingStage": 2
       },
       {
         "id": "derived-egan-bernal",
         "name": "Egan Bernal",
-        "letourId": null,
-        "reviewNeeded": true,
+        "letourId": "81",
+        "reviewNeeded": false,
         "latestQualifyingStage": 1
       }
     ],
@@ -3619,11 +3629,6 @@ window.TDF_DATA = {
         "entryType": "curated"
       },
       {
-        "id": "letour-rider-31",
-        "name": "Juan Ayuso Pesquera",
-        "entryType": "derived"
-      },
-      {
         "id": "letour-rider-128",
         "name": "Søren Wærenskjold",
         "entryType": "derived"
@@ -3645,7 +3650,7 @@ window.TDF_DATA = {
       },
       {
         "id": "derived-torstein-traeen",
-        "name": "Torstein Traeen",
+        "name": "Torstein Træen",
         "entryType": "derived"
       },
       {

@@ -9,6 +9,7 @@ wallpapers/
 !scripts/Update-StageResults.ps1
 !scripts/Validate-RiderRegistry.ps1
 !scripts/Test-ProductionDeployment.ps1
+!scripts/Fetch-RiderImages.ps1
 *.log
 Thumbs.db
 Desktop.ini
