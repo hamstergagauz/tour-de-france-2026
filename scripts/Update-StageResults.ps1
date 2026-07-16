@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$DataPath = "assets/data.js",
   [int[]]$Stages,
   [switch]$DryRun
@@ -261,6 +261,38 @@ function Set-RiderEditorialProfiles {
       $rider | Add-Member -NotePropertyName $property.Key -NotePropertyValue $property.Value -Force
     }
   }
+}
+
+function Set-OfficialRiderPhotos {
+  param([object]$Data)
+
+  $knownOfficialIds = @{
+    "tadej-pogacar" = "1"; "jonas-vingegaard" = "11"; "remco-evenepoel" = "21"
+    "isaac-del-toro" = "2"; "paul-seixas" = "51"; "florian-lipowitz" = "25"
+    "juan-ayuso" = "31"; "richard-carapaz" = "41"; "mathieu-van-der-poel" = "101"
+    "jasper-philipsen" = "105"; "mads-pedersen" = "33"; "tim-merlier" = "91"
+    "biniam-girmay" = "131"; "tom-pidcock" = "171"; "julian-alaphilippe" = "191"
+    "ben-healy" = "44"
+  }
+  $changed = $false
+
+  foreach ($rider in @($Data.riders)) {
+    if ($knownOfficialIds.ContainsKey($rider.id) -and $rider.officialIds.letour -ne $knownOfficialIds[$rider.id]) {
+      $rider.officialIds.letour = $knownOfficialIds[$rider.id]
+      $changed = $true
+    }
+    if (-not $rider.officialIds.letour) { continue }
+
+    $officialId = 0
+    if (-not [int]::TryParse([string]$rider.officialIds.letour, [ref]$officialId)) { continue }
+    $image = "assets/riders/official/{0:D3}.jpg" -f $officialId
+    if ($rider.image -ne $image) {
+      $rider.image = $image
+      $changed = $true
+    }
+  }
+
+  return $changed
 }
 
 function Get-RankingPageUrl {
@@ -1155,8 +1187,9 @@ $data = Read-TdfData -Path $DataPath
 Ensure-RiderRegistryShape -Data $data
 Merge-KnownRiderDuplicates -Data $data
 Set-RiderEditorialProfiles -Data $data
+$photoRegistryChanged = Set-OfficialRiderPhotos -Data $data
 $rankingHtmlByStage = @{}
-$changed = $false
+$changed = [bool]$photoRegistryChanged
 
 if (-not $data.stageResults) {
   $data | Add-Member -NotePropertyName "stageResults" -NotePropertyValue ([pscustomobject]@{})

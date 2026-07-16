@@ -1,0 +1,1106 @@
+﻿[
+    {
+        "officialId":  "001",
+        "riderSlug":  "tadej-pogacar",
+        "sourceName":  "001 - tadej-pogacar_hamster_GE.jpg",
+        "websiteFile":  "001.jpg"
+    },
+    {
+        "officialId":  "002",
+        "riderSlug":  "isaac-del-toro-romero",
+        "sourceName":  "002 - isaac-del-toro-romero_hamster_GE.jpg",
+        "websiteFile":  "002.jpg"
+    },
+    {
+        "officialId":  "003",
+        "riderSlug":  "felix-grossschartner",
+        "sourceName":  "003 - felix-grossschartner_hamster_GE.jpg",
+        "websiteFile":  "003.jpg"
+    },
+    {
+        "officialId":  "004",
+        "riderSlug":  "brandon-mcnulty",
+        "sourceName":  "004 - brandon-mcnulty_hamster_GE.jpg",
+        "websiteFile":  "004.jpg"
+    },
+    {
+        "officialId":  "005",
+        "riderSlug":  "nils-politt",
+        "sourceName":  "005 - nils-politt_hamster_GE.jpg",
+        "websiteFile":  "005.jpg"
+    },
+    {
+        "officialId":  "006",
+        "riderSlug":  "florian-vermeersch",
+        "sourceName":  "006 - florian-vermeersch_hamster_GE.jpg",
+        "websiteFile":  "006.jpg"
+    },
+    {
+        "officialId":  "007",
+        "riderSlug":  "tim-wellens",
+        "sourceName":  "007 - tim-wellens_hamster_GE.jpg",
+        "websiteFile":  "007.jpg"
+    },
+    {
+        "officialId":  "008",
+        "riderSlug":  "adam-yates",
+        "sourceName":  "008 - adam-yates_hamster_GE.jpg",
+        "websiteFile":  "008.jpg"
+    },
+    {
+        "officialId":  "011",
+        "riderSlug":  "jonas-vingegaard-hansen",
+        "sourceName":  "011 - jonas-vingegaard-hansen_hamster_GE.jpg",
+        "websiteFile":  "011.jpg"
+    },
+    {
+        "officialId":  "012",
+        "riderSlug":  "edoardo-affini",
+        "sourceName":  "012 - edoardo-affini_hamster_GE.jpg",
+        "websiteFile":  "012.jpg"
+    },
+    {
+        "officialId":  "013",
+        "riderSlug":  "bruno-armirail",
+        "sourceName":  "013 - bruno-armirail_hamster_GE.jpg",
+        "websiteFile":  "013.jpg"
+    },
+    {
+        "officialId":  "014",
+        "riderSlug":  "victor-campenaerts",
+        "sourceName":  "014 - victor-campenaerts_hamster_GE.jpg",
+        "websiteFile":  "014.jpg"
+    },
+    {
+        "officialId":  "015",
+        "riderSlug":  "per-strand-hagenes",
+        "sourceName":  "015 - per-strand-hagenes_hamster_GE.jpg",
+        "websiteFile":  "015.jpg"
+    },
+    {
+        "officialId":  "016",
+        "riderSlug":  "matteo-jorgenson",
+        "sourceName":  "016 - matteo-jorgenson_hamster_GE.jpg",
+        "websiteFile":  "016.jpg"
+    },
+    {
+        "officialId":  "017",
+        "riderSlug":  "sepp-kuss",
+        "sourceName":  "017 - sepp-kuss_hamster_GE.jpg",
+        "websiteFile":  "017.jpg"
+    },
+    {
+        "officialId":  "018",
+        "riderSlug":  "davide-piganzoli",
+        "sourceName":  "018 - davide-piganzoli_hamster_GE.jpg",
+        "websiteFile":  "018.jpg"
+    },
+    {
+        "officialId":  "021",
+        "riderSlug":  "remco-evenepoel",
+        "sourceName":  "021 - remco-evenepoel_hamster_GE.jpg",
+        "websiteFile":  "021.jpg"
+    },
+    {
+        "officialId":  "022",
+        "riderSlug":  "mattia-cattaneo",
+        "sourceName":  "022 - mattia-cattaneo_hamster_GE.jpg",
+        "websiteFile":  "022.jpg"
+    },
+    {
+        "officialId":  "023",
+        "riderSlug":  "nico-denz",
+        "sourceName":  "023 - nico-denz_hamster_GE.jpg",
+        "websiteFile":  "023.jpg"
+    },
+    {
+        "officialId":  "024",
+        "riderSlug":  "jai-hindley",
+        "sourceName":  "024 - jai-hindley_hamster_GE.jpg",
+        "websiteFile":  "024.jpg"
+    },
+    {
+        "officialId":  "025",
+        "riderSlug":  "florian-lipowitz",
+        "sourceName":  "025 - florian-lipowitz_hamster_GE.jpg",
+        "websiteFile":  "025.jpg"
+    },
+    {
+        "officialId":  "026",
+        "riderSlug":  "jan-tratnik",
+        "sourceName":  "026 - jan-tratnik_hamster_GE.jpg",
+        "websiteFile":  "026.jpg"
+    },
+    {
+        "officialId":  "027",
+        "riderSlug":  "tim-van-dijke",
+        "sourceName":  "027 - tim-van-dijke_hamster_GE.jpg",
+        "websiteFile":  "027.jpg"
+    },
+    {
+        "officialId":  "028",
+        "riderSlug":  "maxim-van-gils",
+        "sourceName":  "028 - maxim-van-gils_hamster_GE.jpg",
+        "websiteFile":  "028.jpg"
+    },
+    {
+        "officialId":  "031",
+        "riderSlug":  "juan-ayuso-pesquera",
+        "sourceName":  "031 - juan-ayuso-pesquera_hamster_GE.jpg",
+        "websiteFile":  "031.jpg"
+    },
+    {
+        "officialId":  "032",
+        "riderSlug":  "derek-james-gee",
+        "sourceName":  "032 - derek-james-gee_hamster_GE.jpg",
+        "websiteFile":  "032.jpg"
+    },
+    {
+        "officialId":  "033",
+        "riderSlug":  "mads-pedersen",
+        "sourceName":  "033 - mads-pedersen_hamster_GE.jpg",
+        "websiteFile":  "033.jpg"
+    },
+    {
+        "officialId":  "034",
+        "riderSlug":  "quinn-simmons",
+        "sourceName":  "034 - quinn-simmons_hamster_GE.jpg",
+        "websiteFile":  "034.jpg"
+    },
+    {
+        "officialId":  "035",
+        "riderSlug":  "mattias-skjelmose",
+        "sourceName":  "035 - mattias-skjelmose_hamster_GE.jpg",
+        "websiteFile":  "035.jpg"
+    },
+    {
+        "officialId":  "036",
+        "riderSlug":  "toms-skujins",
+        "sourceName":  "036 - toms-skujins_hamster_GE.jpg",
+        "websiteFile":  "036.jpg"
+    },
+    {
+        "officialId":  "037",
+        "riderSlug":  "mathias-vacek",
+        "sourceName":  "037 - mathias-vacek_hamster_GE.jpg",
+        "websiteFile":  "037.jpg"
+    },
+    {
+        "officialId":  "038",
+        "riderSlug":  "carlos-verona-quintanilla",
+        "sourceName":  "038 - carlos-verona-quintanilla_hamster_GE.jpg",
+        "websiteFile":  "038.jpg"
+    },
+    {
+        "officialId":  "041",
+        "riderSlug":  "richard-carapaz",
+        "sourceName":  "041 - richard-carapaz_hamster_GE.jpg",
+        "websiteFile":  "041.jpg"
+    },
+    {
+        "officialId":  "042",
+        "riderSlug":  "kasper-asgreen",
+        "sourceName":  "042 - kasper-asgreen_hamster_GE.jpg",
+        "websiteFile":  "042.jpg"
+    },
+    {
+        "officialId":  "043",
+        "riderSlug":  "alex-baudin",
+        "sourceName":  "043 - alex-baudin_hamster_GE.jpg",
+        "websiteFile":  "043.jpg"
+    },
+    {
+        "officialId":  "044",
+        "riderSlug":  "ben-healy",
+        "sourceName":  "044 - ben-healy_hamster_GE.jpg",
+        "websiteFile":  "044.jpg"
+    },
+    {
+        "officialId":  "045",
+        "riderSlug":  "sean-quinn",
+        "sourceName":  "045 - sean-quinn_hamster_GE.jpg",
+        "websiteFile":  "045.jpg"
+    },
+    {
+        "officialId":  "046",
+        "riderSlug":  "georg-steinhauser",
+        "sourceName":  "046 - georg-steinhauser_hamster_GE.jpg",
+        "websiteFile":  "046.jpg"
+    },
+    {
+        "officialId":  "047",
+        "riderSlug":  "michael-valgren",
+        "sourceName":  "047 - michael-valgren_hamster_GE.jpg",
+        "websiteFile":  "047.jpg"
+    },
+    {
+        "officialId":  "048",
+        "riderSlug":  "max-walker",
+        "sourceName":  "048 - max-walker_hamster_GE.jpg",
+        "websiteFile":  "048.jpg"
+    },
+    {
+        "officialId":  "051",
+        "riderSlug":  "paul-seixas",
+        "sourceName":  "051 - paul-seixas_hamster_GE.jpg",
+        "websiteFile":  "051.jpg"
+    },
+    {
+        "officialId":  "052",
+        "riderSlug":  "tiesj-benoot",
+        "sourceName":  "052 - tiesj-benoot_hamster_GE.jpg",
+        "websiteFile":  "052.jpg"
+    },
+    {
+        "officialId":  "053",
+        "riderSlug":  "cees-bol",
+        "sourceName":  "053 - cees-bol_hamster_GE.jpg",
+        "websiteFile":  "053.jpg"
+    },
+    {
+        "officialId":  "054",
+        "riderSlug":  "daan-hoole",
+        "sourceName":  "054 - daan-hoole_hamster_GE.jpg",
+        "websiteFile":  "054.jpg"
+    },
+    {
+        "officialId":  "055",
+        "riderSlug":  "olav-kooij",
+        "sourceName":  "055 - olav-kooij_hamster_GE.jpg",
+        "websiteFile":  "055.jpg"
+    },
+    {
+        "officialId":  "056",
+        "riderSlug":  "aurelien-paret-peintre",
+        "sourceName":  "056 - aurelien-paret-peintre_hamster_GE.jpg",
+        "websiteFile":  "056.jpg"
+    },
+    {
+        "officialId":  "057",
+        "riderSlug":  "nicolas-prodhomme",
+        "sourceName":  "057 - nicolas-prodhomme_hamster_GE.jpg",
+        "websiteFile":  "057.jpg"
+    },
+    {
+        "officialId":  "058",
+        "riderSlug":  "matthew-riccitello",
+        "sourceName":  "058 - matthew-riccitello_hamster_GE.jpg",
+        "websiteFile":  "058.jpg"
+    },
+    {
+        "officialId":  "061",
+        "riderSlug":  "sergio-andres-higuita-garcia",
+        "sourceName":  "061 - sergio-andres-higuita-garcia_hamster_GE.jpg",
+        "websiteFile":  "061.jpg"
+    },
+    {
+        "officialId":  "062",
+        "riderSlug":  "davide-ballerini",
+        "sourceName":  "062 - davide-ballerini_hamster_GE.jpg",
+        "websiteFile":  "062.jpg"
+    },
+    {
+        "officialId":  "063",
+        "riderSlug":  "aaron-murray-gate",
+        "sourceName":  "063 - aaron-murray-gate_hamster_GE.jpg",
+        "websiteFile":  "063.jpg"
+    },
+    {
+        "officialId":  "064",
+        "riderSlug":  "max-kanter",
+        "sourceName":  "064 - max-kanter_hamster_GE.jpg",
+        "websiteFile":  "064.jpg"
+    },
+    {
+        "officialId":  "065",
+        "riderSlug":  "harold-tejada-canacue",
+        "sourceName":  "065 - harold-tejada-canacue_hamster_GE.jpg",
+        "websiteFile":  "065.jpg"
+    },
+    {
+        "officialId":  "066",
+        "riderSlug":  "mike-teunissen",
+        "sourceName":  "066 - mike-teunissen_hamster_GE.jpg",
+        "websiteFile":  "066.jpg"
+    },
+    {
+        "officialId":  "067",
+        "riderSlug":  "simone-velasco",
+        "sourceName":  "067 - simone-velasco_hamster_GE.jpg",
+        "websiteFile":  "067.jpg"
+    },
+    {
+        "officialId":  "068",
+        "riderSlug":  "nicolya-vinokurov",
+        "sourceName":  "068 - nicolya-vinokurov_hamster_GE.jpg",
+        "websiteFile":  "068.jpg"
+    },
+    {
+        "officialId":  "071",
+        "riderSlug":  "lenny-martinez",
+        "sourceName":  "071 - lenny-martinez_hamster_GE.jpg",
+        "websiteFile":  "071.jpg"
+    },
+    {
+        "officialId":  "072",
+        "riderSlug":  "phil-bauhaus",
+        "sourceName":  "072 - phil-bauhaus_hamster_GE.jpg",
+        "websiteFile":  "072.jpg"
+    },
+    {
+        "officialId":  "073",
+        "riderSlug":  "damiano-caruso",
+        "sourceName":  "073 - damiano-caruso_hamster_GE.jpg",
+        "websiteFile":  "073.jpg"
+    },
+    {
+        "officialId":  "074",
+        "riderSlug":  "kamil-gradek",
+        "sourceName":  "074 - kamil-gradek_hamster_GE.jpg",
+        "websiteFile":  "074.jpg"
+    },
+    {
+        "officialId":  "075",
+        "riderSlug":  "matej-mohoric",
+        "sourceName":  "075 - matej-mohoric_hamster_GE.jpg",
+        "websiteFile":  "075.jpg"
+    },
+    {
+        "officialId":  "076",
+        "riderSlug":  "robert-stannard",
+        "sourceName":  "076 - robert-stannard_hamster_GE.jpg",
+        "websiteFile":  "076.jpg"
+    },
+    {
+        "officialId":  "077",
+        "riderSlug":  "antonio-tiberi",
+        "sourceName":  "077 - antonio-tiberi_hamster_GE.jpg",
+        "websiteFile":  "077.jpg"
+    },
+    {
+        "officialId":  "078",
+        "riderSlug":  "vlad-van-mechelen",
+        "sourceName":  "078 - vlad-van-mechelen_hamster_GE.jpg",
+        "websiteFile":  "078.jpg"
+    },
+    {
+        "officialId":  "081",
+        "riderSlug":  "egan-bernal-gomez",
+        "sourceName":  "081 - egan-bernal-gomez_hamster_GE.jpg",
+        "websiteFile":  "081.jpg"
+    },
+    {
+        "officialId":  "082",
+        "riderSlug":  "thymen-arensman",
+        "sourceName":  "082 - thymen-arensman_hamster_GE.jpg",
+        "websiteFile":  "082.jpg"
+    },
+    {
+        "officialId":  "083",
+        "riderSlug":  "tobias-svendsen-foss",
+        "sourceName":  "083 - tobias-svendsen-foss_hamster_GE.jpg",
+        "websiteFile":  "083.jpg"
+    },
+    {
+        "officialId":  "084",
+        "riderSlug":  "filippo-ganna",
+        "sourceName":  "084 - filippo-ganna_hamster_GE.jpg",
+        "websiteFile":  "084.jpg"
+    },
+    {
+        "officialId":  "085",
+        "riderSlug":  "dorian-godon",
+        "sourceName":  "085 - dorian-godon_hamster_GE.jpg",
+        "websiteFile":  "085.jpg"
+    },
+    {
+        "officialId":  "086",
+        "riderSlug":  "michal-kwiatkowski",
+        "sourceName":  "086 - michal-kwiatkowski_hamster_GE.jpg",
+        "websiteFile":  "086.jpg"
+    },
+    {
+        "officialId":  "087",
+        "riderSlug":  "joshua-michael-tarling",
+        "sourceName":  "087 - joshua-michael-tarling_hamster_GE.jpg",
+        "websiteFile":  "087.jpg"
+    },
+    {
+        "officialId":  "088",
+        "riderSlug":  "kevin-vauquelin",
+        "sourceName":  "088 - kevin-vauquelin_hamster_GE.jpg",
+        "websiteFile":  "088.jpg"
+    },
+    {
+        "officialId":  "091",
+        "riderSlug":  "tim-merlier",
+        "sourceName":  "091 - tim-merlier_hamster_GE.jpg",
+        "websiteFile":  "091.jpg"
+    },
+    {
+        "officialId":  "092",
+        "riderSlug":  "pascal-eenkhoorn",
+        "sourceName":  "092 - pascal-eenkhoorn_hamster_GE.jpg",
+        "websiteFile":  "092.jpg"
+    },
+    {
+        "officialId":  "093",
+        "riderSlug":  "valentin-paret-peintre",
+        "sourceName":  "093 - valentin-paret-peintre_hamster_GE.jpg",
+        "websiteFile":  "093.jpg"
+    },
+    {
+        "officialId":  "094",
+        "riderSlug":  "jasper-stuyven",
+        "sourceName":  "094 - jasper-stuyven_hamster_GE.jpg",
+        "websiteFile":  "094.jpg"
+    },
+    {
+        "officialId":  "095",
+        "riderSlug":  "dylan-van-baarle",
+        "sourceName":  "095 - dylan-van-baarle_hamster_GE.jpg",
+        "websiteFile":  "095.jpg"
+    },
+    {
+        "officialId":  "096",
+        "riderSlug":  "bert-van-lerberghe",
+        "sourceName":  "096 - bert-van-lerberghe_hamster_GE.jpg",
+        "websiteFile":  "096.jpg"
+    },
+    {
+        "officialId":  "097",
+        "riderSlug":  "ilan-van-wilder",
+        "sourceName":  "097 - ilan-van-wilder_hamster_GE.jpg",
+        "websiteFile":  "097.jpg"
+    },
+    {
+        "officialId":  "098",
+        "riderSlug":  "louis-vervaeke",
+        "sourceName":  "098 - louis-vervaeke_hamster_GE.jpg",
+        "websiteFile":  "098.jpg"
+    },
+    {
+        "officialId":  "101",
+        "riderSlug":  "mathieu-van-der-poel",
+        "sourceName":  "101 - mathieu-van-der-poel_hamster_GE.jpg",
+        "websiteFile":  "101.jpg"
+    },
+    {
+        "officialId":  "102",
+        "riderSlug":  "ramses-debruyne",
+        "sourceName":  "102 - ramses-debruyne_hamster_GE.jpg",
+        "websiteFile":  "102.jpg"
+    },
+    {
+        "officialId":  "103",
+        "riderSlug":  "silvan-dillier",
+        "sourceName":  "103 - silvan-dillier_hamster_GE.jpg",
+        "websiteFile":  "103.jpg"
+    },
+    {
+        "officialId":  "104",
+        "riderSlug":  "tim-marsman",
+        "sourceName":  "104 - tim-marsman_hamster_GE.jpg",
+        "websiteFile":  "104.jpg"
+    },
+    {
+        "officialId":  "105",
+        "riderSlug":  "jasper-philipsen",
+        "sourceName":  "105 - jasper-philipsen_hamster_GE.jpg",
+        "websiteFile":  "105.jpg"
+    },
+    {
+        "officialId":  "106",
+        "riderSlug":  "edward-planckaert",
+        "sourceName":  "106 - edward-planckaert_hamster_GE.jpg",
+        "websiteFile":  "106.jpg"
+    },
+    {
+        "officialId":  "107",
+        "riderSlug":  "jonas-rickaert",
+        "sourceName":  "107 - jonas-rickaert_hamster_GE.jpg",
+        "websiteFile":  "107.jpg"
+    },
+    {
+        "officialId":  "108",
+        "riderSlug":  "emiel-verstrynge",
+        "sourceName":  "108 - emiel-verstrynge_hamster_GE.jpg",
+        "websiteFile":  "108.jpg"
+    },
+    {
+        "officialId":  "111",
+        "riderSlug":  "ben-alexander-o-connor",
+        "sourceName":  "111 - ben-alexander-o-connor_hamster_GE.jpg",
+        "websiteFile":  "111.jpg"
+    },
+    {
+        "officialId":  "112",
+        "riderSlug":  "pascal-ackermann",
+        "sourceName":  "112 - pascal-ackermann_hamster_GE.jpg",
+        "websiteFile":  "112.jpg"
+    },
+    {
+        "officialId":  "113",
+        "riderSlug":  "luke-durbridge",
+        "sourceName":  "113 - luke-durbridge_hamster_GE.jpg",
+        "websiteFile":  "113.jpg"
+    },
+    {
+        "officialId":  "114",
+        "riderSlug":  "felix-engelhardt",
+        "sourceName":  "114 - felix-engelhardt_hamster_GE.jpg",
+        "websiteFile":  "114.jpg"
+    },
+    {
+        "officialId":  "115",
+        "riderSlug":  "michael-matthews",
+        "sourceName":  "115 - michael-matthews_hamster_GE.jpg",
+        "websiteFile":  "115.jpg"
+    },
+    {
+        "officialId":  "116",
+        "riderSlug":  "kelland-o-brien",
+        "sourceName":  "116 - kelland-o-brien_hamster_GE.jpg",
+        "websiteFile":  "116.jpg"
+    },
+    {
+        "officialId":  "117",
+        "riderSlug":  "lucas-plapp",
+        "sourceName":  "117 - lucas-plapp_hamster_GE.jpg",
+        "websiteFile":  "117.jpg"
+    },
+    {
+        "officialId":  "118",
+        "riderSlug":  "mauro-schmid",
+        "sourceName":  "118 - mauro-schmid_hamster_GE.jpg",
+        "websiteFile":  "118.jpg"
+    },
+    {
+        "officialId":  "121",
+        "riderSlug":  "tobias-halland-johannessen",
+        "sourceName":  "121 - tobias-halland-johannessen_hamster_GE.jpg",
+        "websiteFile":  "121.jpg"
+    },
+    {
+        "officialId":  "122",
+        "riderSlug":  "jonas-abrahamsen",
+        "sourceName":  "122 - jonas-abrahamsen_hamster_GE.jpg",
+        "websiteFile":  "122.jpg"
+    },
+    {
+        "officialId":  "123",
+        "riderSlug":  "anthon-charmig",
+        "sourceName":  "123 - anthon-charmig_hamster_GE.jpg",
+        "websiteFile":  "123.jpg"
+    },
+    {
+        "officialId":  "124",
+        "riderSlug":  "magnus-cort-nielsen",
+        "sourceName":  "124 - magnus-cort-nielsen_hamster_GE.jpg",
+        "websiteFile":  "124.jpg"
+    },
+    {
+        "officialId":  "125",
+        "riderSlug":  "anders-halland-johannessen",
+        "sourceName":  "125 - anders-halland-johannessen_hamster_GE.jpg",
+        "websiteFile":  "125.jpg"
+    },
+    {
+        "officialId":  "126",
+        "riderSlug":  "anders-skaarseth",
+        "sourceName":  "126 - anders-skaarseth_hamster_GE.jpg",
+        "websiteFile":  "126.jpg"
+    },
+    {
+        "officialId":  "127",
+        "riderSlug":  "torstein-traeen",
+        "sourceName":  "127 - torstein-traeen_hamster_GE.jpg",
+        "websiteFile":  "127.jpg"
+    },
+    {
+        "officialId":  "128",
+        "riderSlug":  "soeren-waerenskjold",
+        "sourceName":  "128 - soeren-waerenskjold_hamster_GE.jpg",
+        "websiteFile":  "128.jpg"
+    },
+    {
+        "officialId":  "131",
+        "riderSlug":  "biniam-girmay",
+        "sourceName":  "131 - biniam-girmay_hamster_GE.jpg",
+        "websiteFile":  "131.jpg"
+    },
+    {
+        "officialId":  "132",
+        "riderSlug":  "lewis-askey",
+        "sourceName":  "132 - lewis-askey_hamster_GE.jpg",
+        "websiteFile":  "132.jpg"
+    },
+    {
+        "officialId":  "133",
+        "riderSlug":  "george-bennett",
+        "sourceName":  "133 - george-bennett_hamster_GE.jpg",
+        "websiteFile":  "133.jpg"
+    },
+    {
+        "officialId":  "134",
+        "riderSlug":  "marco-frigo",
+        "sourceName":  "134 - marco-frigo_hamster_GE.jpg",
+        "websiteFile":  "134.jpg"
+    },
+    {
+        "officialId":  "135",
+        "riderSlug":  "matis-louvel",
+        "sourceName":  "135 - matis-louvel_hamster_GE.jpg",
+        "websiteFile":  "135.jpg"
+    },
+    {
+        "officialId":  "136",
+        "riderSlug":  "krists-neilands",
+        "sourceName":  "136 - krists-neilands_hamster_GE.jpg",
+        "websiteFile":  "136.jpg"
+    },
+    {
+        "officialId":  "137",
+        "riderSlug":  "thomas-jake-stewart",
+        "sourceName":  "137 - thomas-jake-stewart_hamster_GE.jpg",
+        "websiteFile":  "137.jpg"
+    },
+    {
+        "officialId":  "138",
+        "riderSlug":  "tom-van-asbroeck",
+        "sourceName":  "138 - tom-van-asbroeck_hamster_GE.jpg",
+        "websiteFile":  "138.jpg"
+    },
+    {
+        "officialId":  "141",
+        "riderSlug":  "cian-uijtdebroeks",
+        "sourceName":  "141 - cian-uijtdebroeks_hamster_GE.jpg",
+        "websiteFile":  "141.jpg"
+    },
+    {
+        "officialId":  "142",
+        "riderSlug":  "pablo-castrillo-zapater",
+        "sourceName":  "142 - pablo-castrillo-zapater_hamster_GE.jpg",
+        "websiteFile":  "142.jpg"
+    },
+    {
+        "officialId":  "143",
+        "riderSlug":  "jefferson-cepeda",
+        "sourceName":  "143 - jefferson-cepeda_hamster_GE.jpg",
+        "websiteFile":  "143.jpg"
+    },
+    {
+        "officialId":  "144",
+        "riderSlug":  "raul-garcia-pierna",
+        "sourceName":  "144 - raul-garcia-pierna_hamster_GE.jpg",
+        "websiteFile":  "144.jpg"
+    },
+    {
+        "officialId":  "145",
+        "riderSlug":  "michel-hessmann",
+        "sourceName":  "145 - michel-hessmann_hamster_GE.jpg",
+        "websiteFile":  "145.jpg"
+    },
+    {
+        "officialId":  "146",
+        "riderSlug":  "nelson-oliveira",
+        "sourceName":  "146 - nelson-oliveira_hamster_GE.jpg",
+        "websiteFile":  "146.jpg"
+    },
+    {
+        "officialId":  "147",
+        "riderSlug":  "javier-romo-oliver",
+        "sourceName":  "147 - javier-romo-oliver_hamster_GE.jpg",
+        "websiteFile":  "147.jpg"
+    },
+    {
+        "officialId":  "148",
+        "riderSlug":  "einer-augusto-rubio-reyes",
+        "sourceName":  "148 - einer-augusto-rubio-reyes_hamster_GE.jpg",
+        "websiteFile":  "148.jpg"
+    },
+    {
+        "officialId":  "151",
+        "riderSlug":  "arnaud-de-lie",
+        "sourceName":  "151 - arnaud-de-lie_hamster_GE.jpg",
+        "websiteFile":  "151.jpg"
+    },
+    {
+        "officialId":  "152",
+        "riderSlug":  "huub-artz",
+        "sourceName":  "152 - huub-artz_hamster_GE.jpg",
+        "websiteFile":  "152.jpg"
+    },
+    {
+        "officialId":  "153",
+        "riderSlug":  "jenno-berckmoes",
+        "sourceName":  "153 - jenno-berckmoes_hamster_GE.jpg",
+        "websiteFile":  "153.jpg"
+    },
+    {
+        "officialId":  "154",
+        "riderSlug":  "lars-craps",
+        "sourceName":  "154 - lars-craps_hamster_GE.jpg",
+        "websiteFile":  "154.jpg"
+    },
+    {
+        "officialId":  "155",
+        "riderSlug":  "liam-slock",
+        "sourceName":  "155 - liam-slock_hamster_GE.jpg",
+        "websiteFile":  "155.jpg"
+    },
+    {
+        "officialId":  "156",
+        "riderSlug":  "lennert-van-eetvelt",
+        "sourceName":  "156 - lennert-van-eetvelt_hamster_GE.jpg",
+        "websiteFile":  "156.jpg"
+    },
+    {
+        "officialId":  "157",
+        "riderSlug":  "baptiste-veistroffer",
+        "sourceName":  "157 - baptiste-veistroffer_hamster_GE.jpg",
+        "websiteFile":  "157.jpg"
+    },
+    {
+        "officialId":  "158",
+        "riderSlug":  "georg-zimmermann",
+        "sourceName":  "158 - georg-zimmermann_hamster_GE.jpg",
+        "websiteFile":  "158.jpg"
+    },
+    {
+        "officialId":  "161",
+        "riderSlug":  "ion-izagirre-insausti",
+        "sourceName":  "161 - ion-izagirre-insausti_hamster_GE.jpg",
+        "websiteFile":  "161.jpg"
+    },
+    {
+        "officialId":  "162",
+        "riderSlug":  "piet-allegaert",
+        "sourceName":  "162 - piet-allegaert_hamster_GE.jpg",
+        "websiteFile":  "162.jpg"
+    },
+    {
+        "officialId":  "163",
+        "riderSlug":  "alex-aranburu-deva",
+        "sourceName":  "163 - alex-aranburu-deva_hamster_GE.jpg",
+        "websiteFile":  "163.jpg"
+    },
+    {
+        "officialId":  "164",
+        "riderSlug":  "jenthe-biermans",
+        "sourceName":  "164 - jenthe-biermans_hamster_GE.jpg",
+        "websiteFile":  "164.jpg"
+    },
+    {
+        "officialId":  "165",
+        "riderSlug":  "milan-fretin",
+        "sourceName":  "165 - milan-fretin_hamster_GE.jpg",
+        "websiteFile":  "165.jpg"
+    },
+    {
+        "officialId":  "166",
+        "riderSlug":  "alex-kirsch",
+        "sourceName":  "166 - alex-kirsch_hamster_GE.jpg",
+        "websiteFile":  "166.jpg"
+    },
+    {
+        "officialId":  "167",
+        "riderSlug":  "hugo-page",
+        "sourceName":  "167 - hugo-page_hamster_GE.jpg",
+        "websiteFile":  "167.jpg"
+    },
+    {
+        "officialId":  "168",
+        "riderSlug":  "benjamin-thomas",
+        "sourceName":  "168 - benjamin-thomas_hamster_GE.jpg",
+        "websiteFile":  "168.jpg"
+    },
+    {
+        "officialId":  "171",
+        "riderSlug":  "tom-pidcock",
+        "sourceName":  "171 - tom-pidcock_hamster_GE.jpg",
+        "websiteFile":  "171.jpg"
+    },
+    {
+        "officialId":  "172",
+        "riderSlug":  "xabier-azparren-irurzun",
+        "sourceName":  "172 - xabier-azparren-irurzun_hamster_GE.jpg",
+        "websiteFile":  "172.jpg"
+    },
+    {
+        "officialId":  "173",
+        "riderSlug":  "christopher-harper",
+        "sourceName":  "173 - christopher-harper_hamster_GE.jpg",
+        "websiteFile":  "173.jpg"
+    },
+    {
+        "officialId":  "174",
+        "riderSlug":  "quinten-hermans",
+        "sourceName":  "174 - quinten-hermans_hamster_GE.jpg",
+        "websiteFile":  "174.jpg"
+    },
+    {
+        "officialId":  "175",
+        "riderSlug":  "damien-craig-howson",
+        "sourceName":  "175 - damien-craig-howson_hamster_GE.jpg",
+        "websiteFile":  "175.jpg"
+    },
+    {
+        "officialId":  "176",
+        "riderSlug":  "xandro-meurisse",
+        "sourceName":  "176 - xandro-meurisse_hamster_GE.jpg",
+        "websiteFile":  "176.jpg"
+    },
+    {
+        "officialId":  "177",
+        "riderSlug":  "brent-van-moer",
+        "sourceName":  "177 - brent-van-moer_hamster_GE.jpg",
+        "websiteFile":  "177.jpg"
+    },
+    {
+        "officialId":  "178",
+        "riderSlug":  "alfred-brockwell-wright",
+        "sourceName":  "178 - alfred-brockwell-wright_hamster_GE.jpg",
+        "websiteFile":  "178.jpg"
+    },
+    {
+        "officialId":  "181",
+        "riderSlug":  "romain-gregoire",
+        "sourceName":  "181 - romain-gregoire_hamster_GE.jpg",
+        "websiteFile":  "181.jpg"
+    },
+    {
+        "officialId":  "182",
+        "riderSlug":  "clement-berthet",
+        "sourceName":  "182 - clement-berthet_hamster_GE.jpg",
+        "websiteFile":  "182.jpg"
+    },
+    {
+        "officialId":  "183",
+        "riderSlug":  "clement-braz-afonso",
+        "sourceName":  "183 - clement-braz-afonso_hamster_GE.jpg",
+        "websiteFile":  "183.jpg"
+    },
+    {
+        "officialId":  "184",
+        "riderSlug":  "ewen-costiou",
+        "sourceName":  "184 - ewen-costiou_hamster_GE.jpg",
+        "websiteFile":  "184.jpg"
+    },
+    {
+        "officialId":  "185",
+        "riderSlug":  "lorenzo-germani",
+        "sourceName":  "185 - lorenzo-germani_hamster_GE.jpg",
+        "websiteFile":  "185.jpg"
+    },
+    {
+        "officialId":  "186",
+        "riderSlug":  "guillaume-martin-guyonnet",
+        "sourceName":  "186 - guillaume-martin-guyonnet_hamster_GE.jpg",
+        "websiteFile":  "186.jpg"
+    },
+    {
+        "officialId":  "187",
+        "riderSlug":  "quentin-pacher",
+        "sourceName":  "187 - quentin-pacher_hamster_GE.jpg",
+        "websiteFile":  "187.jpg"
+    },
+    {
+        "officialId":  "188",
+        "riderSlug":  "clement-russo",
+        "sourceName":  "188 - clement-russo_hamster_GE.jpg",
+        "websiteFile":  "188.jpg"
+    },
+    {
+        "officialId":  "191",
+        "riderSlug":  "julian-alaphilippe",
+        "sourceName":  "191 - julian-alaphilippe_hamster_GE.jpg",
+        "websiteFile":  "191.jpg"
+    },
+    {
+        "officialId":  "192",
+        "riderSlug":  "arvid-de-kleijn",
+        "sourceName":  "192 - arvid-de-kleijn_hamster_GE.jpg",
+        "websiteFile":  "192.jpg"
+    },
+    {
+        "officialId":  "193",
+        "riderSlug":  "marco-haller",
+        "sourceName":  "193 - marco-haller_hamster_GE.jpg",
+        "websiteFile":  "193.jpg"
+    },
+    {
+        "officialId":  "194",
+        "riderSlug":  "marc-hirschi",
+        "sourceName":  "194 - marc-hirschi_hamster_GE.jpg",
+        "websiteFile":  "194.jpg"
+    },
+    {
+        "officialId":  "195",
+        "riderSlug":  "rick-pluimers",
+        "sourceName":  "195 - rick-pluimers_hamster_GE.jpg",
+        "websiteFile":  "195.jpg"
+    },
+    {
+        "officialId":  "196",
+        "riderSlug":  "michael-storer",
+        "sourceName":  "196 - michael-storer_hamster_GE.jpg",
+        "websiteFile":  "196.jpg"
+    },
+    {
+        "officialId":  "197",
+        "riderSlug":  "matteo-trentin",
+        "sourceName":  "197 - matteo-trentin_hamster_GE.jpg",
+        "websiteFile":  "197.jpg"
+    },
+    {
+        "officialId":  "198",
+        "riderSlug":  "yannis-voisard",
+        "sourceName":  "198 - yannis-voisard_hamster_GE.jpg",
+        "websiteFile":  "198.jpg"
+    },
+    {
+        "officialId":  "201",
+        "riderSlug":  "jordan-jegat",
+        "sourceName":  "201 - jordan-jegat_hamster_GE.jpg",
+        "websiteFile":  "201.jpg"
+    },
+    {
+        "officialId":  "202",
+        "riderSlug":  "nicolas-breuillard",
+        "sourceName":  "202 - nicolas-breuillard_hamster_GE.jpg",
+        "websiteFile":  "202.jpg"
+    },
+    {
+        "officialId":  "203",
+        "riderSlug":  "joris-delbove",
+        "sourceName":  "203 - joris-delbove_hamster_GE.jpg",
+        "websiteFile":  "203.jpg"
+    },
+    {
+        "officialId":  "204",
+        "riderSlug":  "alexandre-delettre",
+        "sourceName":  "204 - alexandre-delettre_hamster_GE.jpg",
+        "websiteFile":  "204.jpg"
+    },
+    {
+        "officialId":  "205",
+        "riderSlug":  "thibault-guernalec",
+        "sourceName":  "205 - thibault-guernalec_hamster_GE.jpg",
+        "websiteFile":  "205.jpg"
+    },
+    {
+        "officialId":  "206",
+        "riderSlug":  "mathis-le-berre",
+        "sourceName":  "206 - mathis-le-berre_hamster_GE.jpg",
+        "websiteFile":  "206.jpg"
+    },
+    {
+        "officialId":  "207",
+        "riderSlug":  "anthony-turgis",
+        "sourceName":  "207 - anthony-turgis_hamster_GE.jpg",
+        "websiteFile":  "207.jpg"
+    },
+    {
+        "officialId":  "208",
+        "riderSlug":  "matteo-vercher",
+        "sourceName":  "208 - matteo-vercher_hamster_GE.jpg",
+        "websiteFile":  "208.jpg"
+    },
+    {
+        "officialId":  "211",
+        "riderSlug":  "warren-barguil",
+        "sourceName":  "211 - warren-barguil_hamster_GE.jpg",
+        "websiteFile":  "211.jpg"
+    },
+    {
+        "officialId":  "212",
+        "riderSlug":  "frits-biesterbos",
+        "sourceName":  "212 - frits-biesterbos_hamster_GE.jpg",
+        "websiteFile":  "212.jpg"
+    },
+    {
+        "officialId":  "213",
+        "riderSlug":  "pavel-bittner",
+        "sourceName":  "213 - pavel-bittner_hamster_GE.jpg",
+        "websiteFile":  "213.jpg"
+    },
+    {
+        "officialId":  "214",
+        "riderSlug":  "john-degenkolb",
+        "sourceName":  "214 - john-degenkolb_hamster_GE.jpg",
+        "websiteFile":  "214.jpg"
+    },
+    {
+        "officialId":  "215",
+        "riderSlug":  "robbe-dhondt",
+        "sourceName":  "215 - robbe-dhondt_hamster_GE.jpg",
+        "websiteFile":  "215.jpg"
+    },
+    {
+        "officialId":  "216",
+        "riderSlug":  "niklas-maerkl",
+        "sourceName":  "216 - niklas-maerkl_hamster_GE.jpg",
+        "websiteFile":  "216.jpg"
+    },
+    {
+        "officialId":  "217",
+        "riderSlug":  "julius-van-den-berg",
+        "sourceName":  "217 - julius-van-den-berg_hamster_GE.jpg",
+        "websiteFile":  "217.jpg"
+    },
+    {
+        "officialId":  "218",
+        "riderSlug":  "frank-van-den-broek",
+        "sourceName":  "218 - frank-van-den-broek_hamster_GE.jpg",
+        "websiteFile":  "218.jpg"
+    },
+    {
+        "officialId":  "221",
+        "riderSlug":  "fernando-gaviria-rendon",
+        "sourceName":  "221 - fernando-gaviria-rendon_hamster_GE.jpg",
+        "websiteFile":  "221.jpg"
+    },
+    {
+        "officialId":  "222",
+        "riderSlug":  "abel-balderstone-roumens",
+        "sourceName":  "222 - abel-balderstone-roumens_hamster_GE.jpg",
+        "websiteFile":  "222.jpg"
+    },
+    {
+        "officialId":  "223",
+        "riderSlug":  "sebastian-berwick",
+        "sourceName":  "223 - sebastian-berwick_hamster_GE.jpg",
+        "websiteFile":  "223.jpg"
+    },
+    {
+        "officialId":  "224",
+        "riderSlug":  "alex-molenaar",
+        "sourceName":  "224 - alex-molenaar_hamster_GE.jpg",
+        "websiteFile":  "224.jpg"
+    },
+    {
+        "officialId":  "225",
+        "riderSlug":  "joel-nicolau-beltran",
+        "sourceName":  "225 - joel-nicolau-beltran_hamster_GE.jpg",
+        "websiteFile":  "225.jpg"
+    },
+    {
+        "officialId":  "226",
+        "riderSlug":  "stefano-oldani",
+        "sourceName":  "226 - stefano-oldani_hamster_GE.jpg",
+        "websiteFile":  "226.jpg"
+    },
+    {
+        "officialId":  "227",
+        "riderSlug":  "jakub-otruba",
+        "sourceName":  "227 - jakub-otruba_hamster_GE.jpg",
+        "websiteFile":  "227.jpg"
+    },
+    {
+        "officialId":  "228",
+        "riderSlug":  "jose-felix-parra-cuerda",
+        "sourceName":  "228 - jose-felix-parra-cuerda_hamster_GE.jpg",
+        "websiteFile":  "228.jpg"
+    }
+]

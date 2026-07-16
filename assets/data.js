@@ -255,7 +255,7 @@ window.TDF_DATA = {
       "route": "Barcelone > Barcelone",
       "distance": "19.6 км",
       "type": "Командная гонка",
-      "elevation": "уточнить по профилю этапа",
+      "elevation": "D+ 200 м",
       "startTime": "17:05 CEST",
       "finishWindow": "около 19:16 CEST",
       "difficulty": "Средняя",
@@ -270,7 +270,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-1",
       "viewingAdvice": "Смотреть полностью",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 2,
@@ -281,9 +281,9 @@ window.TDF_DATA = {
       "route": "Tarragone > Barcelone",
       "distance": "168.5 км",
       "type": "Холмистый",
-      "elevation": "уточнить",
-      "startTime": "уточнить",
-      "finishWindow": "уточнить",
+      "elevation": "D+ 2500 м",
+      "startTime": "13:45",
+      "finishWindow": "около 17:26",
       "difficulty": "Средняя",
       "gcImpact": "Низкий/средний",
       "watchPriority": "7/10",
@@ -296,7 +296,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-2",
       "viewingAdvice": "Смотреть финальный час",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 3,
@@ -307,9 +307,9 @@ window.TDF_DATA = {
       "route": "Granollers > Les Angles",
       "distance": "195.9 км",
       "type": "Горный",
-      "elevation": "3850 м",
-      "startTime": "12:10 CEST",
-      "finishWindow": "около 16:54 CEST",
+      "elevation": "D+ 3850 м",
+      "startTime": "12:10",
+      "finishWindow": "около 16:54",
       "difficulty": "Высокая",
       "gcImpact": "Высокий",
       "watchPriority": "9/10",
@@ -322,7 +322,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-3",
       "viewingAdvice": "Смотреть ключевой финальный блок",
-      "status": "Verified route / Official result"
+      "status": "Official stage profile"
     },
     {
       "number": 4,
@@ -333,9 +333,9 @@ window.TDF_DATA = {
       "route": "Carcassonne > Foix",
       "distance": "181.9 км",
       "type": "Холмистый",
-      "elevation": "2700 м",
-      "startTime": "13:10 CEST",
-      "finishWindow": "около 17:23 CEST",
+      "elevation": "D+ 2700 м",
+      "startTime": "13:10",
+      "finishWindow": "около 17:23",
       "difficulty": "Средняя",
       "gcImpact": "Средний",
       "watchPriority": "7/10",
@@ -348,7 +348,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-4",
       "viewingAdvice": "Смотреть финальный час",
-      "status": "Verified route / Official result"
+      "status": "Official stage profile"
     },
     {
       "number": 5,
@@ -359,9 +359,9 @@ window.TDF_DATA = {
       "route": "Lannemezan > Pau",
       "distance": "158.3 км",
       "type": "Равнинный",
-      "elevation": "1600 м",
-      "startTime": "14:05 CEST",
-      "finishWindow": "около 17:37 CEST",
+      "elevation": "D+ 1600 м",
+      "startTime": "14:05",
+      "finishWindow": "около 17:37",
       "difficulty": "Низкая",
       "gcImpact": "Низкий",
       "watchPriority": "5/10",
@@ -373,7 +373,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-5",
       "viewingAdvice": "Достаточно финала",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 6,
@@ -384,9 +384,9 @@ window.TDF_DATA = {
       "route": "Pau > Gavarnie-Gèdre",
       "distance": "186.2 км",
       "type": "Горный",
-      "elevation": "D+ 4100 m",
+      "elevation": "D+ 4100 м",
       "startTime": "12:25",
-      "finishWindow": "17:29-18:05",
+      "finishWindow": "около 17:29",
       "difficulty": "Очень высокая",
       "gcImpact": "Высокий",
       "watchPriority": "10/10",
@@ -400,7 +400,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-6",
       "viewingAdvice": "Смотреть ключевой финальный блок",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 7,
@@ -411,9 +411,9 @@ window.TDF_DATA = {
       "route": "Hagetmau > Bordeaux",
       "distance": "175.1 км",
       "type": "Равнинный",
-      "elevation": "D+ 850 m",
+      "elevation": "D+ 850 м",
       "startTime": "13:15",
-      "finishWindow": "17:13-17:35",
+      "finishWindow": "около 17:13",
       "difficulty": "Низкая",
       "gcImpact": "Низкий",
       "watchPriority": "5/10",
@@ -424,7 +424,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-7",
       "viewingAdvice": "Достаточно финала",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 8,
@@ -437,7 +437,7 @@ window.TDF_DATA = {
       "type": "Равнинный",
       "elevation": "D+ 1150 м",
       "startTime": "13:15",
-      "finishWindow": "17:20–17:43",
+      "finishWindow": "около 17:20",
       "difficulty": "Низкая",
       "gcImpact": "Низкий",
       "watchPriority": "5/10",
@@ -449,7 +449,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-8",
       "viewingAdvice": "Достаточно финала",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 9,
@@ -458,11 +458,11 @@ window.TDF_DATA = {
       "start": "Malemort",
       "finish": "Ussel",
       "route": "Malemort > Ussel",
-      "distance": "155.5 км",
+      "distance": "154.6 км",
       "type": "Холмистый",
-      "elevation": "D+ ~3000 м",
+      "elevation": "D+ 3300 м",
       "startTime": "13:45",
-      "finishWindow": "около 17:30",
+      "finishWindow": "около 17:22",
       "difficulty": "Средняя",
       "gcImpact": "Средний",
       "watchPriority": "7/10",
@@ -474,7 +474,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-9",
       "viewingAdvice": "Смотреть финальный час",
-      "status": "Verified route / Official result"
+      "status": "Official stage profile"
     },
     {
       "number": 10,
@@ -485,9 +485,9 @@ window.TDF_DATA = {
       "route": "Aurillac > Le Lioran",
       "distance": "166.6 км",
       "type": "Горный",
-      "elevation": "уточнить",
-      "startTime": "уточнить",
-      "finishWindow": "уточнить",
+      "elevation": "D+ 3800 м",
+      "startTime": "13:00",
+      "finishWindow": "около 17:02",
       "difficulty": "Высокая",
       "gcImpact": "Средний/высокий",
       "watchPriority": "9/10",
@@ -499,7 +499,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-10",
       "viewingAdvice": "Смотреть ключевой финальный блок",
-      "status": "Verified route / Forecast notes"
+      "status": "Official stage profile"
     },
     {
       "number": 11,
@@ -793,7 +793,7 @@ window.TDF_DATA = {
         "Tadej Pogačar"
       ],
       "name": "Tadej Pogacar",
-      "image": "assets/riders/tadej-pogacar.jpg",
+      "image": "assets/riders/official/001.jpg",
       "imagePosition": "center 22%",
       "team": "UAE Team Emirates-XRG",
       "country": "Словения",
@@ -860,10 +860,11 @@ window.TDF_DATA = {
         "Jonas Vingegaard",
         "Jonas VINGEGAARD HANSEN",
         "J. VINGEGAARD",
-        "Jonas VINGEGAARD"
+        "Jonas VINGEGAARD",
+        "Jonas Vingegaard Hansen"
       ],
       "name": "Jonas Vingegaard",
-      "image": "assets/riders/jonas-vingegaard.jpg",
+      "image": "assets/riders/official/011.jpg",
       "imagePosition": "center 18%",
       "team": "Team Visma | Lease a Bike",
       "country": "Дания",
@@ -914,7 +915,7 @@ window.TDF_DATA = {
         "R. EVENEPOEL"
       ],
       "name": "Remco Evenepoel",
-      "image": "assets/riders/remco-evenepoel.jpg",
+      "image": "assets/riders/official/021.jpg",
       "imagePosition": "center 16%",
       "team": "Soudal Quick-Step",
       "country": "Бельгия",
@@ -934,7 +935,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "21"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1007,10 +1008,11 @@ window.TDF_DATA = {
         "Isaac del Toro",
         "Isaac DEL TORO ROMERO",
         "I. DEL TORO",
-        "Isaac Del Toro"
+        "Isaac Del Toro",
+        "Isaac Del Toro Romero"
       ],
       "name": "Isaac del Toro",
-      "image": "assets/riders/isaac-del-toro.jpg",
+      "image": "assets/riders/official/002.jpg",
       "imagePosition": "center 18%",
       "team": "UAE Team Emirates-XRG",
       "country": "Мексика",
@@ -1065,7 +1067,7 @@ window.TDF_DATA = {
         "P. SEIXAS"
       ],
       "name": "Paul Seixas",
-      "image": "assets/riders/paul-seixas.jpg",
+      "image": "assets/riders/official/051.jpg",
       "imagePosition": "center 16%",
       "team": "Decathlon AG2R La Mondiale",
       "country": "Франция",
@@ -1086,7 +1088,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "51"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1113,7 +1115,7 @@ window.TDF_DATA = {
         "F. LIPOWITZ"
       ],
       "name": "Florian Lipowitz",
-      "image": "assets/riders/florian-lipowitz.jpg",
+      "image": "assets/riders/official/025.jpg",
       "imagePosition": "center 20%",
       "team": "Red Bull-BORA-hansgrohe",
       "country": "Германия",
@@ -1131,7 +1133,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "25"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1160,7 +1162,7 @@ window.TDF_DATA = {
         "Juan Ayuso Pesquera"
       ],
       "name": "Juan Ayuso",
-      "image": "assets/riders/juan-ayuso.jpg",
+      "image": "assets/riders/official/031.jpg",
       "imagePosition": "center 18%",
       "team": "UAE Team Emirates-XRG",
       "country": "Испания",
@@ -1211,7 +1213,7 @@ window.TDF_DATA = {
         "R. CARAPAZ"
       ],
       "name": "Richard Carapaz",
-      "image": "assets/riders/richard-carapaz.jpg",
+      "image": "assets/riders/official/041.jpg",
       "imagePosition": "center 13%",
       "team": "EF Education-EasyPost",
       "country": "Эквадор",
@@ -1231,7 +1233,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "41"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1258,7 +1260,7 @@ window.TDF_DATA = {
         "M. VAN DER POEL"
       ],
       "name": "Mathieu van der Poel",
-      "image": "assets/riders/mathieu-van-der-poel.jpg",
+      "image": "assets/riders/official/101.jpg",
       "imagePosition": "center 14%",
       "team": "Alpecin-Deceuninck",
       "country": "Нидерланды",
@@ -1305,7 +1307,7 @@ window.TDF_DATA = {
         "J. PHILIPSEN"
       ],
       "name": "Jasper Philipsen",
-      "image": "assets/riders/jasper-philipsen.jpg",
+      "image": "assets/riders/official/105.jpg",
       "imagePosition": "center 13%",
       "team": "Alpecin-Deceuninck",
       "country": "Бельгия",
@@ -1322,7 +1324,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "105"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1349,7 +1351,7 @@ window.TDF_DATA = {
         "M. PEDERSEN"
       ],
       "name": "Mads Pedersen",
-      "image": "assets/riders/mads-pedersen.jpg",
+      "image": "assets/riders/official/033.jpg",
       "imagePosition": "center 12%",
       "team": "Lidl-Trek",
       "country": "Дания",
@@ -1406,7 +1408,7 @@ window.TDF_DATA = {
         "T. MERLIER"
       ],
       "name": "Tim Merlier",
-      "image": "assets/riders/tim-merlier.jpg",
+      "image": "assets/riders/official/091.jpg",
       "imagePosition": "center 13%",
       "team": "Soudal Quick-Step",
       "country": "Бельгия",
@@ -1453,7 +1455,7 @@ window.TDF_DATA = {
         "B. GIRMAY"
       ],
       "name": "Biniam Girmay",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Biniam%20Girmay%2C%20Grand%20Prix%20Cycliste%20de%20Qu%C3%A9bec%202022%20%28UCI%20WorldTour%29%20%28cropped%29.jpg?width=900",
+      "image": "assets/riders/official/131.jpg",
       "imagePosition": "center 15%",
       "team": "Intermarché-Wanty",
       "country": "Эритрея",
@@ -1472,7 +1474,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "131"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1499,7 +1501,7 @@ window.TDF_DATA = {
         "T. PIDCOCK"
       ],
       "name": "Tom Pidcock",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Pidcock%20%282023%29.jpg?width=900",
+      "image": "assets/riders/official/171.jpg",
       "imagePosition": "center 13%",
       "team": "Q36.5 Pro Cycling Team",
       "country": "Великобритания",
@@ -1517,7 +1519,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "171"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1544,7 +1546,7 @@ window.TDF_DATA = {
         "J. ALAPHILIPPE"
       ],
       "name": "Julian Alaphilippe",
-      "image": "assets/riders/julian-alaphilippe.jpg",
+      "image": "assets/riders/official/191.jpg",
       "imagePosition": "center 12%",
       "team": "Tudor Pro Cycling Team",
       "country": "Франция",
@@ -1562,7 +1564,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "191"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1589,7 +1591,7 @@ window.TDF_DATA = {
         "B. HEALY"
       ],
       "name": "Ben Healy",
-      "image": "assets/riders/ben-healy.jpg",
+      "image": "assets/riders/official/044.jpg",
       "imagePosition": "center 14%",
       "team": "EF Education-EasyPost",
       "country": "Ирландия",
@@ -1606,7 +1608,7 @@ window.TDF_DATA = {
       },
       "entryType": "curated",
       "officialIds": {
-        "letour": null
+        "letour": "44"
       },
       "reviewNeeded": false,
       "inclusion": {
@@ -1661,24 +1663,25 @@ window.TDF_DATA = {
         "createdAtStage": 11,
         "jerseyType": ""
       },
+      "results": "Победитель 11-го этапа Tour de France 2026; силён в спринте и индивидуальной разделке.",
       "chance": "Спринт/разделка",
-      "watch": "равнинные этапы и разделки",
       "roles": [
         "Спринтер",
         "Этапы",
         "Разделка"
       ],
+      "why": "Мощный универсал для скоростных финишей, ветра и коротких разделок.",
+      "image": "assets/riders/official/128.jpg",
       "country": "Норвегия",
-      "results": "Победитель 11-го этапа Tour de France 2026; силён в спринте и индивидуальной разделке.",
       "risk": "На чисто горных этапах его возможности ограничены.",
-      "image": "assets/riders/soren-waerenskjold.jpg",
       "imagePosition": "center 18%",
-      "why": "Мощный универсал для скоростных финишей, ветра и коротких разделок."
+      "watch": "равнинные этапы и разделки"
     },
     {
       "id": "derived-alex-baudin",
       "aliases": [
-        "Alex Baudin"
+        "Alex Baudin",
+        "Alex BAUDIN"
       ],
       "name": "Alex Baudin",
       "team": "EF Education - EasyPost",
@@ -1711,24 +1714,25 @@ window.TDF_DATA = {
         "createdAtStage": 3,
         "jerseyType": "polkaDot"
       },
+      "results": "Победитель Tour du Limousin 2024; вошёл в сезон Tour 2026 после сильных результатов в недельных гонках.",
       "chance": "Отрыв/горы",
-      "watch": "холмистые и среднегорные этапы",
       "roles": [
         "Этапы",
         "Молодой",
         "GC"
       ],
+      "why": "Лёгкий универсал, способный уехать в отрыв и бороться на холмистом финише.",
+      "image": "assets/riders/official/043.jpg",
       "country": "Франция",
-      "results": "Победитель Tour du Limousin 2024; вошёл в сезон Tour 2026 после сильных результатов в недельных гонках.",
       "risk": "В генеральной классификации уступает главным горным лидерам.",
-      "image": "assets/riders/alex-baudin.jpg",
       "imagePosition": "center 18%",
-      "why": "Лёгкий универсал, способный уехать в отрыв и бороться на холмистом финише."
+      "watch": "холмистые и среднегорные этапы"
     },
     {
       "id": "derived-mathias-vacek",
       "aliases": [
-        "Mathias Vacek"
+        "Mathias Vacek",
+        "Mathias VACEK"
       ],
       "name": "Mathias Vacek",
       "team": "Lidl-Trek",
@@ -1760,19 +1764,19 @@ window.TDF_DATA = {
         "createdAtStage": 4,
         "jerseyType": "white"
       },
+      "results": "Чемпион Чехии в групповой гонке и разделке; призёр этапов Grand Tour.",
       "chance": "Разделка/универсал",
-      "watch": "разделки, классики и холмистые этапы",
       "roles": [
         "Молодой",
         "Разделка",
         "Этапы"
       ],
+      "why": "Сильный молодой универсал с хорошей разделкой и мощным финишем из небольшой группы.",
+      "image": "assets/riders/official/037.jpg",
       "country": "Чехия",
-      "results": "Чемпион Чехии в групповой гонке и разделке; призёр этапов Grand Tour.",
       "risk": "На длинных подъёмах может терять время относительно чистых горняков.",
-      "image": "assets/riders/mathias-vacek.jpg",
       "imagePosition": "center 16%",
-      "why": "Сильный молодой универсал с хорошей разделкой и мощным финишем из небольшой группы."
+      "watch": "разделки, классики и холмистые этапы"
     },
     {
       "id": "letour-rider-55",
@@ -1810,25 +1814,26 @@ window.TDF_DATA = {
         "createdAtStage": 5,
         "jerseyType": ""
       },
+      "results": "Победитель 5-го этапа Tour de France 2026 и трёх этапов Giro d’Italia в 2024–2025 годах.",
       "chance": "Спринт",
-      "watch": "равнинные этапы",
       "roles": [
         "Спринтер",
         "Молодой",
         "Этапы"
       ],
+      "why": "Один из сильнейших молодых чистых спринтеров пелотона.",
+      "image": "assets/riders/official/055.jpg",
       "country": "Нидерланды",
-      "results": "Победитель 5-го этапа Tour de France 2026 и трёх этапов Giro d’Italia в 2024–2025 годах.",
       "risk": "Зависит от работы развозящего поезда и позиции перед финишем.",
-      "image": "assets/riders/olav-kooij.jpg",
       "imagePosition": "center 16%",
-      "why": "Один из сильнейших молодых чистых спринтеров пелотона."
+      "watch": "равнинные этапы"
     },
     {
       "id": "derived-torstein-traeen",
       "aliases": [
         "Torstein Traeen",
-        "Torstein Træen"
+        "Torstein Træen",
+        "Torstein TRÆEN"
       ],
       "team": "Uno-X Mobility",
       "entryType": "derived",
@@ -1860,24 +1865,25 @@ window.TDF_DATA = {
         "jerseyType": "yellow"
       },
       "results": "Победитель горного этапа Tour de Suisse 2024 и девятый в общем зачёте Vuelta a España 2025.",
-      "chance": "Горы/отрыв",
-      "watch": "горные этапы и отрывы",
+      "name": "Torstein Træen",
       "roles": [
         "GC",
         "Этапы",
         "Горы"
       ],
+      "why": "Опытный горняк, опасный в отрывах и на затяжных подъёмах.",
+      "image": "assets/riders/official/127.jpg",
       "country": "Норвегия",
-      "name": "Torstein Træen",
+      "chance": "Горы/отрыв",
       "risk": "Спринт и равнинные финиши ему не подходят.",
-      "image": "assets/riders/torstein-traeen.jpg",
       "imagePosition": "center 17%",
-      "why": "Опытный горняк, опасный в отрывах и на затяжных подъёмах."
+      "watch": "горные этапы и отрывы"
     },
     {
       "id": "derived-alex-molenaar",
       "aliases": [
-        "Alex Molenaar"
+        "Alex Molenaar",
+        "Alex MOLENAAR"
       ],
       "name": "Alex Molenaar",
       "team": "Caja Rural-Seguros RGA",
@@ -1908,23 +1914,25 @@ window.TDF_DATA = {
         "createdAtStage": 2,
         "jerseyType": "polkaDot"
       },
+      "results": "Победитель Tour of Romania 2019 и этапа Tour de Langkawi 2022.",
       "chance": "Отрыв",
-      "watch": "отрывы и холмистые этапы",
       "roles": [
         "Этапы",
         "Горы"
       ],
+      "why": "Активный гонщик для дальних отрывов и сложных переходных этапов.",
+      "image": "assets/riders/official/224.jpg",
       "country": "Нидерланды",
-      "results": "Победитель Tour of Romania 2019 и этапа Tour de Langkawi 2022.",
       "risk": "Редко имеет поддержку команды для борьбы с лидерами общего зачёта.",
-      "image": "assets/riders/alex-molenaar.jpg",
       "imagePosition": "center 16%",
-      "why": "Активный гонщик для дальних отрывов и сложных переходных этапов."
+      "watch": "отрывы и холмистые этапы"
     },
     {
       "id": "derived-egan-bernal",
       "aliases": [
-        "Egan Bernal"
+        "Egan Bernal",
+        "Egan BERNAL GOMEZ",
+        "Egan Bernal Gomez"
       ],
       "name": "Egan Bernal",
       "team": "Netcompany Ineos Cycling Team",
@@ -1955,19 +1963,19 @@ window.TDF_DATA = {
         "createdAtStage": 1,
         "jerseyType": "green"
       },
+      "results": "Победитель Tour de France 2019 и Giro d’Italia 2021.",
       "chance": "GC/горы",
-      "watch": "горные этапы",
       "roles": [
         "GC",
         "Горы",
         "Этапы"
       ],
+      "why": "Проверенный лидер многодневок и один из самых известных горняков поколения.",
+      "image": "assets/riders/official/081.jpg",
       "country": "Колумбия",
-      "results": "Победитель Tour de France 2019 и Giro d’Italia 2021.",
       "risk": "Форма после тяжёлой травмы может быть менее стабильной, чем в лучшие сезоны.",
-      "image": "assets/riders/egan-bernal.jpg",
       "imagePosition": "center 15%",
-      "why": "Проверенный лидер многодневок и один из самых известных горняков поколения."
+      "watch": "горные этапы"
     }
   ],
   "videoSource": {
@@ -2362,7 +2370,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-1",
-      "checkedAt": "2026-07-15T06:54:01+03:00",
+      "checkedAt": "2026-07-16T11:00:20+03:00",
       "distanceActual": "19.6 км",
       "winner": {
         "riderId": "jonas-vingegaard",
@@ -2421,23 +2429,43 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "jonas-vingegaard",
-          "name": "Jonas Vingegaard",
-          "team": "Team Visma | Lease a Bike"
+          "officialIds": {
+            "letour": "11"
+          },
+          "letourSlug": "jonas-vingegaard-hansen",
+          "name": "Jonas Vingegaard Hansen",
+          "rawName": "Jonas VINGEGAARD HANSEN",
+          "team": "TEAM VISMA | LEASE A BIKE"
         },
         "green": {
           "riderId": "derived-egan-bernal",
-          "name": "Egan Bernal",
-          "team": "Netcompany Ineos Cycling Team"
+          "officialIds": {
+            "letour": "81"
+          },
+          "letourSlug": "egan-bernal-gomez",
+          "name": "Egan Bernal Gomez",
+          "rawName": "Egan BERNAL GOMEZ",
+          "team": "NETCOMPANY INEOS CYCLING TEAM"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
-          "team": "UAE Team Emirates XRG"
+          "rawName": "Tadej POGACAR",
+          "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "juan-ayuso",
-          "name": "Juan Ayuso",
-          "team": "Lidl-Trek"
+          "officialIds": {
+            "letour": "31"
+          },
+          "letourSlug": "juan-ayuso-pesquera",
+          "name": "Juan Ayuso Pesquera",
+          "rawName": "Juan AYUSO PESQUERA",
+          "team": "LIDL-TREK"
         }
       },
       "decisions": {}
@@ -2448,7 +2476,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings",
-      "checkedAt": "2026-07-15T06:54:01+03:00",
+      "checkedAt": "2026-07-16T11:00:23+03:00",
       "distanceActual": "168.5 км",
       "winner": {
         "riderId": "isaac-del-toro",
@@ -2507,24 +2535,43 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "jonas-vingegaard",
-          "name": "Jonas Vingegaard",
-          "team": "Team Visma | Lease a Bike"
+          "officialIds": {
+            "letour": "11"
+          },
+          "letourSlug": "jonas-vingegaard-hansen",
+          "name": "Jonas Vingegaard Hansen",
+          "rawName": "Jonas VINGEGAARD HANSEN",
+          "team": "TEAM VISMA | LEASE A BIKE"
         },
         "green": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
-          "team": "UAE Team Emirates XRG"
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
+          "team": "UAE TEAM EMIRATES XRG"
         },
         "polkaDot": {
           "riderId": "derived-alex-molenaar",
+          "officialIds": {
+            "letour": "224"
+          },
+          "letourSlug": "alex-molenaar",
           "name": "Alex Molenaar",
-          "team": "Caja Rural-Seguros RGA"
+          "rawName": "Alex MOLENAAR",
+          "team": "CAJA RURAL-SEGUROS RGA"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
-          "team": "UAE Team Emirates XRG",
-          "wornByRiderId": "juan-ayuso"
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
+          "team": "UAE TEAM EMIRATES XRG"
         }
       },
       "decisions": {}
@@ -2535,7 +2582,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-3",
-      "checkedAt": "2026-07-15T06:54:02+03:00",
+      "checkedAt": "2026-07-16T11:00:27+03:00",
       "distanceActual": "195.9 км",
       "winner": {
         "riderId": "tadej-pogacar",
@@ -2594,23 +2641,43 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
-          "team": "UAE Team Emirates XRG"
+          "rawName": "Tadej POGACAR",
+          "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
-          "team": "UAE Team Emirates XRG"
+          "rawName": "Tadej POGACAR",
+          "team": "UAE TEAM EMIRATES XRG"
         },
         "polkaDot": {
           "riderId": "derived-alex-baudin",
+          "officialIds": {
+            "letour": "43"
+          },
+          "letourSlug": "alex-baudin",
           "name": "Alex Baudin",
-          "team": "EF Education - EasyPost"
+          "rawName": "Alex BAUDIN",
+          "team": "EF EDUCATION - EASYPOST"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
-          "team": "UAE Team Emirates XRG"
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
+          "team": "UAE TEAM EMIRATES XRG"
         }
       },
       "decisions": {}
@@ -2621,7 +2688,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-4",
-      "checkedAt": "2026-07-15T06:54:02+03:00",
+      "checkedAt": "2026-07-16T11:00:30+03:00",
       "distanceActual": "181.9 км",
       "winner": {
         "riderId": "mads-pedersen",
@@ -2680,23 +2747,43 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "derived-torstein-traeen",
-          "name": "Torstein Traeen",
-          "team": "Uno-X Mobility"
+          "officialIds": {
+            "letour": "127"
+          },
+          "letourSlug": "torstein-traeen",
+          "name": "Torstein Træen",
+          "rawName": "Torstein TRÆEN",
+          "team": "UNO-X MOBILITY"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
-          "team": "Lidl-Trek"
+          "rawName": "Mads PEDERSEN",
+          "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "derived-alex-baudin",
+          "officialIds": {
+            "letour": "43"
+          },
+          "letourSlug": "alex-baudin",
           "name": "Alex Baudin",
-          "team": "EF Education - EasyPost"
+          "rawName": "Alex BAUDIN",
+          "team": "EF EDUCATION - EASYPOST"
         },
         "white": {
           "riderId": "derived-mathias-vacek",
+          "officialIds": {
+            "letour": "37"
+          },
+          "letourSlug": "mathias-vacek",
           "name": "Mathias Vacek",
-          "team": "Lidl-Trek"
+          "rawName": "Mathias VACEK",
+          "team": "LIDL-TREK"
         }
       },
       "decisions": {}
@@ -2707,7 +2794,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-5",
-      "checkedAt": "2026-07-15T06:54:02+03:00",
+      "checkedAt": "2026-07-16T11:00:34+03:00",
       "distanceActual": "158.3 км",
       "winner": {
         "riderId": "letour-rider-55",
@@ -2766,22 +2853,42 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "derived-torstein-traeen",
-          "name": "Torstein Traeen",
+          "officialIds": {
+            "letour": "127"
+          },
+          "letourSlug": "torstein-traeen",
+          "name": "Torstein Træen",
+          "rawName": "Torstein TRÆEN",
           "team": "UNO-X MOBILITY"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "derived-alex-baudin",
+          "officialIds": {
+            "letour": "43"
+          },
+          "letourSlug": "alex-baudin",
           "name": "Alex Baudin",
+          "rawName": "Alex BAUDIN",
           "team": "EF EDUCATION - EASYPOST"
         },
         "white": {
           "riderId": "derived-mathias-vacek",
+          "officialIds": {
+            "letour": "37"
+          },
+          "letourSlug": "mathias-vacek",
           "name": "Mathias Vacek",
+          "rawName": "Mathias VACEK",
           "team": "LIDL-TREK"
         }
       },
@@ -2793,7 +2900,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-6",
-      "checkedAt": "2026-07-15T06:54:02+03:00",
+      "checkedAt": "2026-07-16T11:00:37+03:00",
       "distanceActual": "186.2 км",
       "winner": {
         "riderId": "tadej-pogacar",
@@ -2852,22 +2959,42 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
           "team": "UAE TEAM EMIRATES XRG"
         }
       },
@@ -2879,7 +3006,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-7",
-      "checkedAt": "2026-07-15T06:54:02+03:00",
+      "checkedAt": "2026-07-16T11:00:40+03:00",
       "distanceActual": "175.1 км",
       "winner": {
         "riderId": "tim-merlier",
@@ -2938,22 +3065,42 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
           "team": "UAE TEAM EMIRATES XRG"
         }
       },
@@ -2965,7 +3112,7 @@ window.TDF_DATA = {
       "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-8",
-      "checkedAt": "2026-07-15T06:54:03+03:00",
+      "checkedAt": "2026-07-16T11:00:42+03:00",
       "distanceActual": "180.4 км",
       "winner": {
         "riderId": "tim-merlier",
@@ -3024,22 +3171,42 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
           "team": "UAE TEAM EMIRATES XRG"
         }
       },
@@ -3048,11 +3215,11 @@ window.TDF_DATA = {
     "9": {
       "stage": 9,
       "status": "official",
-      "flags": null,
+      "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-9",
-      "checkedAt": "2026-07-15T06:54:03+03:00",
-      "distanceActual": "155.5 км",
+      "checkedAt": "2026-07-16T11:00:45+03:00",
+      "distanceActual": "154.6 км",
       "winner": {
         "riderId": "mathieu-van-der-poel",
         "officialIds": {
@@ -3110,34 +3277,54 @@ window.TDF_DATA = {
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "isaac-del-toro",
-          "name": "Isaac del Toro",
+          "officialIds": {
+            "letour": "2"
+          },
+          "letourSlug": "isaac-del-toro-romero",
+          "name": "Isaac Del Toro Romero",
+          "rawName": "Isaac DEL TORO ROMERO",
           "team": "UAE TEAM EMIRATES XRG"
         }
       },
-      "decisions": null
+      "decisions": {}
     },
     "10": {
       "stage": 10,
       "status": "official",
-      "flags": null,
+      "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-10",
-      "checkedAt": "2026-07-15T06:54:03+03:00",
+      "checkedAt": "2026-07-16T11:00:49+03:00",
       "distanceActual": "166.6 км",
       "winner": {
         "riderId": "tadej-pogacar",
@@ -3191,39 +3378,59 @@ window.TDF_DATA = {
         }
       ],
       "winningTime": "03h 58' 08''",
-      "summary": "T. POGACAR выиграл 10-й этап «Тур де Франс». Вторым финишировал R. EVENEPOEL, третьим — P. SEIXAS. Результат импортирован из официального протокола Tour de France.",
+      "summary": "T. POGACAR выиграл 10-й этап «Тур де Франс». Вторым финишировал R. EVENEPOEL, третьим — P. SEIXAS. Жёлтую майку сохранил Tadej Pogacar. Данные взяты из официального протокола Tour de France.",
       "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-10",
       "jerseysAfterStage": {
         "yellow": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "green": {
           "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
           "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
           "team": "LIDL-TREK"
         },
         "polkaDot": {
           "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
           "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
           "team": "UAE TEAM EMIRATES XRG"
         },
         "white": {
           "riderId": "juan-ayuso",
-          "name": "Juan Ayuso",
+          "officialIds": {
+            "letour": "31"
+          },
+          "letourSlug": "juan-ayuso-pesquera",
+          "name": "Juan Ayuso Pesquera",
+          "rawName": "Juan AYUSO PESQUERA",
           "team": "LIDL-TREK"
         }
       },
-      "decisions": null
+      "decisions": {}
     },
     "11": {
       "stage": 11,
       "status": "official",
-      "flags": null,
+      "flags": {},
       "source": "letour",
       "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
-      "checkedAt": "2026-07-16T10:20:16+03:00",
+      "checkedAt": "2026-07-16T11:01:47+03:00",
       "distanceActual": "161.3 км",
       "winner": {
         "riderId": "letour-rider-128",
@@ -3321,11 +3528,11 @@ window.TDF_DATA = {
           "team": "LIDL-TREK"
         }
       },
-      "decisions": null
+      "decisions": {}
     }
   },
   "resultsMeta": {
-    "checkedAt": "2026-07-16T10:20:17+03:00",
+    "checkedAt": "2026-07-16T11:01:48+03:00",
     "sourcePriority": [
       "letour",
       "pcs",
@@ -3337,7 +3544,7 @@ window.TDF_DATA = {
   },
   "generalClassification": {
     "stage": 11,
-    "checkedAt": "2026-07-16T10:20:16+03:00",
+    "checkedAt": "2026-07-16T11:01:47+03:00",
     "status": "official",
     "source": "letour",
     "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
@@ -3485,7 +3692,7 @@ window.TDF_DATA = {
     ]
   },
   "riderValidation": {
-    "checkedAt": "2026-07-16T10:20:17+03:00",
+    "checkedAt": "2026-07-16T11:01:48+03:00",
     "status": "complete",
     "duplicateIds": [],
     "aliasConflicts": [],
