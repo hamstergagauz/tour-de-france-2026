@@ -129,13 +129,6 @@
     "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20LBL%20start%20Ben%20Healy.jpg?width=900"
   },
   {
-    "name": "Olav Kooij",
-    "page": "Olav Kooij on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg",
-    "image": "assets/riders/olav-kooij.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Olav_Kooij_on_the_podium_at_the_presentation_ceremony_for_Stage_5_of_the_2026_Tour_de_France.jpg",
-    "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Olav%20Kooij%20on%20the%20podium%20at%20the%20presentation%20ceremony%20for%20Stage%205%20of%20the%202026%20Tour%20de%20France.jpg?width=900"
-  },
-  {
     "name": "Alex Baudin",
     "page": "Alex Baudin on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg",
     "image": "assets/riders/alex-baudin.jpg",
@@ -165,16 +158,23 @@
   },
   {
     "name": "Soren Waerenskjold",
-    "page": "Søren Wærenskjold Tour de Belgique 2023.jpg",
+    "page": "Søren Wærenskjold VM 2017.jpg",
     "image": "assets/riders/soren-waerenskjold.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:S%C3%B8ren_W%C3%A6renskjold_Tour_de_Belgique_2023.jpg",
-    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/S%C3%B8ren_W%C3%A6renskjold_Tour_de_Belgique_2023.jpg/960px-S%C3%B8ren_W%C3%A6renskjold_Tour_de_Belgique_2023.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%B8ren_W%C3%A6renskjold_VM_2017.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/S%C3%B8ren_W%C3%A6renskjold_VM_2017.jpg/960px-S%C3%B8ren_W%C3%A6renskjold_VM_2017.jpg"
+  },
+  {
+    "name": "Olav Kooij",
+    "page": "2023 NK Wielrennen podium 5 (cropped).jpg",
+    "image": "assets/riders/olav-kooij.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2023_NK_Wielrennen_podium_5_%28cropped%29.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9b/2023_NK_Wielrennen_podium_5_%28cropped%29.jpg"
   },
   {
     "name": "Mathias Vacek",
-    "page": "Mathias Vacek on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg",
+    "page": "Mathias Vacek - 2023 UCI Road World Championships (Men's road race).jpg",
     "image": "assets/riders/mathias-vacek.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Mathias_Vacek_on_the_podium_at_the_presentation_ceremony_for_Stage_5_of_the_2026_Tour_de_France.jpg",
-    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mathias_Vacek_on_the_podium_at_the_presentation_ceremony_for_Stage_5_of_the_2026_Tour_de_France.jpg/960px-Mathias_Vacek_on_the_podium_at_the_presentation_ceremony_for_Stage_5_of_the_2026_Tour_de_France.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Mathias_Vacek_-_2023_UCI_Road_World_Championships_%28Men%27s_road_race%29.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mathias_Vacek_-_2023_UCI_Road_World_Championships_%28Men%27s_road_race%29.jpg/960px-Mathias_Vacek_-_2023_UCI_Road_World_Championships_%28Men%27s_road_race%29.jpg"
   }
 ]

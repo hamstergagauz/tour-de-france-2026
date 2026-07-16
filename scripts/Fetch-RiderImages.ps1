@@ -26,10 +26,10 @@ $pages = @(
     @{ Name = "Tom Pidcock"; Page = "Tom_Pidcock"; CommonsFile = "Tom Pidcock (2025) (cropped).jpg" },
     @{ Name = "Julian Alaphilippe"; Page = "Julian_Alaphilippe"; CommonsFile = "Julian Alaphilippe (48518120161).jpg" },
     @{ Name = "Ben Healy"; Page = "Ben_Healy"; CommonsFile = "2024 LBL start Ben Healy.jpg" },
-    @{ Name = "Soren Waerenskjold"; Page = "S%C3%B8ren_W%C3%A6renskjold"; CommonsFile = "Søren Wærenskjold Tour de Belgique 2023.jpg" },
-    @{ Name = "Olav Kooij"; Page = "Olav_Kooij"; CommonsFile = "Olav Kooij on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg" },
+    @{ Name = "Soren Waerenskjold"; Page = "S%C3%B8ren_W%C3%A6renskjold"; CommonsFile = "Søren Wærenskjold VM 2017.jpg"; DirectUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/S%C3%B8ren_W%C3%A6renskjold_VM_2017.jpg/960px-S%C3%B8ren_W%C3%A6renskjold_VM_2017.jpg" },
+    @{ Name = "Olav Kooij"; Page = "Olav_Kooij"; CommonsFile = "2023 NK Wielrennen podium 5 (cropped).jpg"; DirectUrl = "https://upload.wikimedia.org/wikipedia/commons/9/9b/2023_NK_Wielrennen_podium_5_%28cropped%29.jpg" },
     @{ Name = "Alex Baudin"; Page = "Alex_Baudin"; CommonsFile = "Alex Baudin on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg" },
-    @{ Name = "Mathias Vacek"; Page = "Mathias_Vacek"; CommonsFile = "Mathias Vacek on the podium at the presentation ceremony for Stage 5 of the 2026 Tour de France.jpg" },
+    @{ Name = "Mathias Vacek"; Page = "Mathias_Vacek"; CommonsFile = "Mathias Vacek - 2023 UCI Road World Championships (Men's road race).jpg"; DirectUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mathias_Vacek_-_2023_UCI_Road_World_Championships_%28Men%27s_road_race%29.jpg/960px-Mathias_Vacek_-_2023_UCI_Road_World_Championships_%28Men%27s_road_race%29.jpg" },
     @{ Name = "Torstein Traeen"; Page = "Torstein_Tr%C3%A6en"; CommonsFile = "2023 LBL start Torstein Træen.jpg" },
     @{ Name = "Alex Molenaar"; Page = "Alex_Molenaar"; CommonsFile = "Alex Molenaar.JPG"; DirectUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alex_Molenaar.JPG/960px-Alex_Molenaar.JPG" },
     @{ Name = "Egan Bernal"; Page = "Egan_Bernal"; CommonsFile = "Egan Bernal KOERS 2019 01 (cropped).jpg"; DirectUrl = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Egan_Bernal_KOERS_2019_01_%28cropped%29.jpg" }
