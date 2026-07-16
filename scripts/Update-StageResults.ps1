@@ -318,6 +318,100 @@ function Get-GeneralClassificationAjaxUrl {
   return "$BaseUrl$path"
 }
 
+function Get-RankingAjaxUrls {
+  param([string]$Html)
+
+  $match = [regex]::Match($Html, 'data-ajax-stack\s*=\s*\{([^}]+)\}', 'IgnoreCase')
+  if (-not $match.Success) { return $null }
+
+  $json = [System.Net.WebUtility]::HtmlDecode("{$($match.Groups[1].Value)}").Replace('\/', '/')
+  return $json | ConvertFrom-Json
+}
+
+function Get-ClassificationLeader {
+  param(
+    [string]$Html,
+    [string]$ClassificationType
+  )
+
+  $urls = Get-RankingAjaxUrls -Html $Html
+  if (-not $urls -or -not $urls.$ClassificationType) { return $null }
+
+  $url = "https://www.letour.fr$($urls.$ClassificationType)"
+  Write-Host "Fetching $ClassificationType leader from $url"
+  try {
+    $classificationHtml = (Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 30).Content
+  } catch {
+    Write-Warning "Could not fetch $ClassificationType leader: $($_.Exception.Message)"
+    return $null
+  }
+
+  $rows = [regex]::Matches($classificationHtml, '<tr[^>]*class="[^"]*rankingTables__row[^"]*"[^>]*>(.*?)</tr>', 'Singleline')
+  if (-not $rows.Count) { return $null }
+
+  $row = $rows[0].Value
+  $rankMatch = [regex]::Match($row, 'rankingTables__row__position[^>]*>\s*<span>(\d+)</span>', 'Singleline')
+  if (-not $rankMatch.Success -or [int]$rankMatch.Groups[1].Value -ne 1) { return $null }
+
+  $fullNameMatch = [regex]::Match($row, 'alt="([^"]+)"', 'Singleline')
+  $shortNameMatch = [regex]::Match($row, 'rankingTables__row__profile--name[^>]*>\s*(.*?)\s*</a>', 'Singleline')
+  $teamMatch = [regex]::Match($row, '<td class="break-line team">\s*<a[^>]*>\s*(.*?)\s*</a>', 'Singleline')
+  $rawName = if ($fullNameMatch.Success) { Convert-HtmlText $fullNameMatch.Groups[1].Value } else { Convert-HtmlText $shortNameMatch.Groups[1].Value }
+  $displayName = Convert-RiderDisplayName $rawName
+  $team = if ($teamMatch.Success) { Convert-HtmlText $teamMatch.Groups[1].Value } else { "" }
+  $entry = New-RankingEntry -RowHtml $row -RawName $rawName -DisplayName $displayName -Team $team
+
+  return [pscustomobject]@{
+    riderId = $null
+    officialIds = $entry.officialIds
+    letourSlug = $entry.letourSlug
+    name = $entry.name
+    rawName = $entry.rawName
+    team = $entry.team
+  }
+}
+
+function Get-JerseyHolders {
+  param([string]$RankingHtml)
+
+  return [pscustomobject]@{
+    yellow = Get-ClassificationLeader -Html $RankingHtml -ClassificationType "itg"
+    green = Get-ClassificationLeader -Html $RankingHtml -ClassificationType "ipg"
+    polkaDot = Get-ClassificationLeader -Html $RankingHtml -ClassificationType "img"
+    white = Get-ClassificationLeader -Html $RankingHtml -ClassificationType "ijg"
+  }
+}
+
+function Get-StageProfileDetails {
+  param([int]$Stage)
+
+  $url = "https://www.letour.fr/en/stage-$Stage"
+  Write-Host "Fetching stage $Stage profile from $url"
+  try {
+    $html = (Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 30).Content
+  } catch {
+    Write-Warning "Could not fetch stage $Stage profile: $($_.Exception.Message)"
+    return $null
+  }
+
+  $mainStart = $html.IndexOf('<div class="stageHeader__stage stageHeader__stage--main">')
+  $mainEnd = if ($mainStart -ge 0) { $html.IndexOf('stageHeader__mobile-nav', $mainStart) } else { -1 }
+  $main = if ($mainStart -ge 0 -and $mainEnd -gt $mainStart) { $html.Substring($mainStart, $mainEnd - $mainStart) } else { $html }
+
+  $lengthMatch = [regex]::Match($main, '<span class="stageHeader__length__label">Length</span>.*?([0-9]+(?:\.[0-9]+)?)\s*km', 'Singleline')
+  $elevationMatch = [regex]::Match($main, '<span class="stageHeader__length__label">D\+</span>.*?([0-9]+)\s*m', 'Singleline')
+  $startMatch = [regex]::Match($html, '<strong>Neutralised start</strong>\s*:\s*([0-9]{1,2}:[0-9]{2})', 'IgnoreCase')
+  $finishMatch = [regex]::Match($html, '<strong>Expected arrival</strong>\s*:\s*([0-9]{1,2}:[0-9]{2})', 'IgnoreCase')
+
+  return [pscustomobject]@{
+    sourceUrl = $url
+    distance = if ($lengthMatch.Success) { "$($lengthMatch.Groups[1].Value) км" } else { $null }
+    elevation = if ($elevationMatch.Success) { "D+ $($elevationMatch.Groups[1].Value) м" } else { $null }
+    startTime = if ($startMatch.Success) { $startMatch.Groups[1].Value } else { $null }
+    finishWindow = if ($finishMatch.Success) { "около $($finishMatch.Groups[1].Value)" } else { $null }
+  }
+}
+
 function Parse-GeneralClassificationTop10 {
   param([string]$Html)
 
@@ -398,11 +492,13 @@ function Get-GeneralClassification {
 function New-GeneratedSummary {
   param(
     [int]$Stage,
-    [object[]]$Top3
+    [object[]]$Top3,
+    [object]$Jerseys
   )
 
   if ($Top3.Count -lt 3) { return "" }
-  return "$($Top3[0].name) выиграл $Stage-й этап «Тур де Франс». Вторым финишировал $($Top3[1].name), третьим — $($Top3[2].name). Результат импортирован из официального протокола Tour de France."
+  $yellowText = if ($Jerseys -and $Jerseys.yellow -and $Jerseys.yellow.name) { " Жёлтую майку сохранил $($Jerseys.yellow.name)." } else { "" }
+  return "$($Top3[0].name) выиграл $Stage-й этап «Тур де Франс». Вторым финишировал $($Top3[1].name), третьим — $($Top3[2].name).$yellowText Данные взяты из официального протокола Tour de France."
 }
 
 function New-RiderRegistryContext {
@@ -1011,6 +1107,29 @@ foreach ($stageNumber in $stageNumbers) {
   $result = if ($existing) { $existing } else { [pscustomobject]@{ stage = $stageNumber } }
 
   $mergedTop3 = if ($existing) { @(Merge-ParsedTop3WithExisting -ParsedTop3 $top3 -ExistingTop3 @($existing.top3)) } else { $top3 }
+  $jerseys = Get-JerseyHolders -RankingHtml $html
+  foreach ($jerseyType in @("yellow", "green", "polkaDot", "white")) {
+    if (-not $jerseys.$jerseyType -and $existing -and $existing.jerseysAfterStage) {
+      $jerseys.$jerseyType = $existing.jerseysAfterStage.$jerseyType
+    }
+  }
+  $profile = Get-StageProfileDetails -Stage $stageNumber
+
+  if ($profile) {
+    if ($profile.distance) {
+      $stage.distance = $profile.distance
+    }
+    if ($profile.elevation) {
+      $stage.elevation = $profile.elevation
+    }
+    if ($profile.startTime) {
+      $stage.startTime = $profile.startTime
+    }
+    if ($profile.finishWindow) {
+      $stage.finishWindow = $profile.finishWindow
+    }
+    $stage.status = "Official stage profile"
+  }
 
   $updatedResult = [pscustomobject]@{
     stage = $stageNumber
@@ -1030,14 +1149,9 @@ foreach ($stageNumber in $stageNumbers) {
     }
     top3 = $mergedTop3
     winningTime = $mergedTop3[0].time
-    summary = if ($result.summary) { $result.summary } else { New-GeneratedSummary -Stage $stageNumber -Top3 $mergedTop3 }
+    summary = if ($existing -and $result.summary -and $result.summary -notmatch 'Результат импортирован') { $result.summary } else { New-GeneratedSummary -Stage $stageNumber -Top3 $mergedTop3 -Jerseys $jerseys }
     summarySourceUrl = if ($result.summarySourceUrl) { $result.summarySourceUrl } else { $url }
-    jerseysAfterStage = if ($result.jerseysAfterStage) { $result.jerseysAfterStage } else { [pscustomobject]@{
-      yellow = $null
-      green = $null
-      polkaDot = $null
-      white = $null
-    } }
+    jerseysAfterStage = $jerseys
     decisions = if ($result.PSObject.Properties["decisions"] -and $result.decisions) { @($result.decisions) } else { @() }
   }
 

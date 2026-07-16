@@ -246,10 +246,12 @@ if ($newItems.Count -eq 0) {
   $data.highlights = @($data.highlights) + $newItems
 }
 
-$sourceNote = switch ($feedResult.Source.Name) {
-  "playlist" { "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."; break }
-  "channel" { "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."; break }
-  default { "Fallback source for Tour de France highlights. RSS failed, so the public playlist page and oEmbed were used." }
+$sourceNote = if ($feedResult.Source.Name -eq "playlist") {
+  "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."
+} elseif ($feedResult.Source.Name -eq "channel") {
+  "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
+} else {
+  "Fallback source for Tour de France highlights. RSS failed, so the public playlist page and oEmbed were used."
 }
 
 $data.videoSource = [pscustomobject]@{
@@ -265,10 +267,16 @@ $data.videoSource = [pscustomobject]@{
 $data.meta.updatedAt = (Get-Date).ToString("yyyy-MM-dd")
 $data.meta.youtubeHighlightsCheckedAt = (Get-Date).ToString("yyyy-MM-ddTHH:mm:sszzz")
 
-if (-not $data.meta.dataStatus.highlights) {
-  $data.meta.dataStatus | Add-Member -NotePropertyName "highlights" -NotePropertyValue "RSS monitored"
+$highlightStatus = if ($feedResult.Source.Name -eq "playlist-page") {
+  "YouTube playlist page fallback"
 } else {
-  $data.meta.dataStatus.highlights = "RSS monitored"
+  "YouTube RSS monitored"
+}
+
+if (-not $data.meta.dataStatus.highlights) {
+  $data.meta.dataStatus | Add-Member -NotePropertyName "highlights" -NotePropertyValue $highlightStatus
+} else {
+  $data.meta.dataStatus.highlights = $highlightStatus
 }
 
 if ($DryRun) {

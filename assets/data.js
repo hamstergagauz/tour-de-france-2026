@@ -1,15 +1,15 @@
 window.TDF_DATA = {
   "meta": {
-    "updatedAt": "2026-07-15",
+    "updatedAt": "2026-07-16",
     "routeCheckedAt": "2026-06-30T13:04:40",
     "dataStatus": {
       "route": "Verified",
       "broadcasters": "Preliminary",
       "predictions": "Forecast",
-      "highlights": "RSS monitored",
+      "highlights": "YouTube RSS monitored",
       "results": "Official / review needed"
     },
-    "youtubeHighlightsCheckedAt": "2026-07-15T07:00:51+03:00"
+    "youtubeHighlightsCheckedAt": "2026-07-16T07:48:51+03:00"
   },
   "links": {
     "officialRoute": "https://www.letour.fr/en/overall-route",
@@ -510,9 +510,9 @@ window.TDF_DATA = {
       "route": "Vichy > Nevers",
       "distance": "161.3 км",
       "type": "Равнинный",
-      "elevation": "уточнить",
+      "elevation": "D+ 1400 м",
       "startTime": "13:50",
-      "finishWindow": "17:31",
+      "finishWindow": "около 17:31",
       "difficulty": "Низкая",
       "gcImpact": "Низкий",
       "watchPriority": "4/10",
@@ -523,7 +523,7 @@ window.TDF_DATA = {
       ],
       "map": "https://www.letour.fr/en/stage-11",
       "viewingAdvice": "Достаточно финала",
-      "status": "Verified route / Official timing"
+      "status": "Official stage profile"
     },
     {
       "number": 12,
@@ -832,7 +832,9 @@ window.TDF_DATA = {
           6,
           7,
           8,
-          9
+          9,
+          10,
+          11
         ],
         "green": [
           3
@@ -842,11 +844,13 @@ window.TDF_DATA = {
           6,
           7,
           8,
-          9
+          9,
+          10,
+          11
         ],
         "white": []
       },
-      "latestQualifyingStage": 10,
+      "latestQualifyingStage": 11,
       "editorialOrder": 1,
       "derivedFrom": null
     },
@@ -1188,10 +1192,11 @@ window.TDF_DATA = {
         "green": [],
         "polkaDot": [],
         "white": [
-          1
+          1,
+          10
         ]
       },
-      "latestQualifyingStage": 1,
+      "latestQualifyingStage": 10,
       "editorialOrder": 8,
       "derivedFrom": null
     },
@@ -1379,12 +1384,14 @@ window.TDF_DATA = {
           6,
           7,
           8,
-          9
+          9,
+          10,
+          11
         ],
         "polkaDot": [],
         "white": []
       },
-      "latestQualifyingStage": 9,
+      "latestQualifyingStage": 11,
       "editorialOrder": 12,
       "derivedFrom": null
     },
@@ -1614,6 +1621,82 @@ window.TDF_DATA = {
       "latestQualifyingStage": null,
       "editorialOrder": 17,
       "derivedFrom": null
+    },
+    {
+      "id": "letour-rider-31",
+      "aliases": [
+        "Juan AYUSO PESQUERA",
+        "Juan Ayuso Pesquera"
+      ],
+      "name": "Juan Ayuso Pesquera",
+      "team": "LIDL-TREK",
+      "country": "",
+      "roles": [],
+      "entryType": "derived",
+      "reviewNeeded": false,
+      "officialIds": {
+        "letour": "31"
+      },
+      "inclusion": {
+        "editorial": false,
+        "stageWinner": false,
+        "jerseyHolder": true
+      },
+      "stageWinnerStages": [],
+      "jerseyHistory": {
+        "yellow": [],
+        "green": [],
+        "polkaDot": [],
+        "white": [
+          11
+        ]
+      },
+      "latestQualifyingStage": 11,
+      "editorialOrder": null,
+      "derivedFrom": {
+        "type": "letour-official",
+        "source": "jersey-holder",
+        "createdAtStage": 11,
+        "jerseyType": "white"
+      }
+    },
+    {
+      "id": "letour-rider-128",
+      "aliases": [
+        "Søren WÆRENSKJOLD",
+        "S. WAERENSKJOLD"
+      ],
+      "name": "Søren Wærenskjold",
+      "team": "UNO-X MOBILITY",
+      "country": "",
+      "roles": [],
+      "entryType": "derived",
+      "reviewNeeded": false,
+      "officialIds": {
+        "letour": "128"
+      },
+      "inclusion": {
+        "editorial": false,
+        "stageWinner": true,
+        "jerseyHolder": false
+      },
+      "stageWinnerStages": [
+        11
+      ],
+      "jerseyHistory": {
+        "yellow": [],
+        "green": [],
+        "polkaDot": [],
+        "white": []
+      },
+      "latestQualifyingStage": 11,
+      "editorialOrder": null,
+      "derivedFrom": {
+        "type": "letour-official",
+        "source": "stage-winner",
+        "createdAtStage": 11,
+        "jerseyType": ""
+      }
     },
     {
       "id": "derived-alex-baudin",
@@ -1849,8 +1932,8 @@ window.TDF_DATA = {
     "channelUrl": "https://www.youtube.com/@TNTSportsCycling",
     "channelId": "UCfDfvvMARk4TKcC62ALi6eA",
     "playlistId": "PLXJfHJFBpClY",
-    "feedUrl": "https://www.youtube.com/playlist?list=PLXJfHJFBpClY",
-    "sourceType": "playlist-page",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA",
+    "sourceType": "channel",
     "note": "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
   },
   "highlights": [
@@ -2193,6 +2276,39 @@ window.TDF_DATA = {
       "source": "TNT Sports Cycling",
       "publishedAt": null,
       "discoveredAt": "2026-07-15T07:00:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 11,
+      "type": "Race Highlights",
+      "title": "FAIRY TAIL WIN IN NEVERS! 👏 | Men's Tour de France Stage 11 Race Highlights | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=3CWwKHIz9sE",
+      "videoId": "3CWwKHIz9sE",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-15T21:06:59+03:00",
+      "discoveredAt": "2026-07-16T07:48:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 11,
+      "type": "Reaction",
+      "title": "Tour de France Stage 11 REACTION: Surprise winner in the bunch sprint 🤯",
+      "url": "https://www.youtube.com/watch?v=iM7doQxzXJU",
+      "videoId": "iM7doQxzXJU",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-15T20:32:37+03:00",
+      "discoveredAt": "2026-07-16T07:48:51+03:00",
+      "isShort": false
+    },
+    {
+      "stage": 11,
+      "type": "Final KM's",
+      "title": "THUNDEROUS SPRINT! 🤩 | Men's Tour de France Stage 11 Final KM's | TNT Sports Cycling",
+      "url": "https://www.youtube.com/watch?v=bOuGn6lOcPQ",
+      "videoId": "bOuGn6lOcPQ",
+      "source": "TNT Sports Cycling",
+      "publishedAt": "2026-07-15T18:25:38+03:00",
+      "discoveredAt": "2026-07-16T07:48:51+03:00",
       "isShort": false
     }
   ],
@@ -2748,7 +2864,7 @@ window.TDF_DATA = {
         },
         {
           "rank": 2,
-          "riderId": null,
+          "riderId": "letour-rider-128",
           "officialIds": {
             "letour": "128"
           },
@@ -3034,48 +3150,154 @@ window.TDF_DATA = {
       "winningTime": "03h 58' 08''",
       "summary": "T. POGACAR выиграл 10-й этап «Тур де Франс». Вторым финишировал R. EVENEPOEL, третьим — P. SEIXAS. Результат импортирован из официального протокола Tour de France.",
       "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-10",
-    "jerseysAfterStage": {
-      "yellow": {
-        "riderId": "tadej-pogacar",
-        "name": "Tadej Pogacar",
-        "team": "UAE TEAM EMIRATES XRG"
+      "jerseysAfterStage": {
+        "yellow": {
+          "riderId": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "team": "UAE TEAM EMIRATES XRG"
+        },
+        "green": {
+          "riderId": "mads-pedersen",
+          "name": "Mads Pedersen",
+          "team": "LIDL-TREK"
+        },
+        "polkaDot": {
+          "riderId": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "team": "UAE TEAM EMIRATES XRG"
+        },
+        "white": {
+          "riderId": "juan-ayuso",
+          "name": "Juan Ayuso",
+          "team": "LIDL-TREK"
+        }
       },
-      "green": {
-        "riderId": "mads-pedersen",
-        "name": "Mads Pedersen",
-        "team": "LIDL-TREK"
+      "decisions": null
+    },
+    "11": {
+      "stage": 11,
+      "status": "official",
+      "flags": null,
+      "source": "letour",
+      "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
+      "checkedAt": "2026-07-16T07:49:05+03:00",
+      "distanceActual": "161.3 км",
+      "winner": {
+        "riderId": "letour-rider-128",
+        "officialIds": {
+          "letour": "128"
+        },
+        "letourSlug": "soeren-waerenskjold",
+        "name": "S. WAERENSKJOLD",
+        "rawName": "Søren WÆRENSKJOLD",
+        "team": "UNO-X MOBILITY"
       },
-      "polkaDot": {
-        "riderId": "tadej-pogacar",
-        "name": "Tadej Pogacar",
-        "team": "UAE TEAM EMIRATES XRG"
-      },
-      "white": {
-        "riderId": "juan-ayuso",
-        "name": "Juan Ayuso",
-        "team": "LIDL-TREK"
-      }
+      "top3": [
+        {
+          "rank": 1,
+          "riderId": "letour-rider-128",
+          "officialIds": {
+            "letour": "128"
+          },
+          "letourSlug": "soeren-waerenskjold",
+          "name": "S. WAERENSKJOLD",
+          "rawName": "Søren WÆRENSKJOLD",
+          "team": "UNO-X MOBILITY",
+          "time": "03h 10' 06''",
+          "gap": "-"
+        },
+        {
+          "rank": 2,
+          "riderId": "letour-rider-55",
+          "officialIds": {
+            "letour": "55"
+          },
+          "letourSlug": "olav-kooij",
+          "name": "O. KOOIJ",
+          "rawName": "Olav KOOIJ",
+          "team": "DECATHLON CMA CGM TEAM",
+          "time": "03h 10' 06''",
+          "gap": "-"
+        },
+        {
+          "rank": 3,
+          "riderId": "jasper-philipsen",
+          "officialIds": {
+            "letour": "105"
+          },
+          "letourSlug": "jasper-philipsen",
+          "name": "J. PHILIPSEN",
+          "rawName": "Jasper PHILIPSEN",
+          "team": "ALPECIN-PREMIER TECH",
+          "time": "03h 10' 06''",
+          "gap": "-"
+        }
+      ],
+      "winningTime": "03h 10' 06''",
+      "summary": "S. WAERENSKJOLD выиграл 11-й этап «Тур де Франс». Вторым финишировал O. KOOIJ, третьим — J. PHILIPSEN. Жёлтую майку сохранил Tadej Pogacar. Данные взяты из официального протокола Tour de France.",
+      "summarySourceUrl": "https://www.letour.fr/en/rankings/stage-11",
+      "jerseysAfterStage": {
+        "yellow": {
+          "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
+          "team": "UAE TEAM EMIRATES XRG"
+        },
+        "green": {
+          "riderId": "mads-pedersen",
+          "officialIds": {
+            "letour": "33"
+          },
+          "letourSlug": "mads-pedersen",
+          "name": "Mads Pedersen",
+          "rawName": "Mads PEDERSEN",
+          "team": "LIDL-TREK"
+        },
+        "polkaDot": {
+          "riderId": "tadej-pogacar",
+          "officialIds": {
+            "letour": "1"
+          },
+          "letourSlug": "tadej-pogacar",
+          "name": "Tadej Pogacar",
+          "rawName": "Tadej POGACAR",
+          "team": "UAE TEAM EMIRATES XRG"
+        },
+        "white": {
+          "riderId": "letour-rider-31",
+          "officialIds": {
+            "letour": "31"
+          },
+          "letourSlug": "juan-ayuso-pesquera",
+          "name": "Juan Ayuso Pesquera",
+          "rawName": "Juan AYUSO PESQUERA",
+          "team": "LIDL-TREK"
+        }
       },
       "decisions": null
     }
   },
   "resultsMeta": {
-    "checkedAt": "2026-07-15T06:54:04+03:00",
+    "checkedAt": "2026-07-16T07:49:05+03:00",
     "sourcePriority": [
       "letour",
       "pcs",
       "manualFallback"
     ],
-    "latestCompletedStage": 10,
+    "latestCompletedStage": 11,
     "status": "review-needed",
     "riderRegistryStatus": "review-needed"
   },
   "generalClassification": {
-    "stage": 10,
-    "checkedAt": "2026-07-15T06:54:03+03:00",
+    "stage": 11,
+    "checkedAt": "2026-07-16T07:49:05+03:00",
     "status": "official",
     "source": "letour",
-    "sourceUrl": "https://www.letour.fr/en/rankings/stage-10",
+    "sourceUrl": "https://www.letour.fr/en/rankings/stage-11",
     "standings": [
       {
         "position": 1,
@@ -3087,7 +3309,7 @@ window.TDF_DATA = {
         "name": "T. POGACAR",
         "rawName": "Tadej POGACAR",
         "team": "UAE TEAM EMIRATES XRG",
-        "totalTime": "36h 15' 02''",
+        "totalTime": "39h 25' 08''",
         "gap": "-",
         "movement": null
       },
@@ -3101,7 +3323,7 @@ window.TDF_DATA = {
         "name": "J. VINGEGAARD",
         "rawName": "Jonas VINGEGAARD HANSEN",
         "team": "TEAM VISMA | LEASE A BIKE",
-        "totalTime": "36h 18' 38''",
+        "totalTime": "39h 28' 44''",
         "gap": "+ 00h 03' 36''",
         "movement": null
       },
@@ -3115,13 +3337,13 @@ window.TDF_DATA = {
         "name": "R. EVENEPOEL",
         "rawName": "Remco EVENEPOEL",
         "team": "RED BULL - BORA - HANSGROHE",
-        "totalTime": "36h 19' 08''",
+        "totalTime": "39h 29' 14''",
         "gap": "+ 00h 04' 06''",
         "movement": null
       },
       {
         "position": 4,
-        "riderId": "juan-ayuso",
+        "riderId": "letour-rider-31",
         "officialIds": {
           "letour": "31"
         },
@@ -3129,7 +3351,7 @@ window.TDF_DATA = {
         "name": "J. AYUSO",
         "rawName": "J. AYUSO",
         "team": "LIDL-TREK",
-        "totalTime": "36h 19' 24''",
+        "totalTime": "39h 29' 30''",
         "gap": "+ 00h 04' 22''",
         "movement": null
       },
@@ -3143,7 +3365,7 @@ window.TDF_DATA = {
         "name": "P. SEIXAS",
         "rawName": "P. SEIXAS",
         "team": "DECATHLON CMA CGM TEAM",
-        "totalTime": "36h 19' 37''",
+        "totalTime": "39h 29' 43''",
         "gap": "+ 00h 04' 35''",
         "movement": null
       },
@@ -3157,7 +3379,7 @@ window.TDF_DATA = {
         "name": "F. LIPOWITZ",
         "rawName": "F. LIPOWITZ",
         "team": "RED BULL - BORA - HANSGROHE",
-        "totalTime": "36h 19' 46''",
+        "totalTime": "39h 29' 52''",
         "gap": "+ 00h 04' 44''",
         "movement": null
       },
@@ -3171,7 +3393,7 @@ window.TDF_DATA = {
         "name": "I. DEL TORO",
         "rawName": "I. DEL TORO",
         "team": "UAE TEAM EMIRATES XRG",
-        "totalTime": "36h 20' 10''",
+        "totalTime": "39h 30' 16''",
         "gap": "+ 00h 05' 08''",
         "movement": null
       },
@@ -3185,7 +3407,7 @@ window.TDF_DATA = {
         "name": "M. SKJELMOSE",
         "rawName": "M. SKJELMOSE",
         "team": "LIDL-TREK",
-        "totalTime": "36h 20' 47''",
+        "totalTime": "39h 30' 53''",
         "gap": "+ 00h 05' 45''",
         "movement": null
       },
@@ -3199,7 +3421,7 @@ window.TDF_DATA = {
         "name": "L. MARTINEZ",
         "rawName": "L. MARTINEZ",
         "team": "BAHRAIN VICTORIOUS",
-        "totalTime": "36h 21' 36''",
+        "totalTime": "39h 31' 42''",
         "gap": "+ 00h 06' 34''",
         "movement": null
       },
@@ -3213,14 +3435,14 @@ window.TDF_DATA = {
         "name": "T. PIDCOCK",
         "rawName": "T. PIDCOCK",
         "team": "PINARELLO-Q36.5 PRO CYCLING TEAM",
-        "totalTime": "36h 26' 51''",
+        "totalTime": "39h 36' 57''",
         "gap": "+ 00h 11' 49''",
         "movement": null
       }
     ]
   },
   "riderValidation": {
-    "checkedAt": "2026-07-15T06:54:04+03:00",
+    "checkedAt": "2026-07-16T07:49:05+03:00",
     "status": "review-needed",
     "duplicateIds": [],
     "aliasConflicts": [],
@@ -3253,6 +3475,20 @@ window.TDF_DATA = {
       }
     ],
     "derivedRiders": [
+      {
+        "id": "letour-rider-31",
+        "name": "Juan Ayuso Pesquera",
+        "letourId": "31",
+        "reviewNeeded": false,
+        "latestQualifyingStage": 11
+      },
+      {
+        "id": "letour-rider-128",
+        "name": "Søren Wærenskjold",
+        "letourId": "128",
+        "reviewNeeded": false,
+        "latestQualifyingStage": 11
+      },
       {
         "id": "derived-alex-baudin",
         "name": "Alex Baudin",
@@ -3381,6 +3617,16 @@ window.TDF_DATA = {
         "id": "ben-healy",
         "name": "Ben Healy",
         "entryType": "curated"
+      },
+      {
+        "id": "letour-rider-31",
+        "name": "Juan Ayuso Pesquera",
+        "entryType": "derived"
+      },
+      {
+        "id": "letour-rider-128",
+        "name": "Søren Wærenskjold",
+        "entryType": "derived"
       },
       {
         "id": "derived-alex-baudin",
