@@ -157,9 +157,14 @@ main {
 
 .photo {
   height: clamp(300px, 21vw, 380px);
-  background: #071726;
+  background: #fff;
   position: relative;
   overflow: hidden;
+}
+
+.photo:not(.photo-placeholder)::before,
+.photo:not(.photo-placeholder)::after {
+  display: none;
 }
 
 .photo-placeholder {
