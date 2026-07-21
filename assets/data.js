@@ -1,6 +1,6 @@
 window.TDF_DATA = {
     "meta":  {
-                 "updatedAt":  "2026-07-20",
+                 "updatedAt":  "2026-07-21",
                  "routeCheckedAt":  "2026-06-30T13:04:40",
                  "dataStatus":  {
                                     "route":  "Verified",
@@ -9,7 +9,7 @@ window.TDF_DATA = {
                                     "highlights":  "YouTube RSS monitored",
                                     "results":  "Official"
                                 },
-                 "youtubeHighlightsCheckedAt":  "2026-07-20T07:01:43+03:00"
+                 "youtubeHighlightsCheckedAt":  "2026-07-21T07:02:03+03:00"
              },
     "links":  {
                   "officialRoute":  "https://www.letour.fr/en/overall-route",
@@ -2250,9 +2250,9 @@ window.TDF_DATA = {
                         "channelUrl":  "https://www.youtube.com/@TNTSportsCycling",
                         "channelId":  "UCfDfvvMARk4TKcC62ALi6eA",
                         "playlistId":  "PLXJfHJFBpClY",
-                        "feedUrl":  "https://www.youtube.com/feeds/videos.xml?playlist_id=PLXJfHJFBpClY",
-                        "sourceType":  "playlist",
-                        "note":  "Primary source for Tour de France highlights. Playlist RSS is checked before channel RSS."
+                        "feedUrl":  "https://www.youtube.com/feeds/videos.xml?channel_id=UCfDfvvMARk4TKcC62ALi6eA",
+                        "sourceType":  "channel",
+                        "note":  "Fallback source for Tour de France highlights. Playlist RSS failed, so channel RSS was used."
                     },
     "highlights":  [
                        {
@@ -2749,6 +2749,17 @@ window.TDF_DATA = {
                            "publishedAt":  "2026-07-19T16:11:35+00:00",
                            "discoveredAt":  "2026-07-20T07:01:43+03:00",
                            "isShort":  false
+                       },
+                       {
+                           "stage":  15,
+                           "type":  "Clip",
+                           "title":  "The smiles say it all for Remco Evenepoel and his team after he won Stage 15 on the Tour de France❤️",
+                           "url":  "https://www.youtube.com/shorts/ndUZdsuWyB8",
+                           "videoId":  "ndUZdsuWyB8",
+                           "source":  "TNT Sports Cycling",
+                           "publishedAt":  "2026-07-20T09:45:29+00:00",
+                           "discoveredAt":  "2026-07-21T07:02:03+03:00",
+                           "isShort":  true
                        }
                    ],
     "stageResults":  {
@@ -2760,7 +2771,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-1",
-                                   "checkedAt":  "2026-07-20T07:01:56+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:13+03:00",
                                    "distanceActual":  "19.6 км",
                                    "winner":  {
                                                   "riderId":  "jonas-vingegaard",
@@ -2870,7 +2881,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings",
-                                   "checkedAt":  "2026-07-20T07:01:59+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:16+03:00",
                                    "distanceActual":  "168.5 км",
                                    "winner":  {
                                                   "riderId":  "isaac-del-toro",
@@ -2980,7 +2991,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-3",
-                                   "checkedAt":  "2026-07-20T07:02:01+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:20+03:00",
                                    "distanceActual":  "195.9 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
@@ -3090,7 +3101,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-4",
-                                   "checkedAt":  "2026-07-20T07:02:04+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:23+03:00",
                                    "distanceActual":  "181.9 км",
                                    "winner":  {
                                                   "riderId":  "mads-pedersen",
@@ -3200,7 +3211,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-5",
-                                   "checkedAt":  "2026-07-20T07:02:06+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:26+03:00",
                                    "distanceActual":  "158.3 км",
                                    "winner":  {
                                                   "riderId":  "letour-rider-55",
@@ -3310,7 +3321,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-6",
-                                   "checkedAt":  "2026-07-20T07:02:09+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:28+03:00",
                                    "distanceActual":  "186.2 км",
                                    "winner":  {
                                                   "riderId":  "tadej-pogacar",
@@ -3420,7 +3431,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-7",
-                                   "checkedAt":  "2026-07-20T07:02:12+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:30+03:00",
                                    "distanceActual":  "175.1 км",
                                    "winner":  {
                                                   "riderId":  "tim-merlier",
@@ -3530,7 +3541,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-8",
-                                   "checkedAt":  "2026-07-20T07:02:14+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:33+03:00",
                                    "distanceActual":  "180.4 км",
                                    "winner":  {
                                                   "riderId":  "tim-merlier",
@@ -3640,7 +3651,7 @@ window.TDF_DATA = {
                                              },
                                    "source":  "letour",
                                    "sourceUrl":  "https://www.letour.fr/en/rankings/stage-9",
-                                   "checkedAt":  "2026-07-20T07:02:17+03:00",
+                                   "checkedAt":  "2026-07-21T07:02:36+03:00",
                                    "distanceActual":  "154.6 км",
                                    "winner":  {
                                                   "riderId":  "mathieu-van-der-poel",
@@ -3750,7 +3761,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-10",
-                                    "checkedAt":  "2026-07-20T07:02:20+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:39+03:00",
                                     "distanceActual":  "166.6 км",
                                     "winner":  {
                                                    "riderId":  "tadej-pogacar",
@@ -3860,7 +3871,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-11",
-                                    "checkedAt":  "2026-07-20T07:02:22+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:41+03:00",
                                     "distanceActual":  "161.3 км",
                                     "winner":  {
                                                    "riderId":  "letour-rider-128",
@@ -3970,7 +3981,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-12",
-                                    "checkedAt":  "2026-07-20T07:02:24+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:44+03:00",
                                     "distanceActual":  "179.1 км",
                                     "winner":  {
                                                    "riderId":  "tim-merlier",
@@ -4080,7 +4091,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-13",
-                                    "checkedAt":  "2026-07-20T07:02:27+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:46+03:00",
                                     "distanceActual":  "205.8 км",
                                     "winner":  {
                                                    "riderId":  "letour-rider-118",
@@ -4190,7 +4201,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-14",
-                                    "checkedAt":  "2026-07-20T07:02:29+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:49+03:00",
                                     "distanceActual":  "155.3 км",
                                     "winner":  {
                                                    "riderId":  "tadej-pogacar",
@@ -4300,7 +4311,7 @@ window.TDF_DATA = {
                                               },
                                     "source":  "letour",
                                     "sourceUrl":  "https://www.letour.fr/en/rankings/stage-15",
-                                    "checkedAt":  "2026-07-20T07:02:32+03:00",
+                                    "checkedAt":  "2026-07-21T07:02:51+03:00",
                                     "distanceActual":  "183.9 км",
                                     "winner":  {
                                                    "riderId":  "remco-evenepoel",
@@ -4404,7 +4415,7 @@ window.TDF_DATA = {
                                 }
                      },
     "resultsMeta":  {
-                        "checkedAt":  "2026-07-20T07:02:33+03:00",
+                        "checkedAt":  "2026-07-21T07:02:52+03:00",
                         "sourcePriority":  [
                                                "letour",
                                                "pcs",
@@ -4416,7 +4427,7 @@ window.TDF_DATA = {
                     },
     "generalClassification":  {
                                   "stage":  15,
-                                  "checkedAt":  "2026-07-20T07:02:32+03:00",
+                                  "checkedAt":  "2026-07-21T07:02:51+03:00",
                                   "status":  "official",
                                   "source":  "letour",
                                   "sourceUrl":  "https://www.letour.fr/en/rankings/stage-15",
@@ -4564,7 +4575,7 @@ window.TDF_DATA = {
                                                 ]
                               },
     "riderValidation":  {
-                            "checkedAt":  "2026-07-20T07:02:33+03:00",
+                            "checkedAt":  "2026-07-21T07:02:52+03:00",
                             "status":  "complete",
                             "duplicateIds":  [
 
