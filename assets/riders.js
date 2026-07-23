@@ -219,6 +219,10 @@
   }
 
   function riderDescriptionHtml(rider) {
+    const raceStatus = rider.raceStatus?.label
+      ? `<p class="small"><strong>Статус Tour 2026:</strong> ${rider.raceStatus.label}. ${rider.raceStatus.reason || ""}</p>`
+      : "";
+
     if (rider.entryType === "derived") {
       if (rider.why || rider.results || (rider.roles || []).length) {
         return `
@@ -226,6 +230,7 @@
             ${(rider.roles || []).map((role) => `<span class="tag ${roleClass(role)}">${role}</span>`).join("")}
           </div>
           <p>${rider.why || "Профиль добавлен по официальным результатам Tour de France."}</p>
+          ${raceStatus}
           <p class="small"><strong>Результаты:</strong> ${rider.results || "уточнить"}</p>
           <p class="small"><strong>Смотреть:</strong> ${rider.watch || "ближайшие подходящие этапы"}</p>
           <p class="small"><strong>Риск:</strong> ${rider.risk || "уточнить"}</p>
@@ -243,6 +248,7 @@
         ${(rider.roles || []).map((role) => `<span class="tag ${roleClass(role)}">${role}</span>`).join("")}
       </div>
       <p>${rider.why || ""}</p>
+      ${raceStatus}
       <p class="small"><strong>Результаты:</strong> ${rider.results || "уточнить"}</p>
       <p class="small"><strong>Смотреть:</strong> этапы ${rider.watch || "уточнить"}</p>
       <p class="small social"><strong>Проверить:</strong> ${socialLinks(rider)}</p>

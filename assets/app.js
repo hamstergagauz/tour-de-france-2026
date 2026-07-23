@@ -66,6 +66,11 @@
     return parseWatchStages(rider).includes(stageNumber);
   }
 
+  function riderIsActiveForStage(rider, stageNumber) {
+    const status = rider?.raceStatus;
+    return status?.state !== "withdrawn" || stageNumber <= Number(status.stage || 0);
+  }
+
   function riderSortKey(rider) {
     if (rider.entryType === "curated") return Number(rider.editorialOrder ?? 999);
     return 1000 + Number(rider.latestQualifyingStage ?? 0);
@@ -121,6 +126,7 @@
     if (!needle) return [];
 
     const directMatches = (data.riders || []).filter((rider) => {
+      if (!riderIsActiveForStage(rider, stage.number)) return false;
       const fields = [
         rider.name,
         rider.team,
@@ -281,7 +287,7 @@
     const picked = [];
     const completedResult = stageResult(stage.number);
     const addRider = (rider) => {
-      if (!rider || picked.some((item) => item.id === rider.id)) return;
+      if (!rider || !riderIsActiveForStage(rider, stage.number) || picked.some((item) => item.id === rider.id)) return;
       picked.push(rider);
     };
     const addRiders = (riders) => riders.forEach(addRider);
@@ -294,6 +300,7 @@
     (stage.favorites || []).forEach((favorite) => addRiders(favoriteMatchedRiders(favorite, stage)));
 
     const rankedRiders = [...(data.riders || [])]
+      .filter((rider) => riderIsActiveForStage(rider, stage.number))
       .filter((rider) => (rider.inclusion?.editorial || rider.inclusion?.stageWinner || rider.inclusion?.jerseyHolder))
       .sort((left, right) => {
         const scoreDelta = previewRelevance(right, stage) - previewRelevance(left, stage);
